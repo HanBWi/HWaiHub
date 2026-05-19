@@ -5,7 +5,7 @@
   // 1. Neues Szenario: Webhooks → Notion (Create Database Item)
   // 2. Webhook-URL von Make.com hier eintragen:
   // ─────────────────────────────────────────────────────────────────
-  var WEBHOOK_URL = 'MAKE_WEBHOOK_URL_HIER_EINFÜGEN';
+  var WEBHOOK_URL = 'https://hook.eu1.make.com/mtmn2bhcxbo6h8ivvcdp9sj6o1lcer86';
 
   var MSGS = {
     de: {
