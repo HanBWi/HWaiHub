@@ -32,20 +32,24 @@
           text: '🎓 **Workshops & Training**\n\nPraxisnahe Workshops für Führungsteams, Fachbereiche oder das gesamte Unternehmen.\n\n✓ KI-Grundlagen für Nicht-Techniker\n✓ Prompt Engineering (ChatGPT, Copilot & Co.)\n✓ Tool-spezifische Intensivtrainings\n✓ E-Learning-Module & Nachbetreuung',
           chips: ['Pakete & Preise', 'Kontakt']
         },
+        website: {
+          text: '🌐 **Website-Pakete**\n\n**Starter-Website**\n✓ Vollständige Markenidentität\n✓ Einseitige Website oder Landing Page\n✓ Professionelle Texterstellung\n✓ Mobiloptimiert & schnell\n✓ 1 Sprache inklusive\n✓ 1 Kontaktformular\n\n📦 Betreuungspaket: **€79/Monat**\n✓ 5 Änderungswünsche/Monat\n✓ Chat-Support\n✓ Fertig in 7 Tagen\n✓ Sicheres Hosting & SSL\n✓ Automatische Backups & Updates\n\n——————————————\n\n**Professional-Website**\n✓ Vollständige Markenidentität\n✓ Website mit bis zu 5 Seiten\n✓ Professionelle Texterstellung\n✓ Mobiloptimiert & schnell\n✓ 2 Sprachen inklusive\n✓ 2 Kontaktformulare\n✓ 1 CMS-Collection\n✓ 3 Integrationen\n✓ SEO inklusive\n\n📦 Betreuungspaket: **€179/Monat**\n✓ Unbegrenzte Änderungswünsche\n✓ 3 Plätze in der Websprint-App\n✓ Chat-Support\n✓ Fertig in 14 Tagen',
+          chips: ['Pakete & Preise', 'Kontakt']
+        },
         pricing: {
-          text: '💼 **Pakete & Preise**\n\n**Starter** — ab €1.500 (einmalig)\nErster KI-Einstieg: 1 Automatisierung, Prozessanalyse, 2 Wochen Nachbetreuung\n\n**Professional** — ab €4.800 + €600/Mo.\nBeliebtestes Paket: 3–5 Automatisierungen, Dashboard, Priority-Support\n\n**Enterprise** — ab €13.500\nKomplette digitale Transformation, dedizierter KI-Berater\n\nAlle Preise netto zzgl. MwSt. · Erstgespräch kostenlos & unverbindlich',
+          text: '💼 **Pakete & Preise**\n\n**Starter** — ab €2.999 (einmalig)\nErster KI-Einstieg: 1 Automatisierung, Prozessanalyse, 2 Wochen Nachbetreuung\n\n**Professional** — ab €7.999 + €600/Mo.\nBeliebtestes Paket: 3–5 Automatisierungen, Dashboard, Priority-Support\n\n**Enterprise** — ab €18.999\nKomplette digitale Transformation, dedizierter KI-Berater\n\nAlle Preise netto zzgl. MwSt. · Erstgespräch kostenlos & unverbindlich',
           chips: ['Starter', 'Professional', 'Enterprise', 'Kontakt']
         },
         starter: {
-          text: '**Starter — ab €1.500**\n*(einmalig, netto zzgl. 19% MwSt.)*\n\n✓ 1 KI-Automatisierung eingerichtet\n✓ Prozessanalyse\n✓ z.B. E-Mail-Assistent oder Kalenderoptimierung\n✓ 2 Wochen Nachbetreuung\n✓ Schritt-für-Schritt-Anleitung\n\nIdeal für den ersten KI-Schritt.',
+          text: '**Starter — ab €2.999**\n*(einmalig, netto zzgl. 19% MwSt.)*\n\n✓ 1 KI-Automatisierung eingerichtet\n✓ Prozessanalyse\n✓ z.B. E-Mail-Assistent oder Kalenderoptimierung\n✓ 2 Wochen Nachbetreuung\n✓ Schritt-für-Schritt-Anleitung\n\nIdeal für den ersten KI-Schritt.',
           chips: ['Professional', 'Enterprise', 'Kontakt']
         },
         professional: {
-          text: '**Professional — ab €4.800 + €600/Mo.**\n*(netto zzgl. 19% MwSt.)*\n\n✓ 3–5 KI-Automatisierungen\n✓ Vollständige Prozessanalyse\n✓ E-Mail + Kalender + Rechnungen\n✓ Übersichts-Dashboard\n✓ Monatliches Optimierungs-Meeting\n✓ Priority-Support (24h)\n✓ DSGVO-Dokumentation inkl.\n\nDas beliebteste Paket für wachsende Teams.',
+          text: '**Professional — ab €7.999 + €600/Mo.**\n*(netto zzgl. 19% MwSt.)*\n\n✓ 3–5 KI-Automatisierungen\n✓ Vollständige Prozessanalyse\n✓ E-Mail + Kalender + Rechnungen\n✓ Übersichts-Dashboard\n✓ Monatliches Optimierungs-Meeting\n✓ Priority-Support (24h)\n✓ DSGVO-Dokumentation inkl.\n\nDas beliebteste Paket für wachsende Teams.',
           chips: ['Starter', 'Enterprise', 'Kontakt']
         },
         enterprise: {
-          text: '**Enterprise — ab €13.500**\n*(individuell, netto zzgl. 19% MwSt.)*\n\n✓ Komplette digitale Transformation\n✓ Unbegrenzte Automatisierungen\n✓ End-to-End Produktentwicklung\n✓ Dedizierter KI-Berater\n✓ Mitarbeiterschulungen inkl.\n✓ Retainer-Modell möglich\n\nFür Unternehmen, die vollen Umfang wollen.',
+          text: '**Enterprise — ab €18.999**\n*(individuell, netto zzgl. 19% MwSt.)*\n\n✓ Komplette digitale Transformation\n✓ Unbegrenzte Automatisierungen\n✓ End-to-End Produktentwicklung\n✓ Dedizierter KI-Berater\n✓ Mitarbeiterschulungen inkl.\n✓ Retainer-Modell möglich\n\nFür Unternehmen, die vollen Umfang wollen.',
           chips: ['Starter', 'Professional', 'Kontakt']
         },
         about: {
@@ -67,10 +71,11 @@
         automation:   ['automatisierung', 'automatisieren', 'prozess', 'workflow', 'e-mail assistent'],
         change:       ['change management', 'change', 'veränderung', 'akzeptanz', 'führungskraft', 'team führen'],
         workshops:    ['workshop', 'training', 'schulung', 'weiterbildung', 'prompt engineering', 'kurs'],
+        website:      ['website', 'webseite', 'landing page', 'homepage', 'internetseite', 'webdesign', 'seite erstellen', 'hosting', 'ssl', 'websprint'],
         pricing:      ['preis', 'kosten', 'paket', 'pakete', 'wie viel', 'wieviel', 'budget', 'bezahlen'],
-        starter:      ['starter', 'einstieg', '1500', '1.500', 'günstig', 'klein'],
-        professional: ['professional', 'wachstum', '4800', '4.800'],
-        enterprise:   ['enterprise', 'vollausbau', '13500', '13.500', 'groß', 'komplett'],
+        starter:      ['starter', 'einstieg', '2999', '2.999', 'günstig', 'klein'],
+        professional: ['professional', 'wachstum', '7999', '7.999'],
+        enterprise:   ['enterprise', 'vollausbau', '18999', '18.999', 'groß', 'komplett'],
         about:        ['über hanna', 'wer ist', 'erfahrung', 'zertifikat', 'hintergrund', 'portugal', 'cascais', 'remote', 'standort'],
         contact:      ['kontakt', 'buchen', 'erstgespräch', 'termin', 'anfragen', 'e-mail', 'mail', 'schreiben', 'melden']
       }
@@ -105,20 +110,24 @@
           text: '🎓 **Workshops & Training**\n\nHands-on workshops for leadership teams, departments, or the entire organisation.\n\n✓ AI basics for non-technical staff\n✓ Prompt engineering (ChatGPT, Copilot & more)\n✓ Tool-specific intensive training\n✓ E-learning modules & follow-up',
           chips: ['Packages & Pricing', 'Contact']
         },
+        website: {
+          text: '🌐 **Website Packages**\n\n**Starter Website**\n✓ Full brand identity\n✓ One-page website or landing page\n✓ Professional copywriting\n✓ Mobile-ready & fast loading\n✓ 1 language included\n✓ 1 contact form\n\n📦 Monthly care package: **€79/month**\n✓ 5 website change requests/month\n✓ Chat support\n✓ Ready in 7 days\n✓ Secure hosting & SSL certificate\n✓ Automatic backups & technical updates\n\n——————————————\n\n**Professional Website**\n✓ Full brand identity\n✓ Custom website up to 5 pages\n✓ Professional copywriting\n✓ Mobile-ready & fast loading\n✓ 2 languages included\n✓ 2 contact forms\n✓ 1 CMS collection\n✓ 3 integrations\n✓ SEO included\n\n📦 Monthly care package: **€179/month**\n✓ Unlimited website change requests\n✓ 3 seats in Websprint app\n✓ Chat support\n✓ Ready in 14 days',
+          chips: ['Packages & Pricing', 'Contact']
+        },
         pricing: {
-          text: '💼 **Packages & Pricing**\n\n**Starter** — from €1,500 (one-time)\nFirst AI step: 1 automation, process analysis, 2 weeks aftercare\n\n**Professional** — from €4,800 + €600/mo.\nMost popular: 3–5 automations, dashboard, priority support\n\n**Enterprise** — from €13,500\nFull digital transformation, dedicated AI consultant\n\nAll prices net plus VAT · Initial call free & non-binding',
+          text: '💼 **Packages & Pricing**\n\n**Starter** — from €2,999 (one-time)\nFirst AI step: 1 automation, process analysis, 2 weeks aftercare\n\n**Professional** — from €7,999 + €600/mo.\nMost popular: 3–5 automations, dashboard, priority support\n\n**Enterprise** — from €18,999\nFull digital transformation, dedicated AI consultant\n\nAll prices net plus VAT · Initial call free & non-binding',
           chips: ['Starter', 'Professional', 'Enterprise', 'Contact']
         },
         starter: {
-          text: '**Starter — from €1,500**\n*(one-time, net plus VAT)*\n\n✓ 1 AI automation set up\n✓ Process analysis\n✓ e.g. email assistant or calendar\n✓ 2 weeks aftercare\n✓ Step-by-step guide\n\nIdeal for your first AI step.',
+          text: '**Starter — from €2,999**\n*(one-time, net plus VAT)*\n\n✓ 1 AI automation set up\n✓ Process analysis\n✓ e.g. email assistant or calendar\n✓ 2 weeks aftercare\n✓ Step-by-step guide\n\nIdeal for your first AI step.',
           chips: ['Professional', 'Enterprise', 'Contact']
         },
         professional: {
-          text: '**Professional — from €4,800 + €600/mo.**\n*(net plus VAT)*\n\n✓ 3–5 AI automations\n✓ Full process analysis\n✓ Email + calendar + invoices\n✓ Overview dashboard\n✓ Monthly optimisation meeting\n✓ Priority support (24h)\n✓ GDPR documentation incl.\n\nThe most popular package for growing teams.',
+          text: '**Professional — from €7,999 + €600/mo.**\n*(net plus VAT)*\n\n✓ 3–5 AI automations\n✓ Full process analysis\n✓ Email + calendar + invoices\n✓ Overview dashboard\n✓ Monthly optimisation meeting\n✓ Priority support (24h)\n✓ GDPR documentation incl.\n\nThe most popular package for growing teams.',
           chips: ['Starter', 'Enterprise', 'Contact']
         },
         enterprise: {
-          text: '**Enterprise — from €13,500**\n*(custom, net plus VAT)*\n\n✓ Complete digital transformation\n✓ Unlimited automations\n✓ End-to-end product development\n✓ Dedicated AI consultant\n✓ Employee training included\n✓ Retainer model available\n\nFor companies that want the full scope.',
+          text: '**Enterprise — from €18,999**\n*(custom, net plus VAT)*\n\n✓ Complete digital transformation\n✓ Unlimited automations\n✓ End-to-end product development\n✓ Dedicated AI consultant\n✓ Employee training included\n✓ Retainer model available\n\nFor companies that want the full scope.',
           chips: ['Starter', 'Professional', 'Contact']
         },
         about: {
@@ -140,10 +149,11 @@
         automation:   ['automation', 'automate', 'process', 'workflow', 'email assistant'],
         change:       ['change management', 'change', 'transformation', 'acceptance', 'leadership'],
         workshops:    ['workshop', 'training', 'course', 'prompt engineering', 'learning'],
+        website:      ['website', 'landing page', 'homepage', 'web design', 'webdesign', 'hosting', 'ssl', 'websprint', 'one page', 'web page'],
         pricing:      ['price', 'cost', 'package', 'packages', 'how much', 'budget', 'pay'],
-        starter:      ['starter', 'entry', '1500', '1,500', 'cheap', 'small'],
-        professional: ['professional', 'growth', '4800', '4,800'],
-        enterprise:   ['enterprise', 'full scale', '13500', '13,500', 'large', 'complete'],
+        starter:      ['starter', 'entry', '2999', '2,999', 'cheap', 'small'],
+        professional: ['professional', 'growth', '7999', '7,999'],
+        enterprise:   ['enterprise', 'full scale', '18999', '18,999', 'large', 'complete'],
         about:        ['about hanna', 'who is', 'experience', 'certification', 'background', 'portugal', 'cascais', 'remote', 'location'],
         contact:      ['contact', 'book', 'call', 'appointment', 'email', 'write', 'reach', 'get in touch']
       }
@@ -169,13 +179,14 @@
         automation: { text: '⚙️ **Automatyzacja procesów**\n\nEliminacja pożeraczy czasu, redukcja błędów, odciążenie zespołów — tam, gdzie efekt jest największy.\n\n✓ Analiza procesów i potencjał automatyzacji\n✓ Wdrożenie (e-mail, dokumenty, przepływy pracy)\n✓ Implementacja zgodna z RODO\n✓ Dashboard monitoringowy i KPI', chips: ['Pakiety i Ceny', 'Kontakt'] },
         change:     { text: '🧑‍💼 **Zarządzanie zmianą**\n\nAI nie zawodzi z powodu technologii — zawodzi z powodu braku akceptacji. Prowadzę liderów i zespoły przez zmianę: strategicznie, empatycznie, trwale.\n\n✓ Analiza interesariuszy i strategia komunikacji\n✓ Coaching kadry kierowniczej\n✓ Zarządzanie oporem\n✓ Zmiana kultury i mindset AI', chips: ['Pakiety i Ceny', 'Kontakt'] },
         workshops:  { text: '🎓 **Warsztaty i szkolenia**\n\nPraktyczne warsztaty dla kadry kierowniczej, działów lub całej firmy.\n\n✓ Podstawy AI dla osób nieinformatycznych\n✓ Prompt engineering (ChatGPT, Copilot i inne)\n✓ Intensywne szkolenia z konkretnych narzędzi\n✓ Moduły e-learningowe i wsparcie po szkoleniu', chips: ['Pakiety i Ceny', 'Kontakt'] },
+        website: { text: '🌐 **Pakiety Stron Internetowych**\n\n**Starter — Strona internetowa**\n✓ Pełna identyfikacja wizualna marki\n✓ Jednostronicowa witryna lub landing page\n✓ Profesjonalne teksty\n✓ Responsywna i szybka\n✓ 1 język w zestawie\n✓ 1 formularz kontaktowy\n\n📦 Pakiet opieki: **€79/mies.**\n✓ 5 zmian na stronie/miesiąc\n✓ Wsparcie chat\n✓ Gotowa w 7 dni\n✓ Bezpieczny hosting & SSL\n✓ Automatyczne kopie zapasowe i aktualizacje\n\n——————————————\n\n**Professional — Strona internetowa**\n✓ Pełna identyfikacja wizualna marki\n✓ Strona do 5 podstron\n✓ Profesjonalne teksty\n✓ Responsywna i szybka\n✓ 2 języki w zestawie\n✓ 2 formularze kontaktowe\n✓ 1 kolekcja CMS\n✓ 3 integracje\n✓ SEO w zestawie\n\n📦 Pakiet opieki: **€179/mies.**\n✓ Nieograniczone zmiany na stronie\n✓ 3 miejsca w aplikacji Websprint\n✓ Wsparcie chat\n✓ Gotowa w 14 dni', chips: ['Pakiety i Ceny', 'Kontakt'] },
         pricing: {
-          text: '💼 **Pakiety i Ceny**\n\n**Starter** — od €1 500 (jednorazowo)\nPierwszy krok w AI: 1 automatyzacja, analiza procesów, 2 tygodnie wsparcia\n\n**Professional** — od €4 800 + €600/mies.\nNajpopularniejszy: 3–5 automatyzacji, dashboard, wsparcie priorytetowe\n\n**Enterprise** — od €13 500\nKompletna transformacja cyfrowa, dedykowany doradca AI\n\nWszystkie ceny netto plus VAT · Pierwsza rozmowa bezpłatna',
+          text: '💼 **Pakiety i Ceny**\n\n**Starter** — od €2 999 (jednorazowo)\nPierwszy krok w AI: 1 automatyzacja, analiza procesów, 2 tygodnie wsparcia\n\n**Professional** — od €7 999 + €600/mies.\nNajpopularniejszy: 3–5 automatyzacji, dashboard, wsparcie priorytetowe\n\n**Enterprise** — od €18 999\nKompletna transformacja cyfrowa, dedykowany doradca AI\n\nWszystkie ceny netto plus VAT · Pierwsza rozmowa bezpłatna',
           chips: ['Starter', 'Professional', 'Enterprise', 'Kontakt']
         },
-        starter:      { text: '**Starter — od €1 500**\n*(jednorazowo, netto plus VAT)*\n\n✓ 1 automatyzacja AI wdrożona\n✓ Analiza procesów\n✓ np. asystent e-mail lub kalendarz\n✓ 2 tygodnie wsparcia po wdrożeniu\n✓ Instrukcja krok po kroku\n\nIdealny na pierwszy krok w AI.', chips: ['Professional', 'Enterprise', 'Kontakt'] },
-        professional: { text: '**Professional — od €4 800 + €600/mies.**\n*(netto plus VAT)*\n\n✓ 3–5 automatyzacji AI\n✓ Pełna analiza procesów\n✓ E-mail + kalendarz + faktury\n✓ Dashboard przeglądowy\n✓ Miesięczne spotkanie optymalizacyjne\n✓ Priority support (24h)\n✓ Dokumentacja RODO w zestawie', chips: ['Starter', 'Enterprise', 'Kontakt'] },
-        enterprise:   { text: '**Enterprise — od €13 500**\n*(indywidualnie, netto plus VAT)*\n\n✓ Kompletna transformacja cyfrowa\n✓ Nieograniczone automatyzacje\n✓ Tworzenie produktów end-to-end\n✓ Dedykowany doradca AI\n✓ Szkolenia pracowników w zestawie\n✓ Model retainerowy możliwy', chips: ['Starter', 'Professional', 'Kontakt'] },
+        starter:      { text: '**Starter — od €2 999**\n*(jednorazowo, netto plus VAT)*\n\n✓ 1 automatyzacja AI wdrożona\n✓ Analiza procesów\n✓ np. asystent e-mail lub kalendarz\n✓ 2 tygodnie wsparcia po wdrożeniu\n✓ Instrukcja krok po kroku\n\nIdealny na pierwszy krok w AI.', chips: ['Professional', 'Enterprise', 'Kontakt'] },
+        professional: { text: '**Professional — od €7 999 + €600/mies.**\n*(netto plus VAT)*\n\n✓ 3–5 automatyzacji AI\n✓ Pełna analiza procesów\n✓ E-mail + kalendarz + faktury\n✓ Dashboard przeglądowy\n✓ Miesięczne spotkanie optymalizacyjne\n✓ Priority support (24h)\n✓ Dokumentacja RODO w zestawie', chips: ['Starter', 'Enterprise', 'Kontakt'] },
+        enterprise:   { text: '**Enterprise — od €18 999**\n*(indywidualnie, netto plus VAT)*\n\n✓ Kompletna transformacja cyfrowa\n✓ Nieograniczone automatyzacje\n✓ Tworzenie produktów end-to-end\n✓ Dedykowany doradca AI\n✓ Szkolenia pracowników w zestawie\n✓ Model retainerowy możliwy', chips: ['Starter', 'Professional', 'Kontakt'] },
         about:   { text: '👩‍💼 **Hanna Winkelmann**\nKonsultantka AI i Transformacji Cyfrowej · Założycielka, HWaiHub\n\nZ ponad dziesięcioletnim doświadczeniem prowadzi firmy od strategii AI do wdrożenia — bez buzzwordów, z mierzalnymi wynikami.\n\n📍 Cascais, Portugalia — Zdalnie i na miejscu\n\nCertyfikaty: Microsoft Azure · CSPO · SAS · PRINCE2 Agile', chips: ['Usługi', 'Kontakt'] },
         contact: { text: '📬 **Skontaktuj się**\n\nBezpłatna pierwsza rozmowa trwa 30 minut — bez zobowiązań.\n\n✉️ hallo@hwaihub.com\n\nLub skorzystaj z formularza kontaktowego na stronie głównej. Zazwyczaj odpowiadam w ciągu 24 godzin.', chips: ['Do formularza kontaktowego →'] },
         fallback: { text: 'Świetne pytanie — może trochę przekraczam moje możliwości 😊 Hanna chętnie odpowie bezpośrednio:\n\n✉️ hallo@hwaihub.com', chips: ['Usługi', 'Pakiety i Ceny', 'Kontakt'] }
@@ -186,12 +197,58 @@
         automation:   ['automatyzacj', 'automat', 'proces', 'workflow'],
         change:       ['zarządzanie zmianą', 'zmian', 'transformacj', 'akceptacj', 'przywódc'],
         workshops:    ['warsztat', 'szkoleni', 'kurs', 'prompt engineering'],
+        website:      ['website', 'strona internet', 'landing page', 'witryn', 'hosting', 'ssl', 'websprint', 'webdesign'],
         pricing:      ['cen', 'koszt', 'pakiet', 'ile', 'budżet', 'płac'],
-        starter:      ['starter', 'wejście', '1500', '1 500'],
-        professional: ['professional', 'wzrost', '4800', '4 800'],
-        enterprise:   ['enterprise', 'pełna skala', '13500', '13 500'],
+        starter:      ['starter', 'wejście', '2999', '2 999'],
+        professional: ['professional', 'wzrost', '7999', '7 999'],
+        enterprise:   ['enterprise', 'pełna skala', '18999', '18 999'],
         about:        ['o hannie', 'kto', 'doświadczen', 'certyfikat', 'portugalia', 'cascais', 'zdalnie'],
         contact:      ['kontakt', 'umów', 'rozmow', 'termin', 'e-mail', 'napisz', 'skontaktuj']
+      }
+    },
+
+    es: {
+      toggle_label: 'Abrir chat',
+      title: 'Asistente HWaiHub',
+      subtitle: 'Preguntas sobre servicios y paquetes',
+      placeholder: 'Tu pregunta…',
+      send: '→',
+      greeting: '¡Hola! 👋 Puedo responder preguntas sobre los servicios, paquetes y todo lo relacionado con HWaiHub. ¿En qué puedo ayudarte?',
+      quick_start: ['Servicios', 'Paquetes y Precios', 'Sobre Hanna', 'Contacto'],
+      responses: {
+        services: {
+          text: '**HWaiHub ofrece cuatro servicios principales:**\n\n🧭 Estrategia de IA & Hoja de ruta\n⚙️ Automatización de Procesos\n🧑‍💼 Gestión del Cambio\n🎓 Talleres y Formación\n\n¿Sobre cuál te gustaría saber más?',
+          chips: ['Estrategia de IA', 'Automatización', 'Gestión del Cambio', 'Talleres']
+        },
+        strategy:     { text: '🧭 **Estrategia de IA & Hoja de ruta**\n\nDesde el análisis del estado actual hasta un plan de acción priorizado — sin exceso tecnológico, con impacto real en el negocio.\n\n✓ Evaluación de madurez en IA\n✓ Priorización de casos de uso (basada en ROI)\n✓ Selección de tecnología & cribado de proveedores\n✓ Hoja de ruta de implementación con hitos', chips: ['Paquetes y Precios', 'Contacto'] },
+        automation:   { text: '⚙️ **Automatización de Procesos**\n\nEliminar tareas repetitivas, reducir errores y liberar a los equipos — donde tiene más impacto.\n\n✓ Análisis de procesos & potencial de automatización\n✓ Implementación (correo, documentos, flujos)\n✓ Configuración conforme al RGPD\n✓ Panel de monitorización & KPIs', chips: ['Paquetes y Precios', 'Contacto'] },
+        change:       { text: '🧑‍💼 **Gestión del Cambio**\n\nLa IA no falla por la tecnología — falla por falta de adopción. Acompaño a líderes y equipos en el cambio: de forma estratégica, empática y sostenible.\n\n✓ Análisis de stakeholders & estrategia de comunicación\n✓ Coaching de liderazgo\n✓ Gestión de resistencias\n✓ Cambio cultural & mentalidad de IA', chips: ['Paquetes y Precios', 'Contacto'] },
+        workshops:    { text: '🎓 **Talleres y Formación**\n\nTalleres prácticos para equipos directivos, departamentos o toda la empresa.\n\n✓ Fundamentos de IA para no técnicos\n✓ Ingeniería de prompts (ChatGPT, Copilot y más)\n✓ Formaciones intensivas de herramientas específicas\n✓ Módulos de e-learning & seguimiento', chips: ['Paquetes y Precios', 'Contacto'] },
+        website: { text: '🌐 **Paquetes de Sitio Web**\n\n**Starter — Sitio Web**\n✓ Identidad de marca completa\n✓ Web de una página o landing page\n✓ Redacción profesional\n✓ Adaptado a móvil y carga rápida\n✓ 1 idioma incluido\n✓ 1 formulario de contacto\n\n📦 Paquete de mantenimiento: **€79/mes**\n✓ 5 cambios en la web/mes\n✓ Soporte por chat\n✓ Lista en 7 días\n✓ Hosting seguro & certificado SSL\n✓ Copias de seguridad automáticas y actualizaciones\n\n——————————————\n\n**Professional — Sitio Web**\n✓ Identidad de marca completa\n✓ Web personalizada hasta 5 páginas\n✓ Redacción profesional\n✓ Adaptado a móvil y carga rápida\n✓ 2 idiomas incluidos\n✓ 2 formularios de contacto\n✓ 1 colección CMS\n✓ 3 integraciones\n✓ SEO incluido\n\n📦 Paquete de mantenimiento: **€179/mes**\n✓ Cambios ilimitados en la web\n✓ 3 asientos en la app Websprint\n✓ Soporte por chat\n✓ Lista en 14 días', chips: ['Paquetes y Precios', 'Contacto'] },
+        pricing: {
+          text: '💼 **Paquetes y Precios**\n\n**Starter** — desde €2.999 (único)\nPrimer paso en IA: 1 automatización, análisis de procesos, 2 semanas de seguimiento\n\n**Professional** — desde €7.999 + €600/mes\nEl más popular: 3–5 automatizaciones, panel, soporte prioritario\n\n**Enterprise** — desde €18.999\nTransformación digital completa, consultor de IA dedicado\n\nTodos los precios netos más IVA · Primera llamada gratuita y sin compromiso',
+          chips: ['Starter', 'Professional', 'Enterprise', 'Contacto']
+        },
+        starter:      { text: '**Starter — desde €2.999**\n*(único, neto más IVA)*\n\n✓ 1 automatización de IA configurada\n✓ Análisis de procesos\n✓ p.ej. asistente de correo o calendario\n✓ 2 semanas de seguimiento\n✓ Guía paso a paso\n\nIdeal para dar el primer paso en IA.', chips: ['Professional', 'Enterprise', 'Contacto'] },
+        professional: { text: '**Professional — desde €7.999 + €600/mes**\n*(neto más IVA)*\n\n✓ 3–5 automatizaciones de IA\n✓ Análisis completo de procesos\n✓ Correo + calendario + facturas\n✓ Panel de visión general\n✓ Reunión mensual de optimización\n✓ Soporte prioritario (24h)\n✓ Documentación RGPD incluida\n\nEl paquete más popular para equipos en crecimiento.', chips: ['Starter', 'Enterprise', 'Contacto'] },
+        enterprise:   { text: '**Enterprise — desde €18.999**\n*(personalizado, neto más IVA)*\n\n✓ Transformación digital completa\n✓ Automatizaciones ilimitadas\n✓ Desarrollo end-to-end\n✓ Consultor de IA dedicado\n✓ Formación de empleados incluida\n✓ Modelo de retainer disponible\n\nPara empresas que quieren el alcance completo.', chips: ['Starter', 'Professional', 'Contacto'] },
+        about:   { text: '👩‍💼 **Hanna Winkelmann**\nConsultora de IA & Transformación Digital · Fundadora, HWaiHub\n\nCon más de una década de experiencia, guía a empresas desde la estrategia de IA hasta la implementación — sin buzzwords, con resultados medibles.\n\n📍 Cascais, Portugal — Remoto y presencial\n\nCertificaciones: Microsoft Azure · CSPO · SAS · PRINCE2 Agile', chips: ['Servicios', 'Contacto'] },
+        contact: { text: '📬 **Ponte en contacto**\n\nLa primera llamada gratuita dura 30 minutos — sin compromiso.\n\n✉️ hallo@hwaihub.com\n\nO usa el formulario de contacto en la página principal. Normalmente respondo en 24 horas.', chips: ['Al formulario de contacto →'] },
+        fallback: { text: 'Buena pregunta — puede que me quede un poco corto aquí 😊 Hanna estaría encantada de responderla directamente:\n\n✉️ hallo@hwaihub.com', chips: ['Servicios', 'Paquetes y Precios', 'Contacto'] }
+      },
+      keywords: {
+        services:     ['servicio', 'oferta', 'qué hace', 'qué ofrece', 'consultoría'],
+        strategy:     ['estrategi', 'hoja de ruta', 'roadmap', 'plan', 'planificación'],
+        automation:   ['automatiz', 'automat', 'proceso', 'flujo'],
+        change:       ['gestión del cambio', 'cambio', 'transformación', 'liderazgo'],
+        workshops:    ['taller', 'formación', 'curso', 'ingeniería de prompts'],
+        website:      ['website', 'sitio web', 'página web', 'landing page', 'webdesign', 'hosting', 'ssl', 'websprint'],
+        pricing:      ['precio', 'coste', 'paquete', 'cuánto', 'presupuesto', 'pagar'],
+        starter:      ['starter', 'entrada', '2999', '2.999'],
+        professional: ['professional', 'crecimiento', '7999', '7.999'],
+        enterprise:   ['enterprise', 'escala completa', '18999', '18.999', 'grande', 'completo'],
+        about:        ['sobre hanna', 'quién es', 'experiencia', 'certificación', 'portugal', 'cascais', 'remoto'],
+        contact:      ['contacto', 'contactar', 'llamada', 'correo', 'escribir', 'ponerse en contacto']
       }
     },
 
@@ -212,13 +269,14 @@
         automation:   { text: '⚙️ **Automatização de Processos**\n\nEliminar tarefas repetitivas, reduzir erros e libertar as equipas — onde tem mais impacto.\n\n✓ Análise de processos & potencial de automatização\n✓ Implementação (e-mail, documentos, fluxos)\n✓ Configuração conforme RGPD\n✓ Dashboard de monitorização & KPIs', chips: ['Pacotes e Preços', 'Contacto'] },
         change:       { text: '🧑‍💼 **Gestão da Mudança**\n\nA IA não falha por causa da tecnologia — falha pela falta de adesão. Guio líderes e equipas pela mudança: de forma estratégica, empática e sustentável.\n\n✓ Análise de stakeholders & estratégia de comunicação\n✓ Coaching de liderança\n✓ Gestão de resistências\n✓ Mudança cultural & mentalidade de IA', chips: ['Pacotes e Preços', 'Contacto'] },
         workshops:    { text: '🎓 **Workshops & Formações**\n\nWorkshops práticos para equipas de liderança, departamentos ou toda a empresa.\n\n✓ Fundamentos de IA para não técnicos\n✓ Engenharia de prompts (ChatGPT, Copilot e mais)\n✓ Formações intensivas de ferramentas específicas\n✓ Módulos de e-learning & acompanhamento', chips: ['Pacotes e Preços', 'Contacto'] },
+        website: { text: '🌐 **Pacotes de Website**\n\n**Starter — Website**\n✓ Identidade de marca completa\n✓ Website de uma página ou landing page\n✓ Copywriting profissional\n✓ Adaptado para mobile e carregamento rápido\n✓ 1 idioma incluído\n✓ 1 formulário de contacto\n\n📦 Pacote de manutenção: **€79/mês**\n✓ 5 pedidos de alteração/mês\n✓ Suporte por chat\n✓ Pronto em 7 dias\n✓ Hosting seguro & certificado SSL\n✓ Backups automáticos e atualizações técnicas\n\n——————————————\n\n**Professional — Website**\n✓ Identidade de marca completa\n✓ Website personalizado até 5 páginas\n✓ Copywriting profissional\n✓ Adaptado para mobile e carregamento rápido\n✓ 2 idiomas incluídos\n✓ 2 formulários de contacto\n✓ 1 coleção CMS\n✓ 3 integrações\n✓ SEO incluído\n\n📦 Pacote de manutenção: **€179/mês**\n✓ Pedidos de alteração ilimitados\n✓ 3 lugares na app Websprint\n✓ Suporte por chat\n✓ Pronto em 14 dias', chips: ['Pacotes e Preços', 'Contacto'] },
         pricing: {
-          text: '💼 **Pacotes e Preços**\n\n**Starter** — a partir de €1.500 (único)\nPrimeiro passo em IA: 1 automatização, análise de processos, 1 semana de acompanhamento\n\n**Professional** — a partir de €4.800 + €600/mês\nMais popular: 3–5 automatizações, dashboard, suporte prioritário\n\n**Enterprise** — a partir de €13.500\nTransformação digital completa, consultor de IA dedicado\n\nTodos os preços líquidos mais IVA · Primeira conversa gratuita',
+          text: '💼 **Pacotes e Preços**\n\n**Starter** — a partir de €2.999 (único)\nPrimeiro passo em IA: 1 automatização, análise de processos, 2 semanas de acompanhamento\n\n**Professional** — a partir de €7.999 + €600/mês\nMais popular: 3–5 automatizações, dashboard, suporte prioritário\n\n**Enterprise** — a partir de €18.999\nTransformação digital completa, consultor de IA dedicado\n\nTodos os preços líquidos mais IVA · Primeira conversa gratuita',
           chips: ['Starter', 'Professional', 'Enterprise', 'Contacto']
         },
-        starter:      { text: '**Starter — a partir de €1.500**\n*(único, líquido mais IVA)*\n\n✓ 1 automatização de IA configurada\n✓ Análise de processos\n✓ p.ex. assistente de e-mail ou calendário\n✓ 1 semana de acompanhamento\n✓ Guia passo a passo\n\nIdeal para dar o primeiro passo em IA.', chips: ['Professional', 'Enterprise', 'Contacto'] },
-        professional: { text: '**Professional — a partir de €4.800 + €600/mês**\n*(líquido mais IVA)*\n\n✓ 3–5 automatizações de IA\n✓ Análise completa de processos\n✓ E-mail + calendário + faturas\n✓ Dashboard de visão geral\n✓ Reunião mensal de otimização\n✓ Suporte prioritário (24h)\n✓ Documentação RGPD incluída', chips: ['Starter', 'Enterprise', 'Contacto'] },
-        enterprise:   { text: '**Enterprise — a partir de €13.500**\n*(personalizado, líquido mais IVA)*\n\n✓ Transformação digital completa\n✓ Automatizações ilimitadas\n✓ Implementação end-to-end\n✓ Consultor de IA dedicado\n✓ Formação de colaboradores incluída\n✓ Modelo de retainer disponível', chips: ['Starter', 'Professional', 'Contacto'] },
+        starter:      { text: '**Starter — a partir de €2.999**\n*(único, líquido mais IVA)*\n\n✓ 1 automatização de IA configurada\n✓ Análise de processos\n✓ p.ex. assistente de e-mail ou calendário\n✓ 2 semanas de acompanhamento\n✓ Guia passo a passo\n\nIdeal para dar o primeiro passo em IA.', chips: ['Professional', 'Enterprise', 'Contacto'] },
+        professional: { text: '**Professional — a partir de €7.999 + €600/mês**\n*(líquido mais IVA)*\n\n✓ 3–5 automatizações de IA\n✓ Análise completa de processos\n✓ E-mail + calendário + faturas\n✓ Dashboard de visão geral\n✓ Reunião mensal de otimização\n✓ Suporte prioritário (24h)\n✓ Documentação RGPD incluída', chips: ['Starter', 'Enterprise', 'Contacto'] },
+        enterprise:   { text: '**Enterprise — a partir de €18.999**\n*(personalizado, líquido mais IVA)*\n\n✓ Transformação digital completa\n✓ Automatizações ilimitadas\n✓ Implementação end-to-end\n✓ Consultor de IA dedicado\n✓ Formação de colaboradores incluída\n✓ Modelo de retainer disponível', chips: ['Starter', 'Professional', 'Contacto'] },
         about:   { text: '👩‍💼 **Hanna Winkelmann**\nConsultora de IA & Transformação Digital · Fundadora, HWaiHub\n\nCom mais de uma década de experiência, guia empresas da estratégia de IA à implementação — sem buzzwords, com resultados mensuráveis.\n\n📍 Cascais, Portugal — Remoto e presencial\n\nCertificações: Microsoft Azure · CSPO · SAS · PRINCE2 Agile', chips: ['Serviços', 'Contacto'] },
         contact: { text: '📬 **Entra em contacto**\n\nA primeira conversa gratuita dura 30 minutos — sem compromisso.\n\n✉️ hallo@hwaihub.com\n\nOu usa o formulário de contacto na página inicial. Normalmente respondo em até 24 horas.', chips: ['Ir ao formulário →'] },
         fallback: { text: 'Boa pergunta — talvez eu seja um pouco limitado aqui 😊 A Hanna responderia de bom grado diretamente:\n\n✉️ hallo@hwaihub.com', chips: ['Serviços', 'Pacotes e Preços', 'Contacto'] }
@@ -229,10 +287,11 @@
         automation:   ['automatiz', 'automat', 'process', 'fluxo'],
         change:       ['gestão da mudança', 'mudança', 'transformaç', 'liderança'],
         workshops:    ['workshop', 'formaç', 'curso', 'engenharia de prompts'],
+        website:      ['website', 'página web', 'landing page', 'webdesign', 'hosting', 'ssl', 'websprint', 'site'],
         pricing:      ['preç', 'cust', 'pacote', 'quanto', 'orçamento', 'pagar'],
-        starter:      ['starter', 'entrada', '1500', '1.500'],
-        professional: ['professional', 'crescimento', '4800', '4.800'],
-        enterprise:   ['enterprise', 'escala total', '13500', '13.500'],
+        starter:      ['starter', 'entrada', '2999', '2.999'],
+        professional: ['professional', 'crescimento', '7999', '7.999'],
+        enterprise:   ['enterprise', 'escala total', '18999', '18.999'],
         about:        ['sobre hanna', 'quem é', 'experiência', 'certificaç', 'portugal', 'cascais', 'remoto'],
         contact:      ['contacto', 'contactar', 'conversa', 'e-mail', 'escrever', 'entrar em contacto']
       }
@@ -256,7 +315,7 @@
   function matchTopic(input, lang) {
     var lower = input.toLowerCase();
     var kw = CB[lang].keywords;
-    var order = ['starter','professional','enterprise','strategy','automation','change','workshops','pricing','services','about','contact'];
+    var order = ['starter','professional','enterprise','strategy','automation','change','workshops','website','pricing','services','about','contact'];
     for (var i = 0; i < order.length; i++) {
       var topic = order[i];
       var words = kw[topic];
@@ -281,7 +340,11 @@
       // pt
       'serviços':'services','pacotes e preços':'pricing','sobre hanna':'about',
       'estratégia de ia':'strategy','automação':'automation','gestão de mudanças':'change',
-      'ir ao formulário →':'contact'
+      'ir ao formulário →':'contact',
+      // es
+      'servicios':'services','paquetes y precios':'pricing',
+      'estrategia de ia':'strategy','automatización':'automation','gestión del cambio':'change','talleres':'workshops',
+      'al formulario de contacto →':'contact'
     };
     var key = Object.keys(chipMap).find(function(k){ return lower === k; });
     return key ? chipMap[key] : 'fallback';
@@ -400,7 +463,8 @@
         chip.addEventListener('click', function() {
           if (label === CB[getLang()].responses.contact.chips[0] ||
               label === 'Zum Kontaktformular →' || label === 'To contact form →' ||
-              label === 'Do formularza kontaktowego →' || label === 'Ir ao formulário →') {
+              label === 'Do formularza kontaktowego →' || label === 'Ir ao formulário →' ||
+              label === 'Al formulario de contacto →') {
             window.location.href = 'index.html#contact';
             return;
           }

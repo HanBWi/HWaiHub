@@ -1,5 +1,5 @@
-const FLAGS = { en:'🇬🇧', de:'🇩🇪', pl:'🇵🇱', pt:'🇵🇹' };
-const CODES = { en:'EN', de:'DE', pl:'PL', pt:'PT' };
+const FLAGS = { en:'🇬🇧', de:'🇩🇪', pl:'🇵🇱', pt:'🇵🇹', es:'🇪🇸' };
+const CODES = { en:'EN', de:'DE', pl:'PL', pt:'PT', es:'ES' };
 
 let currentLang = localStorage.getItem('hw_lang') || 'de';
 

@@ -1605,6 +1605,65 @@
 .ak-section-wrapper {
   padding: 4rem 0 2rem;
 }
+
+/* ── Work-in-Progress Overlay ── */
+.ak-section-wrapper.ak-wip {
+  position: relative;
+}
+.wip-overlay {
+  position: sticky;
+  top: 72px;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+  pointer-events: none;
+}
+.wip-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  background: linear-gradient(135deg, #1a0a00, #2d1500);
+  border: 2px solid #C59B24;
+  border-radius: 16px;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 32px rgba(197,155,36,0.35), 0 0 0 4px rgba(197,155,36,0.08);
+  pointer-events: all;
+}
+.wip-icon {
+  font-size: 2rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.wip-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.wip-text strong {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #C59B24;
+  letter-spacing: 0.02em;
+}
+.wip-text span {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.65);
+}
+.ak-wip-content {
+  opacity: 0.45;
+  pointer-events: none;
+  user-select: none;
+  filter: grayscale(30%);
+}
+@media (max-width: 600px) {
+  .wip-badge {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 1.2rem;
+  }
+}
 .ak-main-header {
   text-align: center;
   margin-bottom: 4rem;
