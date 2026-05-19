@@ -1,0 +1,31 @@
+<nav id="mainNav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="HWaiHub Home">
+      <img src="HWaiHub_logo.png" alt="HWaiHub" />
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="services.html"   data-i18n="nav_services">Leistungen</a></li>
+      <li><a href="packages.html"   data-i18n="nav_pricing">Pakete</a></li>
+      <li><a href="references.html" data-i18n="nav_results">Referenzen</a></li>
+      <li><a href="about.html"      data-i18n="nav_about">Über mich</a></li>
+      <li><a href="index.html#contact"        data-i18n="nav_contact">Kontakt</a></li>
+    </ul>
+    <div class="nav-cta" style="display:flex;align-items:center;gap:1.2rem;">
+      <div class="lang-switcher" id="langSwitcher">
+        <button class="lang-trigger" id="langTrigger" onclick="toggleLangDropdown(event)" aria-haspopup="listbox" aria-expanded="false">
+          <span id="langCurrentFlag">🇬🇧</span>
+          <span id="langCurrentCode">EN</span>
+          <span class="lang-caret">▼</span>
+        </button>
+        <div class="lang-dropdown" role="listbox">
+          <button class="lang-option active" onclick="setLang('en')" data-lang="en"><span class="lang-flag">🇬🇧</span> English</button>
+          <button class="lang-option"        onclick="setLang('de')" data-lang="de"><span class="lang-flag">🇩🇪</span> Deutsch</button>
+          <button class="lang-option"        onclick="setLang('pl')" data-lang="pl"><span class="lang-flag">🇵🇱</span> Polski</button>
+          <button class="lang-option"        onclick="setLang('pt')" data-lang="pt"><span class="lang-flag">🇧🇷</span> Português</button>
+        </div>
+      </div>
+      <a href="index.html#contact" class="btn btn-primary" style="font-size:0.85rem;padding:0.7rem 1.4rem;" data-i18n="nav_cta">Erstgespräch buchen →</a>
+    </div>
+    <button class="hamburger" aria-label="Menü"><span></span><span></span><span></span></button>
+  </div>
+</nav>
