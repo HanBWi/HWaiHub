@@ -1,12 +1,11 @@
 (function () {
   // ─────────────────────────────────────────────────────────────────
-  // KONFIGURATION — Formspree Endpoint
-  // Einmalig kostenlos einrichten: https://formspree.io
-  // 1. Account erstellen mit hallo@hwaihub.com
-  // 2. "New Form" erstellen → Endpoint-URL kopieren (z.B. https://formspree.io/f/xabc1234)
-  // 3. Diese URL hier eintragen:
+  // KONFIGURATION — Make.com Webhook → Notion
+  // Setup: https://make.com (kostenloser Account)
+  // 1. Neues Szenario: Webhooks → Notion (Create Database Item)
+  // 2. Webhook-URL von Make.com hier eintragen:
   // ─────────────────────────────────────────────────────────────────
-  var FORMSPREE_URL = 'FORMSPREE_ENDPOINT_HIER_EINFÜGEN';
+  var WEBHOOK_URL = 'MAKE_WEBHOOK_URL_HIER_EINFÜGEN';
 
   var MSGS = {
     de: {
@@ -116,15 +115,15 @@
         return;
       }
 
-      // Formspree noch nicht konfiguriert?
-      if (!FORMSPREE_URL || FORMSPREE_URL.indexOf('FORMSPREE') === 0) {
+      // Webhook noch nicht konfiguriert?
+      if (!WEBHOOK_URL || WEBHOOK_URL.indexOf('MAKE_') === 0) {
         showFeedback(false, t('notset'));
         return;
       }
 
       setSubmitState(true);
 
-      fetch(FORMSPREE_URL, {
+      fetch(WEBHOOK_URL, {
         method:  'POST',
         headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -144,7 +143,8 @@
         })
         .then(function (data) {
           setSubmitState(false);
-          if (data.ok) {
+          // Make.com gibt {"accepted":true} zurück, Formspree {"ok":true}
+          if (data.accepted || data.ok) {
             showFeedback(true, t('success'));
             form.reset();
           } else {
