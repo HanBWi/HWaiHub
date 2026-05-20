@@ -1,4 +1,3 @@
-const FLAGS = { en:'🇬🇧', de:'🇩🇪', pl:'🇵🇱', pt:'🇵🇹', es:'🇪🇸' };
 const CODES = { en:'EN', de:'DE', pl:'PL', pt:'PT', es:'ES' };
 
 let currentLang = localStorage.getItem('hw_lang') || 'de';
@@ -12,9 +11,7 @@ function setLang(lang) {
   const trigger = document.getElementById('langTrigger');
   if (trigger) trigger.setAttribute('aria-expanded','false');
   // Update trigger label
-  const flagEl = document.getElementById('langCurrentFlag');
   const codeEl = document.getElementById('langCurrentCode');
-  if (flagEl) flagEl.textContent = FLAGS[lang] || lang.toUpperCase();
   if (codeEl) codeEl.textContent = CODES[lang] || lang.toUpperCase();
   // Update option states
   document.querySelectorAll('.lang-option').forEach(btn => {
