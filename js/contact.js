@@ -10,40 +10,40 @@
   var MSGS = {
     de: {
       sending:  'Wird gesendet…',
-      success:  '✓ Vielen Dank! Deine Nachricht ist angekommen. Ich melde mich so bald wie möglich.',
-      error:    'Leider ist ein Fehler aufgetreten. Bitte schreib mir direkt an info@hwaihub.com.',
+      success:  '✓ Nachricht erhalten. Ich melde mich innerhalb von 24 Stunden.',
+      error:    'Fehler beim Senden. Bitte kontaktiere mich direkt: info@hwaihub.com.',
       required: 'Bitte fülle alle Pflichtfelder aus.',
       gdpr:     'Bitte stimme der Datenschutzerklärung zu.',
       notset:   'Formular noch nicht konfiguriert. Bitte schreib direkt an info@hwaihub.com.',
     },
     en: {
       sending:  'Sending…',
-      success:  '✓ Thank you! Your message has been received. I\'ll get back to you as soon as possible.',
-      error:    'Something went wrong. Please write to me directly at info@hwaihub.com.',
+      success:  '✓ Message received. I\'ll be in touch within 24 hours.',
+      error:    'Submission failed. Please reach me directly at info@hwaihub.com.',
       required: 'Please fill in all required fields.',
       gdpr:     'Please accept the privacy policy.',
       notset:   'Form not configured yet. Please write directly to info@hwaihub.com.',
     },
     pl: {
       sending:  'Wysyłanie…',
-      success:  '✓ Dziękuję! Twoja wiadomość dotarła. Odezwę się jak najszybciej.',
-      error:    'Coś poszło nie tak. Napisz bezpośrednio na info@hwaihub.com.',
+      success:  '✓ Wiadomość odebrana. Odpowiem w ciągu 24 godzin.',
+      error:    'Błąd wysyłania. Skontaktuj się bezpośrednio: info@hwaihub.com.',
       required: 'Proszę wypełnić wszystkie wymagane pola.',
       gdpr:     'Proszę zaakceptować politykę prywatności.',
       notset:   'Formularz jeszcze nie skonfigurowany. Napisz na info@hwaihub.com.',
     },
     pt: {
       sending:  'A enviar…',
-      success:  '✓ Obrigada! A sua mensagem foi recebida. Responderei o mais breve possível.',
-      error:    'Ocorreu um erro. Por favor escreva diretamente para info@hwaihub.com.',
+      success:  '✓ Mensagem recebida. Responderei em 24 horas.',
+      error:    'Erro no envio. Contacte-me diretamente: info@hwaihub.com.',
       required: 'Por favor preencha todos os campos obrigatórios.',
       gdpr:     'Por favor aceite a política de privacidade.',
       notset:   'Formulário ainda não configurado. Escreva para info@hwaihub.com.',
     },
     es: {
       sending:  'Enviando…',
-      success:  '✓ ¡Gracias! Tu mensaje ha sido recibido. Te responderé lo antes posible.',
-      error:    'Algo salió mal. Por favor escríbeme directamente a info@hwaihub.com.',
+      success:  '✓ Mensaje recibido. Me pondré en contacto en 24 horas.',
+      error:    'Error al enviar. Escríbeme directamente a info@hwaihub.com.',
       required: 'Por favor rellena todos los campos obligatorios.',
       gdpr:     'Por favor acepta la política de privacidad.',
       notset:   'Formulario aún no configurado. Escribe a info@hwaihub.com.',
@@ -51,8 +51,8 @@
   };
 
   function getLang() {
-    var l = localStorage.getItem('hw_lang') || 'de';
-    return MSGS[l] ? l : 'de';
+    var l = localStorage.getItem('hw_lang') || 'en';
+    return MSGS[l] ? l : 'en';
   }
 
   function t(key) {

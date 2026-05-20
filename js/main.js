@@ -1,6 +1,6 @@
 const CODES = { en:'EN', de:'DE', pl:'PL', pt:'PT', es:'ES' };
 
-let currentLang = localStorage.getItem('hw_lang') || 'de';
+let currentLang = localStorage.getItem('hw_lang') || 'en';
 
 function setLang(lang) {
   currentLang = lang;
