@@ -10,7 +10,7 @@
   var MSGS = {
     de: {
       sending:  'Wird gesendet…',
-      success:  '✓ Nachricht erhalten. Ich melde mich innerhalb von 24 Stunden.',
+      success:  '✓ Nachricht erhalten. Wir melden uns innerhalb von 24 Stunden.',
       error:    'Fehler beim Senden. Bitte kontaktiere mich direkt: info@hwaihub.com.',
       required: 'Bitte fülle alle Pflichtfelder aus.',
       gdpr:     'Bitte stimme der Datenschutzerklärung zu.',
@@ -18,7 +18,7 @@
     },
     en: {
       sending:  'Sending…',
-      success:  '✓ Message received. I\'ll be in touch within 24 hours.',
+      success:  '✓ Message received. We will be in touch within 24 hours.',
       error:    'Submission failed. Please reach me directly at info@hwaihub.com.',
       required: 'Please fill in all required fields.',
       gdpr:     'Please accept the privacy policy.',
@@ -26,7 +26,7 @@
     },
     pl: {
       sending:  'Wysyłanie…',
-      success:  '✓ Wiadomość odebrana. Odpowiem w ciągu 24 godzin.',
+      success:  '✓ Wiadomość odebrana. Skontaktujemy się w ciągu 24 godzin.',
       error:    'Błąd wysyłania. Skontaktuj się bezpośrednio: info@hwaihub.com.',
       required: 'Proszę wypełnić wszystkie wymagane pola.',
       gdpr:     'Proszę zaakceptować politykę prywatności.',
@@ -34,7 +34,7 @@
     },
     pt: {
       sending:  'A enviar…',
-      success:  '✓ Mensagem recebida. Responderei em 24 horas.',
+      success:  '✓ Mensagem recebida. Entraremos em contacto em 24 horas.',
       error:    'Erro no envio. Contacte-me diretamente: info@hwaihub.com.',
       required: 'Por favor preencha todos os campos obrigatórios.',
       gdpr:     'Por favor aceite a política de privacidade.',
@@ -42,7 +42,7 @@
     },
     es: {
       sending:  'Enviando…',
-      success:  '✓ Mensaje recibido. Me pondré en contacto en 24 horas.',
+      success:  '✓ Mensaje recibido. Nos pondremos en contacto en 24 horas.',
       error:    'Error al enviar. Escríbeme directamente a info@hwaihub.com.',
       required: 'Por favor rellena todos los campos obligatorios.',
       gdpr:     'Por favor acepta la política de privacidad.',
