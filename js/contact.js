@@ -138,17 +138,13 @@
         }),
       })
         .then(function (res) {
-          if (!res.ok) throw new Error('HTTP ' + res.status);
-          return res.json();
-        })
-        .then(function (data) {
           setSubmitState(false);
-          // Make.com gibt {"accepted":true} zurück, Formspree {"ok":true}
-          if (data.accepted || data.ok) {
+          // Jede 2xx Antwort von Make.com gilt als Erfolg
+          if (res.ok) {
             showFeedback(true, t('success'));
             form.reset();
           } else {
-            showFeedback(false, t('error'));
+            throw new Error('HTTP ' + res.status);
           }
         })
         .catch(function (err) {
