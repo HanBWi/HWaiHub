@@ -3,7 +3,7 @@
 
     /* ── Reset & Base ─────────────────────────────── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; font-size: 16px; }
+    html { scroll-behavior: smooth; font-size: 16px; color-scheme: light; }
     body {
       font-family: 'Inter', system-ui, sans-serif;
       background: #FAF9F7;
@@ -2573,8 +2573,133 @@ nav.scrolled {
   color: #FFF;
 }
 
+/* ── Result cards ────────────────────────────────────── */
+.result-card {
+  background: #FFFFFF;
+  border-color: rgba(0,0,0,0.07);
+  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+}
+.result-desc { color: #6E6860; }
+
+/* ── Trust bar ───────────────────────────────────────── */
+.trust-bar {
+  border-top-color: rgba(0,0,0,0.07);
+  border-bottom-color: rgba(0,0,0,0.07);
+}
+
+/* ── Mobile nav open ─────────────────────────────────── */
+.nav-links.open {
+  background: #F2EFE8;
+  border-top-color: rgba(0,0,0,0.07);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+.nav-links.open a {
+  color: rgba(28,25,20,0.75);
+  border-bottom-color: rgba(0,0,0,0.07);
+}
+
+/* ── Social icon buttons ─────────────────────────────── */
+.social-icon-btn {
+  background: rgba(0,0,0,0.05);
+  border-color: rgba(0,0,0,0.1);
+}
+
 /* ── Scrollbar (subtle) ──────────────────────────────── */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #F2EFE8; }
 ::-webkit-scrollbar-thumb { background: rgba(168,114,48,0.35); border-radius: 3px; }
+
+/* ══════════════════════════════════════════════════════════
+   MOBILE READABILITY — Problem 2 fixes
+   ══════════════════════════════════════════════════════════ */
+
+/* Prevent horizontal overflow on all screen sizes */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  /* Body text minimum 15px */
+  body { font-size: 15px; line-height: 1.65; }
+
+  /* Generous section padding on mobile */
+  .services, .results, .about, .pricing, .contact,
+  .sv-phases, .sv-industries, .sv-process,
+  .ak-section-wrapper, .pk-section { padding: 4rem 0; }
+
+  .container { padding: 0 1.25rem; }
+
+  /* Section text */
+  .section-sub { font-size: 1rem; line-height: 1.7; }
+
+  /* Hero */
+  .hero { padding: 6rem 0 3.5rem; }
+  .hero-sub { font-size: 1rem; line-height: 1.7; }
+
+  /* Buttons — ensure 44px touch target */
+  .btn {
+    min-height: 44px;
+    padding: 0.85rem 1.6rem;
+    font-size: 0.92rem;
+  }
+
+  /* Body text blocks */
+  .about-body { font-size: 0.97rem; line-height: 1.8; }
+  .service-desc { font-size: 0.92rem; line-height: 1.7; }
+  .phase-desc { font-size: 0.88rem; line-height: 1.65; }
+  .testimonial-text { font-size: 0.93rem; line-height: 1.7; }
+
+  /* Form inputs — 44px touch target */
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    min-height: 44px;
+    font-size: 1rem; /* prevents iOS zoom on focus */
+    padding: 0.8rem 1rem;
+  }
+  .form-group select { min-height: 44px; }
+  .form-group textarea { min-height: 110px; }
+
+  /* Contact form full-width on mobile */
+  .contact-form { padding: 1.5rem; }
+
+  /* Pricing grid on mobile */
+  .pricing-phases-grid { grid-template-columns: 1fr; }
+
+  /* Nav CTA button touch target */
+  .nav-cta .btn { min-height: 40px; }
+
+  /* Cookie banner */
+  #cookieBanner { padding: 1rem 1.2rem; bottom: 0; left: 0; right: 0; border-radius: 16px 16px 0 0; }
+  .cookie-btns { width: 100%; justify-content: flex-end; }
+  .cookie-btn-accept, .cookie-btn-decline { min-height: 40px; }
+}
+
+@media (max-width: 480px) {
+  /* Tighter container on very small screens */
+  .container { padding: 0 1rem; }
+
+  /* Hero headline readable on small phones */
+  .hero-content h1 { font-size: clamp(2rem, 8vw, 2.8rem); }
+
+  /* Results grid single column */
+  .results-grid { grid-template-columns: 1fr; }
+
+  /* About grid single column */
+  .about-grid { gap: 2rem; }
+
+  /* Phase cards stack */
+  .pricing-phases-grid { grid-template-columns: 1fr; gap: 1rem; }
+
+  /* Testimonial width on small screens */
+  .testimonial { width: 280px; }
+
+  /* Ensure no horizontal scroll from stat cards */
+  .hero-stats { flex-direction: column; }
+  .hero-stat-card { flex: none; width: 100%; }
+
+  /* Form rows stack */
+  .form-row { grid-template-columns: 1fr; }
+}
 ::-webkit-scrollbar-thumb:hover { background: rgba(168,114,48,0.6); }
