@@ -7,6 +7,29 @@
   // ─────────────────────────────────────────────────────────────────
   var WEBHOOK_URL = 'https://hook.eu1.make.com/mtmn2bhcxbo6h8ivvcdp9sj6o1lcer86';
 
+  // ─────────────────────────────────────────────────────────────────
+  // SICHERHEIT — Token-Schutz & Spam-Abwehr
+  //
+  // SCHRITT 1 – Make.com Filter einrichten (einmalig, in deinem Szenario):
+  //   Füge nach dem Webhook-Trigger einen Filter hinzu:
+  //   Bedingung: {{1._token}} = "hwai-contact-2026"
+  //   → Alle Anfragen ohne diesen Token werden von Make.com ignoriert.
+  //
+  // SCHRITT 2 – IP-Beschränkung (optional, in Make.com → Webhook → Settings):
+  //   Unter "Advanced Settings" kannst du IP-Adressen whitelisten.
+  //   Für eine öffentliche Kontaktseite reicht der Token-Filter aus.
+  //
+  // SCHRITT 3 – Honeypot (automatisch, kein Handlungsbedarf):
+  //   Das Formular enthält ein unsichtbares Feld (cf-honeypot).
+  //   Bots füllen es aus → Absendung wird clientseitig stillschweigend blockiert.
+  //
+  // SCHRITT 4 – Rate-Limiting (automatisch, kein Handlungsbedarf):
+  //   Max. 3 Absendungen pro 10 Minuten pro Browser-Session.
+  // ─────────────────────────────────────────────────────────────────
+  var CONTACT_TOKEN   = 'hwai-contact-2026';
+  var RATE_LIMIT_MAX  = 3;
+  var RATE_LIMIT_MS   = 10 * 60 * 1000; // 10 Minuten
+
   var MSGS = {
     de: {
       sending:  'Wird gesendet…',
@@ -89,6 +112,29 @@
     }
   }
 
+  // ── Rate-Limit-Hilfsfunktionen ─────────────────────────────────────
+  function getRateLimitData() {
+    try {
+      return JSON.parse(localStorage.getItem('hw_contact_rl') || '{"count":0,"since":0}');
+    } catch (e) { return { count: 0, since: 0 }; }
+  }
+  function setRateLimitData(data) {
+    try { localStorage.setItem('hw_contact_rl', JSON.stringify(data)); } catch (e) {}
+  }
+  function isRateLimited() {
+    var d = getRateLimitData();
+    var now = Date.now();
+    if (now - d.since > RATE_LIMIT_MS) { return false; }
+    return d.count >= RATE_LIMIT_MAX;
+  }
+  function incrementRateLimit() {
+    var d = getRateLimitData();
+    var now = Date.now();
+    if (now - d.since > RATE_LIMIT_MS) { d = { count: 0, since: now }; }
+    d.count++;
+    setRateLimitData(d);
+  }
+
   function init() {
     var form = document.getElementById('contactForm');
     if (!form) return;
@@ -96,6 +142,16 @@
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       hideFeedback();
+
+      // ── Honeypot-Prüfung (Bots füllen versteckte Felder aus) ──────
+      var honeypot = (document.getElementById('cf-honeypot') || {}).value || '';
+      if (honeypot) { return; } // Stilles Ignorieren — kein Feedback für Bots
+
+      // ── Rate-Limiting ─────────────────────────────────────────────
+      if (isRateLimited()) {
+        showFeedback(false, 'Zu viele Anfragen. Bitte warte einige Minuten oder schreib direkt an info@hwaihub.com.');
+        return;
+      }
 
       var name    = (document.getElementById('cf-name')    || {}).value || '';
       var email   = (document.getElementById('cf-email')   || {}).value || '';
@@ -122,6 +178,7 @@
       }
 
       setSubmitState(true);
+      incrementRateLimit();
 
       fetch(WEBHOOK_URL, {
         method:  'POST',
@@ -135,6 +192,7 @@
           message:  message.trim(),
           lang:     getLang(),
           _subject: 'Neue Anfrage von ' + name.trim() + ' – HWaiHub',
+          _token:   CONTACT_TOKEN, // Make.com-Filter prüft diesen Wert
         }),
       })
         .then(function (res) {
