@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Wie sieht eine KI-Transformation im Mittelstand in der Praxis aus? Methodik, realistische Ergebnisse und konkrete Automatisierungen — Schritt für Schritt erklärt.">
+<title>KI-Transformation im Mittelstand: So funktioniert es | HWaiHub</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css" />
+
+<style>
+/* ═══════════════════════════════════════════════
+   HWaiHub Corporate Identity — Brand Token System
+   ═══════════════════════════════════════════════ */
+:root {
+  /* Brand Gold */
+  --gold:        #A87230;
+  --gold-light:  #C8963E;
+  --gold-pale:   #E2B96A;
+  --gold-dark:   #9A7630;
+
+  /* Backgrounds */
+  --bg-main:     #FAF9F7;
+  --bg-secondary:#F2EFE8;
+  --bg-card:     #FFFDF9;
+  --warm-white:  #FFFFFF;
+  --faint-accent:#F5F0E8;
+
+  /* Text */
+  --txt-primary: #1C1914;
+  --txt-secondary:#4A453F;
+  --txt-tertiary: #6E6860;
+  --txt-hint:    #9A948C;
+  --txt-on-gold: #1A0A00;
+
+  /* Transparent */
+  --gold-glow:   rgba(168,114,48,0.10);
+  --badge-bg:    rgba(200,150,62,0.12);
+  --border:      rgba(0,0,0,0.08);
+  --border-mid:  rgba(168,114,48,0.20);
+
+  /* Gradient */
+  --grad-gold: linear-gradient(135deg, #A87230, #E2B96A);
+
+  /* Type */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'Lato', 'Helvetica Neue', sans-serif;
+}
+
+/* ── Reset & Base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg-main);
+  color: var(--txt-primary);
+  font-size: 16px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ═══════════════════════════════════════════════
+   ARTICLE HERO
+   ═══════════════════════════════════════════════ */
+.article-hero {
+  background: var(--txt-primary);
+  padding: 56px 40px 52px;
+  padding-top: 130px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Warm gold texture overlay */
+.article-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 80% at 80% 20%, rgba(168,114,48,0.22) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 50% at 10% 90%, rgba(200,150,62,0.10) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+/* Thin gold top border */
+.article-hero::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--grad-gold);
+}
+
+.hero-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.breadcrumb-link {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold-pale);
+  text-decoration: none;
+}
+.breadcrumb-sep { color: rgba(255,255,255,0.2); font-size: 11px; }
+
+.hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--badge-bg);
+  border: 1px solid rgba(200,150,62,0.25);
+  color: var(--gold-pale);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 5px 13px;
+  border-radius: 2px;
+  margin-bottom: 18px;
+}
+
+.hero-tag::before {
+  content: '◆';
+  font-size: 7px;
+  color: var(--gold-light);
+}
+
+.article-hero h1 {
+  font-family: var(--font-display);
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--warm-white);
+  line-height: 1.18;
+  max-width: 680px;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
+
+.article-hero h1 em {
+  font-style: italic;
+  color: var(--gold-pale);
+}
+
+.hero-lead {
+  font-size: 16px;
+  color: rgba(255,255,255,0.60);
+  max-width: 580px;
+  line-height: 1.75;
+  font-weight: 300;
+  margin-bottom: 28px;
+}
+
+.hero-meta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.38);
+}
+
+.meta-dot {
+  width: 3px; height: 3px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+}
+
+.read-time {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.5);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+/* ═══════════════════════════════════════════════
+   KEY STATS BAND
+   ═══════════════════════════════════════════════ */
+.stats-band {
+  background: var(--faint-accent);
+  border-bottom: 1px solid var(--border-mid);
+  padding: 28px 40px;
+}
+
+.stats-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0;
+}
+
+.stat-item {
+  padding: 8px 24px;
+  text-align: center;
+  border-right: 1px solid var(--border-mid);
+}
+.stat-item:first-child { padding-left: 0; }
+.stat-item:last-child { border-right: none; }
+
+.stat-val {
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: 700;
+  background: var(--grad-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: block;
+  line-height: 1.1;
+}
+
+.stat-lbl {
+  font-size: 11px;
+  color: var(--txt-tertiary);
+  margin-top: 4px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+/* ═══════════════════════════════════════════════
+   MAIN ARTICLE LAYOUT
+   ═══════════════════════════════════════════════ */
+.article-container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 52px 40px 72px;
+}
+
+/* Byline */
+.byline {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 20px 0 24px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 36px;
+}
+
+.byline-avatar {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: var(--grad-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--txt-on-gold);
+  flex-shrink: 0;
+}
+
+.byline-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--txt-primary);
+}
+
+.byline-role {
+  font-size: 12px;
+  color: var(--txt-hint);
+  margin-top: 1px;
+}
+
+/* ── Typography ── */
+.article-body h2 {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--txt-primary);
+  line-height: 1.25;
+  margin: 48px 0 16px;
+  letter-spacing: -0.3px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.article-body h2::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 3px;
+  background: var(--grad-gold);
+  margin-bottom: 14px;
+  border-radius: 2px;
+}
+
+.article-body p {
+  font-size: 16px;
+  color: var(--txt-secondary);
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.article-body strong {
+  color: var(--txt-primary);
+  font-weight: 700;
+}
+
+/* ── Intro paragraph ── */
+.intro-p {
+  font-size: 17px !important;
+  color: var(--txt-primary) !important;
+  font-weight: 300;
+  line-height: 1.85 !important;
+  margin-bottom: 28px !important;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* ── Pull Quote ── */
+.pullquote {
+  margin: 36px 0;
+  padding: 24px 28px;
+  background: var(--faint-accent);
+  border-left: 4px solid var(--gold);
+  border-radius: 0 8px 8px 0;
+  position: relative;
+}
+
+.pullquote::before {
+  content: '\201C';
+  font-family: var(--font-display);
+  font-size: 64px;
+  color: var(--gold-pale);
+  position: absolute;
+  top: -8px;
+  left: 20px;
+  line-height: 1;
+  opacity: 0.5;
+}
+
+.pullquote blockquote {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-style: italic;
+  color: var(--txt-primary);
+  line-height: 1.65;
+  margin-bottom: 12px;
+  padding-top: 16px;
+}
+
+.pullquote cite {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* ── Highlight / Info Box ── */
+.info-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border-mid);
+  border-radius: 8px;
+  padding: 24px 28px;
+  margin: 32px 0;
+}
+
+.info-box-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.info-box-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border-mid);
+}
+
+.info-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-box ul li {
+  font-size: 15px;
+  color: var(--txt-secondary);
+  padding: 6px 0;
+  display: flex;
+  gap: 11px;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--border);
+  line-height: 1.6;
+}
+
+.info-box ul li:last-child { border-bottom: none; }
+
+.info-box ul li::before {
+  content: '◆';
+  color: var(--gold-light);
+  font-size: 8px;
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+/* ── Warning Box ── */
+.warning-box {
+  background: rgba(168,114,48,0.05);
+  border: 1px solid rgba(168,114,48,0.15);
+  border-left: 4px solid var(--gold-dark);
+  border-radius: 0 6px 6px 0;
+  padding: 18px 22px;
+  margin: 28px 0;
+}
+
+.warning-box-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  margin-bottom: 7px;
+}
+
+.warning-box p {
+  font-size: 14.5px !important;
+  color: var(--txt-secondary) !important;
+  margin-bottom: 0 !important;
+  line-height: 1.65 !important;
+}
+
+/* ═══════════════════════════════════════════════
+   CASE STUDY CARDS
+   ═══════════════════════════════════════════════ */
+.case-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 28px 0;
+  box-shadow: 0 2px 16px rgba(168,114,48,0.05);
+}
+
+.case-card-header {
+  background: var(--txt-primary);
+  padding: 18px 24px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  position: relative;
+}
+
+.case-card-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--grad-gold);
+}
+
+.case-title {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--warm-white);
+  margin-bottom: 3px;
+}
+
+.case-subtitle {
+  font-size: 11px;
+  color: rgba(255,255,255,0.38);
+  letter-spacing: 0.3px;
+}
+
+.case-badge {
+  background: var(--badge-bg);
+  border: 1px solid rgba(200,150,62,0.3);
+  color: var(--gold-pale);
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 3px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  letter-spacing: 0.5px;
+}
+
+.case-card-body {
+  padding: 22px 24px;
+}
+
+.case-card-body p {
+  font-size: 14.5px;
+  color: var(--txt-secondary);
+  margin-bottom: 18px;
+  line-height: 1.7;
+}
+
+.case-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 10px;
+}
+
+.result-box {
+  background: var(--faint-accent);
+  border: 1px solid var(--border-mid);
+  border-radius: 6px;
+  padding: 14px 10px;
+  text-align: center;
+}
+
+.result-val {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  background: var(--grad-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: block;
+  line-height: 1.15;
+}
+
+.result-lbl {
+  font-size: 11px;
+  color: var(--txt-hint);
+  margin-top: 4px;
+  line-height: 1.4;
+}
+
+/* ═══════════════════════════════════════════════
+   SECTION DIVIDER
+   ═══════════════════════════════════════════════ */
+.section-divider {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 44px 0;
+}
+
+.section-divider::before,
+.section-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.divider-diamond {
+  color: var(--gold-light);
+  font-size: 10px;
+}
+
+/* ═══════════════════════════════════════════════
+   ARTICLE CTA
+   ═══════════════════════════════════════════════ */
+.article-cta {
+  background: var(--txt-primary);
+  border-radius: 10px;
+  padding: 44px 40px;
+  text-align: center;
+  margin-top: 52px;
+  position: relative;
+  overflow: hidden;
+}
+
+.article-cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 70% 60% at 50% 0%, rgba(168,114,48,0.18) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.article-cta::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--grad-gold);
+}
+
+.cta-inner { position: relative; z-index: 2; }
+
+.cta-eyebrow {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--gold-pale);
+  margin-bottom: 14px;
+  opacity: 0.7;
+}
+
+.article-cta h3 {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--warm-white);
+  margin-bottom: 14px;
+  line-height: 1.3;
+}
+
+.article-cta p {
+  font-size: 14.5px;
+  color: rgba(255,255,255,0.52);
+  max-width: 440px;
+  margin: 0 auto 28px;
+  line-height: 1.7;
+}
+
+.cta-button {
+  display: inline-block;
+  background: var(--grad-gold);
+  color: var(--txt-on-gold);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 14px 36px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+  transition: opacity 0.2s, transform 0.15s;
+}
+
+.cta-button:hover {
+  opacity: 0.92;
+  transform: translateY(-2px);
+}
+
+.cta-note {
+  font-size: 11.5px;
+  color: rgba(255,255,255,0.28);
+  margin-top: 14px;
+}
+
+/* ═══════════════════════════════════════════════
+   SOURCES
+   ═══════════════════════════════════════════════ */
+.sources-section {
+  margin-top: 56px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+
+.sources-title {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--txt-hint);
+  margin-bottom: 20px;
+}
+
+.sources-list {
+  list-style: none;
+  counter-reset: source-counter;
+  padding: 0;
+}
+
+.sources-list li {
+  counter-increment: source-counter;
+  display: flex;
+  gap: 14px;
+  font-size: 12.5px;
+  color: var(--txt-hint);
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  line-height: 1.6;
+  align-items: flex-start;
+}
+
+.sources-list li:last-child { border-bottom: none; }
+
+.sources-list li::before {
+  content: counter(source-counter);
+  min-width: 22px; height: 22px;
+  background: var(--faint-accent);
+  border: 1px solid var(--border-mid);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--gold);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.sources-list a {
+  color: var(--gold-dark);
+  text-decoration: none;
+}
+.sources-list a:hover { text-decoration: underline; }
+
+/* ═══════════════════════════════════════════════
+   FOOTER
+   ═══════════════════════════════════════════════ */
+.site-footer {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+  padding: 32px 40px;
+}
+
+.footer-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--txt-tertiary);
+}
+.footer-logo span { color: var(--gold); }
+
+.footer-logo small {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 9.5px;
+  color: var(--txt-hint);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: 1px;
+}
+
+.footer-copy {
+  font-size: 11.5px;
+  color: var(--txt-hint);
+}
+
+/* ═══════════════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════════════ */
+@media (max-width: 680px) {
+  .article-hero { padding: 100px 20px 36px; }
+  .article-hero h1 { font-size: 28px; }
+  .stats-band { padding: 24px 20px; }
+  .stats-inner { grid-template-columns: repeat(2, 1fr); }
+  .stat-item { border-right: none; border-bottom: 1px solid var(--border-mid); padding: 12px 0; }
+  .article-container { padding: 36px 20px 52px; }
+  .case-card-header { flex-direction: column; }
+  .article-cta { padding: 32px 24px; }
+  .footer-inner { flex-direction: column; text-align: center; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ═══════ NAVIGATION ═══════ -->
+<nav id="mainNav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="HWaiHub Home">
+      <img src="../assets/images/HWaiHub_logo_g_Schw.png" alt="HWaiHub" style="height:38px;" />
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../services.html" data-i18n="nav_services">Leistungen</a></li>
+      <li><a href="../packages.html" data-i18n="nav_pricing">Pakete</a></li>
+      <li><a href="../references.html" data-i18n="nav_results">Referenzen</a></li>
+      <li><a href="../about.html" data-i18n="nav_about">Über mich</a></li>
+      <li><a href="../index.html#contact" data-i18n="nav_contact">Kontakt</a></li>
+    </ul>
+    <div class="nav-cta" style="display:flex;align-items:center;gap:1.2rem;">
+      <div class="lang-switcher" id="langSwitcher">
+        <button class="lang-trigger" id="langTrigger" onclick="toggleLangDropdown(event)" aria-haspopup="listbox" aria-expanded="false">
+          <span id="langCurrentCode">DE</span>
+          <span class="lang-caret">▼</span>
+        </button>
+        <div class="lang-dropdown" role="listbox">
+          <button class="lang-option" onclick="setLang('en')" data-lang="en">English</button>
+          <button class="lang-option active" onclick="setLang('de')" data-lang="de">Deutsch</button>
+          <button class="lang-option" onclick="setLang('pl')" data-lang="pl">Polski</button>
+          <button class="lang-option" onclick="setLang('pt')" data-lang="pt">Português</button>
+          <button class="lang-option" onclick="setLang('es')" data-lang="es">Español</button>
+        </div>
+      </div>
+      <a href="../index.html#contact" class="btn btn-primary" style="font-size:0.85rem;padding:0.7rem 1.4rem;" data-i18n="nav_cta">Erstgespräch buchen →</a>
+    </div>
+    <button class="hamburger" aria-label="Menü"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+
+<!-- ═══════ ARTICLE HERO ═══════ -->
+<header class="article-hero">
+  <div class="hero-inner">
+
+    <nav class="hero-breadcrumb">
+      <a href="../index.html" class="breadcrumb-link">Blog</a>
+      <span class="breadcrumb-sep">/</span>
+      <a href="../index.html" class="breadcrumb-link">Praxis-Leitfäden</a>
+      <span class="breadcrumb-sep">/</span>
+      <a href="#" class="breadcrumb-link">KI im Mittelstand</a>
+    </nav>
+
+    <div class="hero-tag" data-i18n="art_hero_tag">Praxis-Leitfaden — Mai 2025</div>
+
+    <h1 data-i18n-html="art_hero_h1">KI-Transformation<br>im <em>Mittelstand</em></h1>
+
+    <p class="hero-lead" data-i18n="art_hero_lead">Was passiert, wenn ein mittelständisches Unternehmen seine täglichen Büroprozesse konsequent mit KI-Agenten automatisiert? Konkrete Ergebnisse, echte Zahlen — und was das für Ihren Betrieb bedeutet.</p>
+
+    <div class="hero-meta">
+      <span class="meta-item">HWaiHub Redaktion</span>
+      <span class="meta-dot"></span>
+      <span class="meta-item" data-i18n="art_hero_meta_date">Mai 2025</span>
+      <span class="meta-dot"></span>
+      <span class="meta-item" data-i18n="art_hero_meta_topic">KI-Automatisierung · Mittelstand</span>
+      <span class="read-time" data-i18n="art_hero_readtime">⏱ 6 Min. Lesezeit</span>
+    </div>
+
+  </div>
+</header>
+
+
+<!-- ═══════ KEY STATS BAND ═══════ -->
+<div class="stats-band">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <span class="stat-val">80 %</span>
+      <div class="stat-lbl" data-i18n="art_stat1_lbl">Zeitersparnis Rechnungsverarbeitung</div>
+    </div>
+    <div class="stat-item">
+      <span class="stat-val">3–5 h</span>
+      <div class="stat-lbl" data-i18n="art_stat2_lbl">täglich zurückgewonnen pro Mitarbeiter</div>
+    </div>
+    <div class="stat-item">
+      <span class="stat-val">42 %</span>
+      <div class="stat-lbl" data-i18n="art_stat3_lbl">weniger Fehler in Büroprozessen</div>
+    </div>
+    <div class="stat-item">
+      <span class="stat-val">270 %+</span>
+      <div class="stat-lbl" data-i18n="art_stat4_lbl">ROI durch strategischen KI-Einsatz</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════ ARTICLE BODY ═══════ -->
+<main class="article-container">
+
+  <!-- Byline -->
+  <div class="byline">
+    <div class="byline-avatar">H</div>
+    <div>
+      <div class="byline-name">HWaiHub Redaktion</div>
+      <div class="byline-role" data-i18n="art_byline_role">KI-Automatisierung & Digitale Transformation · Mai 2025</div>
+    </div>
+  </div>
+
+  <article class="article-body">
+
+    <!-- Intro -->
+    <p class="intro-p" data-i18n="art_intro">Stellen Sie sich vor, Ihre Buchhaltungssoftware liest Rechnungen selbstständig ein. Ihr E-Mail-Postfach beantwortet Standardanfragen automatisch. Meetings erzeugen ihr Protokoll von selbst. Was vor wenigen Jahren noch nach Zukunftsmusik klang, ist heute für mittelständische Unternehmen in Deutschland nicht nur zugänglich — die ersten Anwender liefern konkrete, messbare Ergebnisse.</p>
+
+    <p data-i18n="art_p_context">Nehmen wir ein konkretes Szenario: Ein mittelständisches Unternehmen mit 45 Mitarbeitern aus dem Dienstleistungssektor — eine Ausgangslage, die vielen Betrieben vertraut ist. Zu viele Routineaufgaben, zu wenig Zeit für das eigentliche Kerngeschäft, wachsender Druck durch Fachkräftemangel und steigende Betriebskosten. Genau für solche Situationen entwickelt HWaiHub maßgeschneiderte Automatisierungslösungen.</p>
+
+
+    <!-- SECTION 1 -->
+    <h2 data-i18n="art_h2_1">Die Ausgangslage: Täglich verlorene Stunden</h2>
+
+    <p data-i18n-html="art_p1">Bevor die erste KI-Automatisierung eingerichtet wird, analysieren wir gemeinsam den Ist-Zustand. Das Ergebnis ist regelmäßig ernüchternd — aber keineswegs ungewöhnlich. <strong>Über 75 % der täglichen Arbeitszeit in der Verwaltung fließen in repetitive Tätigkeiten:</strong> E-Mails bearbeiten, Termine koordinieren, Rechnungen einlesen, Berichte schreiben, Daten übertragen.</p>
+
+    <div class="pullquote">
+      <blockquote data-i18n="art_pq1">Ich wusste, dass meine Mitarbeiter zu viel Zeit mit Dingen verbringen, die eigentlich automatisch laufen könnten. Aber ich hatte keine Ahnung, wie einfach die Umsetzung tatsächlich ist.</blockquote>
+      <cite data-i18n="art_pq1_cite">— Typische Reaktion in unserem Erstgespräch</cite>
+    </div>
+
+    <p data-i18n-html="art_p2">Besonders schmerzhaft ist die Rechnungsverarbeitung. <strong>Jede eingehende Rechnung kostet im Schnitt 10 Minuten:</strong> Eingang prüfen, Daten manuell in das Buchhaltungssystem eingeben, kategorisieren, weiterleiten. Bei rund 200 Rechnungen pro Monat entspricht das fast 34 Arbeitsstunden — fast eine komplette Arbeitswoche, monatlich, für eine einzige Aufgabe.</p>
+
+    <div class="warning-box">
+      <div class="warning-box-label" data-i18n="art_wb1_label">Kontext: Branchenweites Problem</div>
+      <p data-i18n="art_wb1_p">Laut KI-Index Mittelstand 2025 (Deutscher Mittelstands-Bund / Salesforce, 526 befragte Unternehmen) fehlt bei 43 % der mittelständischen Unternehmen bislang jede konkrete KI-Strategie — obwohl über ein Drittel bereits KI einsetzt und Effizienzsteigerung als wichtigstes Ziel nennt.</p>
+    </div>
+
+
+    <!-- SECTION 2 -->
+    <h2 data-i18n="art_h2_2">Phase 1: Die größten Zeitfresser identifizieren</h2>
+
+    <p data-i18n="art_p3">In einem strukturierten Erstgespräch identifizieren wir gemeinsam die drei Bereiche, in denen Automatisierung sofort spürbar wirken würde. Das Prinzip dahinter ist klar: Erst die einfachsten, wiederkehrenden Aufgaben — dann die komplexeren.</p>
+
+    <div class="info-box">
+      <div class="info-box-label" data-i18n="art_ib1_label">Die drei identifizierten Automatisierungsbereiche</div>
+      <ul>
+        <li data-i18n-html="art_ib1_li1"><strong>E-Mail-Posteingang:</strong> Täglich 60–80 eingehende Mails, davon rund 40 % Standardanfragen mit immer gleichen Antwortmustern.</li>
+        <li data-i18n-html="art_ib1_li2"><strong>Rechnungsverarbeitung:</strong> 200+ Belege pro Monat, vollständig manuell erfasst, geprüft und verbucht — 34 Arbeitsstunden monatlich.</li>
+        <li data-i18n-html="art_ib1_li3"><strong>Meeting-Protokolle:</strong> Jedes der wöchentlichen Team-Meetings kostet 30–45 Minuten Nachbearbeitungszeit für Protokollierung und Versand.</li>
+      </ul>
+    </div>
+
+
+    <!-- SECTION 3 -->
+    <h2 data-i18n="art_h2_3">Phase 2: Einrichtung der KI-Agenten</h2>
+
+    <p data-i18n="art_p4">HWaiHub richtet die vereinbarten KI-Automatisierungen ein. Kein eigenes IT-Team ist dafür nötig. Kein technisches Vorwissen beim Kunden. Die gesamte Einrichtung übernehmen wir — der Kunde wird am Ende lediglich mit einem übersichtlichen Dashboard vertraut gemacht.</p>
+
+    <!-- Case Card 1 -->
+    <div class="case-card">
+      <div class="case-card-header">
+        <div>
+          <div class="case-title" data-i18n="art_c1_title">Automatisierung 1 — KI-E-Mail-Assistent</div>
+          <div class="case-subtitle" data-i18n="art_c1_subtitle">Tool-Stack: Gmail API · GPT-4o · Make.com · DSGVO-konform</div>
+        </div>
+        <span class="case-badge" data-i18n="art_c1_badge">Schnell einsatzbereit</span>
+      </div>
+      <div class="case-card-body">
+        <p data-i18n="art_c1_p">Der KI-Agent liest täglich alle eingehenden E-Mails, erkennt automatisch den Anfragetyp und beantwortet Standardfragen nach definierten Vorlagen. Komplexere Mails werden priorisiert und dem zuständigen Mitarbeiter zugewiesen — inklusive KI-Zusammenfassung des Inhalts und empfohlenem nächsten Schritt.</p>
+        <div class="case-results">
+          <div class="result-box">
+            <span class="result-val">2,1 h</span>
+            <div class="result-lbl" data-i18n="art_c1_r1_lbl">täglich gespart</div>
+          </div>
+          <div class="result-box">
+            <span class="result-val">38 %</span>
+            <div class="result-lbl" data-i18n="art_c1_r2_lbl">E-Mails vollautomatisch beantwortet</div>
+          </div>
+          <div class="result-box">
+            <span class="result-val">0</span>
+            <div class="result-lbl" data-i18n="art_c1_r3_lbl">technisches Vorwissen nötig</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case Card 2 -->
+    <div class="case-card">
+      <div class="case-card-header">
+        <div>
+          <div class="case-title" data-i18n="art_c2_title">Automatisierung 2 — Rechnungs-Scanner & Buchhaltungs-KI</div>
+          <div class="case-subtitle" data-i18n="art_c2_subtitle">Tool-Stack: OCR-Engine · Make.com · Sevdesk-Integration · DATEV-kompatibel</div>
+        </div>
+        <span class="case-badge" data-i18n="art_c2_badge">Schnell einsatzbereit</span>
+      </div>
+      <div class="case-card-body">
+        <p data-i18n="art_c2_p">Eingehende Rechnungen — ob per E-Mail, als PDF oder eingescannt — werden automatisch erkannt, vollständig ausgelesen, kategorisiert und direkt ins Buchhaltungssystem übertragen. Bei unklaren Belegen erfolgt eine automatische Rückfrage. Manuelle Eingabe: null.</p>
+        <div class="case-results">
+          <div class="result-box">
+            <span class="result-val">80 %</span>
+            <div class="result-lbl" data-i18n="art_c2_r1_lbl">Zeitersparnis pro Rechnung</div>
+          </div>
+          <div class="result-box">
+            <span class="result-val">28 h</span>
+            <div class="result-lbl" data-i18n="art_c2_r2_lbl">monatlich zurückgewonnen</div>
+          </div>
+          <div class="result-box">
+            <span class="result-val">&lt; 1 %</span>
+            <div class="result-lbl" data-i18n="art_c2_r3_lbl">Fehlerquote (vorher: 1–3 %)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case Card 3 -->
+    <div class="case-card">
+      <div class="case-card-header">
+        <div>
+          <div class="case-title" data-i18n="art_c3_title">Automatisierung 3 — Meeting-Protokoll-KI</div>
+          <div class="case-subtitle" data-i18n="art_c3_subtitle">Tool-Stack: Whisper (OpenAI) · GPT-4o · Notion · automatischer E-Mail-Versand</div>
+        </div>
+        <span class="case-badge" data-i18n="art_c3_badge">Schnell einsatzbereit</span>
+      </div>
+      <div class="case-card-body">
+        <p data-i18n="art_c3_p">Nach jedem Meeting wird die Aufnahme automatisch transkribiert, strukturiert zusammengefasst und als professionelles Protokoll an alle Teilnehmer versandt — inklusive Aufgabenliste, getroffener Entscheidungen und nächster Schritte. Innerhalb von fünf Minuten nach Meeting-Ende.</p>
+        <div class="case-results">
+          <div class="result-box">
+            <span class="result-val">35 min</span>
+            <div class="result-lbl" data-i18n="art_c3_r1_lbl">gespart pro Meeting</div>
+          </div>
+          <div class="result-box">
+            <span class="result-val">100 %</span>
+            <div class="result-lbl" data-i18n="art_c3_r2_lbl">aller Meetings protokolliert</div>
+          </div>
+          <div class="result-box">
+            <span class="result-val">5 min</span>
+            <div class="result-lbl" data-i18n="art_c3_r3_lbl">bis Protokoll vorliegt</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- SECTION 4 -->
+    <h2 data-i18n="art_h2_4">Erreichbare Ergebnisse: Was die Zahlen zeigen</h2>
+
+    <p data-i18n-html="art_p5">Auf Basis aktueller Branchendaten und wissenschaftlicher Studien zeigen sich bei diesem Automatisierungspaket typische Wirkungen. Das Potenzial: <strong>Die drei Automatisierungen setzen zusammen täglich 3,5 bis 4 Stunden frei</strong> — Zeit, die in strategische Aufgaben, Kundengespräche und die Weiterentwicklung des Kerngeschäfts fließt.</p>
+
+    <div class="pullquote">
+      <blockquote data-i18n="art_pq2">Zum ersten Mal seit Jahren das Gefühl, die eigene Arbeit wirklich im Griff zu haben. Das ist es, was Unternehmen nach einer KI-Transformation am häufigsten rückmelden.</blockquote>
+      <cite data-i18n="art_pq2_cite">— Typisches Feedback nach der Einführungsphase im Live-Betrieb</cite>
+    </div>
+
+    <p data-i18n-html="art_p6">Zahlen aus dem Markt bestätigen diesen Befund. <strong>38 % der KI-Anwender berichten von messbaren Effizienzsteigerungen, ein Drittel spart bereits signifikant durch Automatisierung</strong> — und 39 % generieren mit KI-Unterstützung sogar zusätzliche Umsätze. Der ROI ist messbar: Laut McKinsey Global Institute erzielen Unternehmen, die KI strategisch einsetzen, im Schnitt 3,70 USD Wertschöpfung pro eingesetztem Dollar. Bei Top-Performern liegt dieser Wert bei über 10 USD.</p>
+
+
+    <!-- SECTION 5 -->
+    <h2 data-i18n="art_h2_5">Was das für Ihren Betrieb bedeutet</h2>
+
+    <p data-i18n="art_p7">Was hier beschrieben wird, ist kein Einzelfall und kein Sonderfall. Es ist das Standardergebnis, wenn KI-Automatisierung methodisch und mit dem richtigen Partner eingesetzt wird. Und es erfordert weder ein internes IT-Team noch ein sechsstelliges Budget.</p>
+
+    <div class="info-box">
+      <div class="info-box-label" data-i18n="art_ib2_label">Empfohlene Einstiegsschritte</div>
+      <ul>
+        <li data-i18n-html="art_ib2_li1"><strong>Identifizieren Sie Ihren größten Zeitfresser.</strong> Oft ist es E-Mail, Rechnungsbearbeitung oder Protokollierung — Bereiche, die sofort automatisierbar sind.</li>
+        <li data-i18n-html="art_ib2_li2"><strong>Starten Sie mit einer einzigen Automatisierung.</strong> Wer klein anfängt, lernt schnell, vermeidet Fehlinvestitionen und skaliert sicher.</li>
+        <li data-i18n-html="art_ib2_li3"><strong>Kein technisches Vorwissen nötig.</strong> Die Einrichtung dauert Tage — Sie erhalten ein fertiges System, das Sie mit einer Einweisung bedienen.</li>
+        <li data-i18n-html="art_ib2_li4"><strong>Messen Sie die Wirkung.</strong> Dokumentieren Sie gesparte Zeit konkret — das überzeugt das Team und justiert die nächsten Schritte.</li>
+      </ul>
+    </div>
+
+    <p data-i18n-html="art_p8">Der KI-Index Mittelstand 2025 zeigt jedoch auch: <strong>43 % der mittelständischen Unternehmen haben noch keine KI-Strategie.</strong> Dabei ist 2025 das Jahr, in dem der Vorsprung der Frühanwender anfängt, sich in messbaren Wettbewerbsvorteilen niederzuschlagen — in Kapazitäten, Fehlerquoten und Reaktionsgeschwindigkeit gegenüber Kunden.</p>
+
+    <div class="warning-box">
+      <div class="warning-box-label" data-i18n="art_wb2_label">Das Risiko des Abwartens</div>
+      <p data-i18n="art_wb2_p">Die Horváth-Studie 2025 warnt deutlich: Mittelständler, die KI-Transformation jetzt nicht vorantreiben, riskieren einen technologischen Rückstand, der in wenigen Jahren zum existenziellen strategischen Risiko werden kann. Während der Gesamtmarkt seine KI-Investitionen erhöht, investiert der Mittelstand 2025 rund 30 % weniger als im Vorjahr.</p>
+    </div>
+
+
+    <!-- SECTION 6 — Fazit -->
+    <h2 data-i18n="art_h2_6">Fazit</h2>
+
+    <p data-i18n="art_fazit_p1">KI-Transformation im Mittelstand ist kein Projekt für die Zukunft. Sie ist möglich, bezahlbar und wirksam — heute. Wer mit einer konkreten Prozessanalyse beginnt, die richtigen Automatisierungen einrichtet und das konsequent begleitet, kann innerhalb weniger Wochen spürbare Entlastung für sein gesamtes Team erreichen.</p>
+
+    <p data-i18n-html="art_fazit_p2"><strong>Die Frage ist nicht mehr, ob KI in Ihren Betrieb gehört. Die Frage ist, mit welchem Prozess Sie anfangen — und wann.</strong></p>
+
+
+    <div class="section-divider">
+      <span class="divider-diamond">◆</span>
+    </div>
+
+
+    <!-- CTA -->
+    <div class="article-cta" id="cta">
+      <div class="cta-inner">
+        <div class="cta-eyebrow" data-i18n="art_cta_eyebrow">HWaiHub · Erstgespräch</div>
+        <h3 data-i18n="art_cta_h3">Bereit für Ihre eigene KI-Transformation?</h3>
+        <p data-i18n="art_cta_p">In einem kostenlosen 30-minütigen Erstgespräch analysieren wir gemeinsam Ihren größten Zeitfresser — und zeigen Ihnen, was in Ihrem Betrieb sofort automatisierbar ist.</p>
+        <a href="../index.html#contact" class="cta-button" data-i18n="art_cta_btn">Kostenloses Erstgespräch buchen →</a>
+        <div class="cta-note" data-i18n="art_cta_note">Kostenlos · Unverbindlich · 30 Minuten · Sofort messbare Erkenntnisse</div>
+      </div>
+    </div>
+
+
+    <!-- SOURCES -->
+    <div class="sources-section">
+      <div class="sources-title" data-i18n="art_sources_title">Quellen & Nachweise</div>
+      <ol class="sources-list">
+        <li>
+          <div><strong>KI-Index Mittelstand 2025</strong> — Deutscher Mittelstands-Bund (DMB) in Kooperation mit Salesforce. Befragung von 526 mittelständischen Unternehmen (bis 500 Beschäftigte), Nov./Dez. 2024. Veröffentlicht Dez. 2025.<br>
+          <a href="https://www.bidt.digital/themenmonitor/ki-im-deutschen-mittelstand-2025/" target="_blank">bidt.digital — KI im deutschen Mittelstand 2025</a></div>
+        </li>
+        <li>
+          <div><strong>McKinsey Global Institute: The State of AI</strong>, März 2025. ROI-Analyse zu strategischem KI-Einsatz; 3,70 USD durchschnittliche Wertschöpfung pro investiertem Dollar, Top-Performer über 10 USD.<br>
+          <a href="https://www.fair-news.de/3817478/ki-transformation-im-mittelstand-mckinsey-daten-zeigen-bis-zu-10-fachen-roi" target="_blank">fair-news.de — McKinsey-Daten: KI-Transformation im Mittelstand</a></div>
+        </li>
+        <li>
+          <div><strong>Horváth-Studie: KI-Investitionen Mittelstand 2025</strong> — Unternehmensberatung Horváth, Stuttgart. Befragung von 200 mittelständischen Unternehmen aus 8 Branchen (Umsatz mind. 100 Mio. €). Zitiert in WirtschaftsWoche, Januar 2026.<br>
+          <a href="https://www.wiwo.de/unternehmen/it/ki-mittelstand-bremst-bei-kuenstlicher-intelligenz-ruecklaeufige-investitionen/100189304.html" target="_blank">WirtschaftsWoche — KI: Mittelstand bremst bei Investitionen</a></div>
+        </li>
+        <li>
+          <div><strong>Prozessautomatisierung Fallstudie KMU: Konkrete Ergebnisse & KPIs</strong> — Optikronix, Februar 2026. Rechnungsverarbeitung: 10 Min. → 2 Min., 80 % Zeitersparnis in der Buchhaltung.<br>
+          <a href="https://www.optikronix.de/prozessautomatisierung-fallstudie-kmu-ergebnisse/" target="_blank">optikronix.de — Prozessautomatisierung Fallstudie KMU</a></div>
+        </li>
+        <li>
+          <div><strong>KI-Trends 2025–2030: Die 7 wichtigsten Chancen für KMU</strong> — Sapper AI, September 2025. 38 % messbarer Effizienzsteigerungen, 39 % Umsatzwachstum durch KI-Anwendung.<br>
+          <a href="https://sapper-ai.de/ki-trends-2025-2030/" target="_blank">sapper-ai.de — KI-Trends 2025–2030</a></div>
+        </li>
+        <li>
+          <div><strong>KI-Studie 2025: KI im Mittelstand und KMU</strong> — Maximal Digital, Mai 2025. Inkl. Accenture-Daten, Fallstudie Maschinenbau: 42 % Fehlerquotenreduktion durch KI-Transformation.<br>
+          <a href="https://maximal.digital/studie-ki-im-mittelstand-und-kmu-2025-einblicke-und-impulse-aus-der-ki-studie-2025" target="_blank">maximal.digital — KI-Studie 2025: KI im Mittelstand</a></div>
+        </li>
+        <li>
+          <div><strong>KI-Buchhaltung: 25+ Stunden monatlich sparen im Mittelstand</strong> — Die Zukunftshelden, 2025. Analyse manueller Buchhaltungsaufwände: über 75 % repetitive Tätigkeiten; Fehlerquoten bei manueller Eingabe 1–3 %.<br>
+          <a href="https://www.diezukunftshelden.de/blog/ki-buchhaltung-zeitersparnis-mittelstand-automatisierung" target="_blank">diezukunftshelden.de — KI-Buchhaltung Zeitersparnis</a></div>
+        </li>
+        <li>
+          <div><strong>IW-Report 2025: KI als Wettbewerbsfaktor</strong> — Institut der deutschen Wirtschaft Köln (IW). Empirische Befunde und Handlungsempfehlungen zum KI-Einsatz in deutschen Unternehmen, Juli 2025.<br>
+          <a href="https://www.iwkoeln.de/fileadmin/user_upload/Studien/Report/PDF/2025/IW-Report_2025-KI-als-Wettbewerbsfaktor.pdf" target="_blank">IW Köln — KI als Wettbewerbsfaktor (PDF)</a></div>
+        </li>
+      </ol>
+    </div>
+
+  </article>
+</main>
+
+
+<!-- ═══════ FOOTER ═══════ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <!-- Sekundäres Logo: dezente Platzierung im Footer -->
+      <!-- <img src="/assets/hwaihub-logo.png" alt="HWaiHub" style="height:28px;opacity:0.6;"> -->
+      HWai<span>Hub</span>
+      <small>Effizienz neu definieren</small>
+    </div>
+    <div class="footer-copy">© 2025 HWaiHub · Alle Rechte vorbehalten · www.hwaihub.de</div>
+  </div>
+</footer>
+
+
+<script src="../js/translations.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
