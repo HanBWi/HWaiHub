@@ -668,7 +668,20 @@
       .hamburger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
     }
     @media (max-width: 600px) {
-      .hero-stats { flex-direction: column; gap: 1.2rem; }
+      /* 2×2 compact tile grid instead of stacked list */
+      .hero-stats {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.6rem;
+      }
+      .hero-stat-card {
+        flex: unset !important;
+        width: auto !important;
+        padding: 0.7rem 0.85rem;
+      }
+      .hero-stats .stat-num { font-size: 1.55rem; }
+      /* Hide less impactful tiles on mobile */
+      .hero-stat-mobile-hide { display: none !important; }
       .form-row { grid-template-columns: 1fr; }
       .results-grid { grid-template-columns: 1fr; }
       .trust-inner { flex-direction: column; gap: 1rem; }
@@ -2748,11 +2761,28 @@ html, body {
   /* Testimonial width on small screens */
   .testimonial { width: 280px; }
 
-  /* Ensure no horizontal scroll from stat cards */
-  .hero-stats { flex-direction: column; }
-  .hero-stat-card { flex: none; width: 100%; }
+  /* Keep 2-column grid on small phones, just tighter */
+  .hero-stats { display: grid !important; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+  .hero-stat-card { flex: none; width: auto; padding: 0.6rem 0.7rem; }
+  .hero-stats .stat-num { font-size: 1.4rem; }
 
   /* Form rows stack */
   .form-row { grid-template-columns: 1fr; }
 }
 ::-webkit-scrollbar-thumb:hover { background: rgba(168,114,48,0.6); }
+
+/* ── Hero scroll indicator ───────────────────────────── */
+.hero-scroll-hint {
+  display: none;
+  text-align: center;
+  color: rgba(255,255,255,0.38);
+  padding-bottom: 1.5rem;
+  animation: heroScrollBounce 2.2s ease-in-out infinite;
+}
+@keyframes heroScrollBounce {
+  0%, 100% { transform: translateY(0); opacity: 0.38; }
+  50%       { transform: translateY(7px); opacity: 0.75; }
+}
+@media (max-width: 900px) {
+  .hero-scroll-hint { display: block; }
+}
