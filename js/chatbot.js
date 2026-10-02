@@ -57,11 +57,11 @@
           chips: ['Leistungen', 'Kontakt']
         },
         contact: {
-          text: '📬 **Kontakt aufnehmen**\n\nDas kostenlose Erstgespräch dauert 30 Minuten — unverbindlich.\n\n✉️ hallo@hwaihub.com\n\nOder nutze das Kontaktformular auf der Startseite. Ich melde mich in der Regel innerhalb von 24 Stunden.',
+          text: '📬 **Kontakt aufnehmen**\n\nDas kostenlose Erstgespräch dauert 30 Minuten — unverbindlich.\n\n✉️ info@hwaihub.com\n\nOder nutze das Kontaktformular auf der Startseite. Ich melde mich in der Regel innerhalb von 24 Stunden.',
           chips: ['Zum Kontaktformular →']
         },
         fallback: {
-          text: 'Für diese Frage bin ich vielleicht zu begrenzt 😊 Hanna beantwortet sie gerne direkt:\n\n✉️ hallo@hwaihub.com\n\nOder nutze das kostenlose Erstgespräch.',
+          text: 'Für diese Frage bin ich vielleicht zu begrenzt 😊 Hanna beantwortet sie gerne direkt:\n\n✉️ info@hwaihub.com\n\nOder nutze das kostenlose Erstgespräch.',
           chips: ['Leistungen', 'Pakete & Preise', 'Kontakt']
         }
       },
@@ -135,11 +135,11 @@
           chips: ['Services', 'Contact']
         },
         contact: {
-          text: '📬 **Get in touch**\n\nThe free initial call lasts 30 minutes — completely non-binding.\n\n✉️ hallo@hwaihub.com\n\nOr use the contact form on the homepage. I usually reply within 24 hours.',
+          text: '📬 **Get in touch**\n\nThe free initial call lasts 30 minutes — completely non-binding.\n\n✉️ info@hwaihub.com\n\nOr use the contact form on the homepage. I usually reply within 24 hours.',
           chips: ['To contact form →']
         },
         fallback: {
-          text: 'Great question — I might be a little limited here 😊 Hanna would be happy to answer it directly:\n\n✉️ hallo@hwaihub.com\n\nOr book a free initial call.',
+          text: 'Great question — I might be a little limited here 😊 Hanna would be happy to answer it directly:\n\n✉️ info@hwaihub.com\n\nOr book a free initial call.',
           chips: ['Services', 'Packages & Pricing', 'Contact']
         }
       },
@@ -188,8 +188,8 @@
         professional: { text: '**Professional — od €7 999 + €600/mies.**\n*(netto plus VAT)*\n\n✓ 3–5 automatyzacji AI\n✓ Pełna analiza procesów\n✓ E-mail + kalendarz + faktury\n✓ Dashboard przeglądowy\n✓ Miesięczne spotkanie optymalizacyjne\n✓ Priority support (24h)\n✓ Dokumentacja RODO w zestawie', chips: ['Starter', 'Enterprise', 'Kontakt'] },
         enterprise:   { text: '**Enterprise — od €18 999**\n*(indywidualnie, netto plus VAT)*\n\n✓ Kompletna transformacja cyfrowa\n✓ Nieograniczone automatyzacje\n✓ Tworzenie produktów end-to-end\n✓ Dedykowany doradca AI\n✓ Szkolenia pracowników w zestawie\n✓ Model retainerowy możliwy', chips: ['Starter', 'Professional', 'Kontakt'] },
         about:   { text: '👩‍💼 **Hanna Winkelmann**\nKonsultantka AI i Transformacji Cyfrowej · Założycielka, HWaiHub\n\nZ ponad dziesięcioletnim doświadczeniem prowadzi firmy od strategii AI do wdrożenia — bez słów kluczowych, z mierzalnymi wynikami.\n\n📍 Cascais, Portugalia — Zdalnie i na miejscu\n\nCertyfikaty: Microsoft Azure · CSPO · SAS · PRINCE2 Agile', chips: ['Usługi', 'Kontakt'] },
-        contact: { text: '📬 **Skontaktuj się**\n\nBezpłatna pierwsza rozmowa trwa 30 minut — bez zobowiązań.\n\n✉️ hallo@hwaihub.com\n\nLub skorzystaj z formularza kontaktowego na stronie głównej. Zazwyczaj odpowiadam w ciągu 24 godzin.', chips: ['Do formularza kontaktowego →'] },
-        fallback: { text: 'Świetne pytanie — może trochę przekraczam moje możliwości 😊 Hanna chętnie odpowie bezpośrednio:\n\n✉️ hallo@hwaihub.com', chips: ['Usługi', 'Pakiety i Ceny', 'Kontakt'] }
+        contact: { text: '📬 **Skontaktuj się**\n\nBezpłatna pierwsza rozmowa trwa 30 minut — bez zobowiązań.\n\n✉️ info@hwaihub.com\n\nLub skorzystaj z formularza kontaktowego na stronie głównej. Zazwyczaj odpowiadam w ciągu 24 godzin.', chips: ['Do formularza kontaktowego →'] },
+        fallback: { text: 'Świetne pytanie — może trochę przekraczam moje możliwości 😊 Hanna chętnie odpowie bezpośrednio:\n\n✉️ info@hwaihub.com', chips: ['Usługi', 'Pakiety i Ceny', 'Kontakt'] }
       },
       keywords: {
         services:     ['usług', 'serwis', 'ofert', 'co robisz', 'co oferujesz', 'doradztwo'],
@@ -233,8 +233,8 @@
         professional: { text: '**Professional — desde €7.999 + €600/mes**\n*(neto más IVA)*\n\n✓ 3–5 automatizaciones de IA\n✓ Análisis completo de procesos\n✓ Correo + calendario + facturas\n✓ Panel de visión general\n✓ Reunión mensual de optimización\n✓ Soporte prioritario (24h)\n✓ Documentación RGPD incluida\n\nEl paquete más popular para equipos en crecimiento.', chips: ['Starter', 'Enterprise', 'Contacto'] },
         enterprise:   { text: '**Enterprise — desde €18.999**\n*(personalizado, neto más IVA)*\n\n✓ Transformación digital completa\n✓ Automatizaciones ilimitadas\n✓ Desarrollo end-to-end\n✓ Consultor de IA dedicado\n✓ Formación de empleados incluida\n✓ Modelo de retainer disponible\n\nPara empresas que quieren el alcance completo.', chips: ['Starter', 'Professional', 'Contacto'] },
         about:   { text: '👩‍💼 **Hanna Winkelmann**\nConsultora de IA & Transformación Digital · Fundadora, HWaiHub\n\nCon más de una década de experiencia, guía a empresas desde la estrategia de IA hasta la implementación — sin buzzwords, con resultados medibles.\n\n📍 Cascais, Portugal — Remoto y presencial\n\nCertificaciones: Microsoft Azure · CSPO · SAS · PRINCE2 Agile', chips: ['Servicios', 'Contacto'] },
-        contact: { text: '📬 **Ponte en contacto**\n\nLa primera llamada gratuita dura 30 minutos — sin compromiso.\n\n✉️ hallo@hwaihub.com\n\nO usa el formulario de contacto en la página principal. Normalmente respondo en 24 horas.', chips: ['Al formulario de contacto →'] },
-        fallback: { text: 'Buena pregunta — puede que me quede un poco corto aquí 😊 Hanna estaría encantada de responderla directamente:\n\n✉️ hallo@hwaihub.com', chips: ['Servicios', 'Paquetes y Precios', 'Contacto'] }
+        contact: { text: '📬 **Ponte en contacto**\n\nLa primera llamada gratuita dura 30 minutos — sin compromiso.\n\n✉️ info@hwaihub.com\n\nO usa el formulario de contacto en la página principal. Normalmente respondo en 24 horas.', chips: ['Al formulario de contacto →'] },
+        fallback: { text: 'Buena pregunta — puede que me quede un poco corto aquí 😊 Hanna estaría encantada de responderla directamente:\n\n✉️ info@hwaihub.com', chips: ['Servicios', 'Paquetes y Precios', 'Contacto'] }
       },
       keywords: {
         services:     ['servicio', 'oferta', 'qué hace', 'qué ofrece', 'consultoría'],
@@ -278,8 +278,8 @@
         professional: { text: '**Professional — a partir de €7.999 + €600/mês**\n*(líquido mais IVA)*\n\n✓ 3–5 automatizações de IA\n✓ Análise completa de processos\n✓ E-mail + calendário + faturas\n✓ Dashboard de visão geral\n✓ Reunião mensal de otimização\n✓ Suporte prioritário (24h)\n✓ Documentação RGPD incluída', chips: ['Starter', 'Enterprise', 'Contacto'] },
         enterprise:   { text: '**Enterprise — a partir de €18.999**\n*(personalizado, líquido mais IVA)*\n\n✓ Transformação digital completa\n✓ Automatizações ilimitadas\n✓ Implementação end-to-end\n✓ Consultor de IA dedicado\n✓ Formação de colaboradores incluída\n✓ Modelo de retainer disponível', chips: ['Starter', 'Professional', 'Contacto'] },
         about:   { text: '👩‍💼 **Hanna Winkelmann**\nConsultora de IA & Transformação Digital · Fundadora, HWaiHub\n\nCom mais de uma década de experiência, guia empresas da estratégia de IA à implementação — sem buzzwords, com resultados mensuráveis.\n\n📍 Cascais, Portugal — Remoto e presencial\n\nCertificações: Microsoft Azure · CSPO · SAS · PRINCE2 Agile', chips: ['Serviços', 'Contacto'] },
-        contact: { text: '📬 **Entra em contacto**\n\nA primeira conversa gratuita dura 30 minutos — sem compromisso.\n\n✉️ hallo@hwaihub.com\n\nOu usa o formulário de contacto na página inicial. Normalmente respondo em até 24 horas.', chips: ['Ir ao formulário →'] },
-        fallback: { text: 'Boa pergunta — talvez eu seja um pouco limitado aqui 😊 A Hanna responderia de bom grado diretamente:\n\n✉️ hallo@hwaihub.com', chips: ['Serviços', 'Pacotes e Preços', 'Contacto'] }
+        contact: { text: '📬 **Entra em contacto**\n\nA primeira conversa gratuita dura 30 minutos — sem compromisso.\n\n✉️ info@hwaihub.com\n\nOu usa o formulário de contacto na página inicial. Normalmente respondo em até 24 horas.', chips: ['Ir ao formulário →'] },
+        fallback: { text: 'Boa pergunta — talvez eu seja um pouco limitado aqui 😊 A Hanna responderia de bom grado diretamente:\n\n✉️ info@hwaihub.com', chips: ['Serviços', 'Pacotes e Preços', 'Contacto'] }
       },
       keywords: {
         services:     ['serviç', 'ofert', 'o que faz', 'o que oferece', 'consultori'],
