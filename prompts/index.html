@@ -16,6 +16,8 @@
   <meta property="og:url" content="https://www.hwaihub.com/prompts/" />
   <meta property="og:image" content="https://www.hwaihub.com/prompts/guide-cover.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="favicon.png" />
 
   <style>
     /* Bewusst ohne Google Fonts: keine Datenübertragung an Dritte beim Seitenaufruf */
@@ -62,8 +64,9 @@
     .micro { font-size: 0.85rem; color: var(--gray-light); margin-top: 0.85rem; }
 
     /* ── Header ── */
-    header { padding: 1.6rem 0; }
-    header img { height: 38px; width: auto; }
+    header { padding: 1.6rem 0; background: var(--cream); }
+    .wordmark { display: inline-block; font-size: 1.85rem; font-weight: 800; letter-spacing: -0.03em; line-height: 1; color: var(--dark); text-decoration: none; }
+    .wordmark span { color: #C9954A; }
 
     /* ── Hero ── */
     .hero { background: var(--cream); padding: 4rem 0 5.5rem; }
@@ -168,7 +171,7 @@
     @media (max-width: 860px) {
       .container { padding: 0 1.25rem; }
       header { padding: 1.1rem 0; }
-      header img { height: 32px; }
+      .wordmark { font-size: 1.55rem; }
       .hero { padding: 2rem 0 3.5rem; }
       .hero-photo { justify-self: center; }
       .hero-wrap, .signup-wrap { grid-template-columns: 1fr; gap: 2.5rem; }
@@ -192,7 +195,7 @@
 
   <header>
     <div class="container">
-      <a href="/" aria-label="HWaiHub Startseite"><img src="/assets/images/HWaiHub_logo_g_Schw.png" alt="HWaiHub" /></a>
+      <a class="wordmark" href="/" aria-label="HWaiHub Startseite">HW<span>ai</span>Hub</a>
     </div>
   </header>
 
