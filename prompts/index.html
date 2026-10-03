@@ -263,7 +263,7 @@
             <label for="f-email">E-Mail-Adresse</label>
             <input id="f-email" name="fields[email]" type="email" autocomplete="email" placeholder="deine@email.de" required />
           </div>
-          <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <div class="hp" aria-hidden="true"><label for="f-hpx">Bitte leer lassen</label><input id="f-hpx" type="text" name="hpx_9f3k" tabindex="-1" autocomplete="new-password" /></div>
           <button class="btn" type="submit">Ja, schick mir die Prompts!</button>
           <p class="consent">Mit deiner Anmeldung erhältst du die 10 Profit-Prompts und meinen Newsletter mit KI-Tipps für Selbstständige. Der Versand erfolgt über MailerLite. Du kannst dich jederzeit mit einem Klick abmelden. Mehr dazu in der <a href="/datenschutz.html" target="_blank" rel="noopener">Datenschutzerklärung</a>.</p>
           <div class="msg err" id="ml-err" role="alert"><p>Das hat leider nicht geklappt. Bitte prüfe deine E-Mail-Adresse und versuch es noch einmal, oder schreib mir an <a href="mailto:info@hwaihub.com">info@hwaihub.com</a>.</p></div>
@@ -314,7 +314,7 @@
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       err.style.display = 'none';
-      if (form.website.value) return; // Spam-Schutz
+      if (form.hpx_9f3k.value) return; // Spam-Schutz (Feldname bewusst nicht autofill-tauglich)
       if (!form.reportValidity()) return;
 
       const btn = form.querySelector('button');
