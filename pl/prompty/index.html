@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Za darmo: 10 Promptów na Zysk dla przedsiębiorców | HWaiHub</title>
+  <meta name="description" content="Oszczędzaj 5 godzin tygodniowo dzięki AI, już od dziś. Moje 10 promptów na zysk dla przedsiębiorców: skopiuj, wklej, uzupełnij, gotowe. Darmowy przewodnik Hanny Winkelmann." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.hwaihub.com/pl/prompty/" />
+
+  <!-- Open Graph (Vorschau bei Instagram, LinkedIn, WhatsApp) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="HWaiHub" />
+  <meta property="og:title" content="Za darmo: 10 Promptów na Zysk dla przedsiębiorców" />
+  <meta property="og:description" content="Oszczędzaj 5 godzin tygodniowo dzięki AI. Skopiuj, wklej, gotowe." />
+  <meta property="og:url" content="https://www.hwaihub.com/pl/prompty/" />
+  <meta property="og:image" content="https://www.hwaihub.com/pl/prompty/guide-cover.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="favicon.png" />
+
+  <style>
+    /* Bewusst ohne Google Fonts: keine Datenübertragung an Dritte beim Seitenaufruf */
+    :root {
+      --gold: #A87230;
+      --gold-light: #C8963E;
+      --dark: #1C1914;
+      --gray: #6E6860;
+      --gray-light: #9A948C;
+      --cream: #F5F0E8;
+      --offwhite: #FAF9F7;
+      --line: #E4DCCF;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: var(--offwhite);
+      color: var(--dark);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; }
+    .container { max-width: 1160px; margin: 0 auto; padding: 0 2rem; }
+
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.8rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.1rem;
+    }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+      background: var(--gold); color: #fff;
+      font: inherit; font-size: 1rem; font-weight: 700; letter-spacing: 0.03em;
+      padding: 1.1rem 2rem; border: 0; border-radius: 8px; cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 8px 22px rgba(168,114,48,0.28);
+      transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    }
+    .btn:hover { transform: translateY(-2px); background: #96652a; box-shadow: 0 12px 28px rgba(168,114,48,0.35); }
+    .btn:disabled { opacity: 0.7; cursor: wait; transform: none; }
+    .micro { font-size: 0.85rem; color: var(--gray-light); margin-top: 0.85rem; }
+
+    /* ── Header ── */
+    header { padding: 1.6rem 0; background: var(--cream); }
+    .wordmark { display: inline-block; font-size: 1.85rem; font-weight: 800; letter-spacing: -0.03em; line-height: 1; color: var(--dark); text-decoration: none; }
+    .wordmark span { color: #C9954A; }
+
+    /* ── Hero ── */
+    .hero { background: var(--cream); padding: 4rem 0 5.5rem; }
+    .hero-wrap { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 4.5rem; align-items: center; }
+    .hero h1 {
+      font-size: clamp(2.3rem, 4.6vw, 3.7rem);
+      line-height: 1.07; font-weight: 800; letter-spacing: -0.025em;
+      margin-bottom: 1.4rem;
+    }
+    .hero h1 span { color: var(--gold); white-space: nowrap; }
+    .hero .sub { font-size: 1.2rem; color: var(--gray); max-width: 34rem; margin-bottom: 1.8rem; }
+    .checks { list-style: none; margin-bottom: 2.2rem; }
+    .checks li { position: relative; padding: 0.4rem 0 0.4rem 2.2rem; font-size: 1.08rem; }
+    .checks li::before {
+      content: "✓"; position: absolute; left: 0; top: 0.5rem;
+      width: 1.45rem; height: 1.45rem; border-radius: 50%;
+      background: var(--gold); color: #fff; font-size: 0.8rem; font-weight: 800;
+      display: grid; place-items: center;
+    }
+    .hero-photo { position: relative; max-width: 470px; justify-self: end; width: 100%; }
+    .hero-photo img {
+      width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 18%;
+      border-radius: 28px;
+      box-shadow: 0 30px 60px rgba(28,25,20,0.18);
+    }
+    .proof {
+      position: absolute; left: -2.2rem; bottom: 2.4rem;
+      background: #fff; border-radius: 14px; padding: 1rem 1.25rem;
+      display: flex; align-items: center; gap: 0.9rem;
+      box-shadow: 0 14px 34px rgba(28,25,20,0.14);
+    }
+    .proof b { font-size: 2rem; line-height: 1; color: var(--gold); font-weight: 800; }
+    .proof span { font-size: 0.88rem; line-height: 1.35; }
+
+    /* ── Inhalt ── */
+    .inside { padding: 5.5rem 0; }
+    .section-head { max-width: 40rem; margin-bottom: 2.8rem; }
+    .section-head h2 { font-size: clamp(1.8rem, 3.2vw, 2.5rem); line-height: 1.15; letter-spacing: -0.02em; font-weight: 800; }
+    .section-head p { color: var(--gray); font-size: 1.1rem; margin-top: 0.8rem; }
+    .prompt-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.5rem; }
+    .prompt-item {
+      display: flex; align-items: center; gap: 1rem;
+      background: #fff; border: 1px solid var(--line); border-radius: 12px;
+      padding: 1rem 1.2rem;
+    }
+    .prompt-item .n { font-size: 1.4rem; font-weight: 800; color: var(--gold); min-width: 2.2rem; }
+    .prompt-item .t { flex: 1; }
+    .prompt-item .t b { display: block; font-size: 1rem; }
+    .prompt-item .t small { color: var(--gray); font-size: 0.9rem; }
+    .tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.25rem 0.6rem; border-radius: 999px; white-space: nowrap; }
+    .tag.g { background: var(--gold); color: #fff; }
+    .tag.z { background: var(--dark); color: #fff; }
+
+    /* ── Anmeldung ── */
+    .signup { background: var(--dark); color: #fff; padding: 5.5rem 0; scroll-margin-top: 1rem; }
+    .signup-wrap { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 4.5rem; align-items: center; }
+    .cover {
+      max-width: 340px; margin: 0 auto;
+      transform: rotate(-4deg);
+      border-radius: 6px; overflow: hidden;
+      box-shadow: 0 30px 70px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.06);
+    }
+    .signup h2 { font-size: clamp(1.8rem, 3.2vw, 2.5rem); line-height: 1.15; letter-spacing: -0.02em; font-weight: 800; margin-bottom: 0.9rem; }
+    .signup .lead { color: #CFC8BC; font-size: 1.1rem; margin-bottom: 2rem; max-width: 32rem; }
+    .form { max-width: 30rem; }
+    .field { margin-bottom: 0.9rem; }
+    .field label { display: block; font-size: 0.85rem; font-weight: 600; color: #CFC8BC; margin-bottom: 0.35rem; }
+    .field input {
+      width: 100%; font: inherit; font-size: 1rem;
+      padding: 0.95rem 1rem; border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.16); background: rgba(255,255,255,0.06); color: #fff;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .field input::placeholder { color: #8E877C; }
+    .field input:focus { outline: none; border-color: var(--gold-light); background: rgba(255,255,255,0.1); }
+    .form .btn { width: 100%; margin-top: 0.4rem; }
+    .consent { font-size: 0.8rem; color: #A39C90; margin-top: 1rem; line-height: 1.55; }
+    .consent a { color: #D9C9AE; }
+    .hp { position: absolute; left: -5000px; }
+    .msg { display: none; border-radius: 12px; padding: 1.5rem 1.6rem; max-width: 30rem; }
+    .msg.ok { background: rgba(200,150,62,0.12); border: 1px solid rgba(200,150,62,0.4); }
+    .msg.err { background: rgba(220,90,70,0.12); border: 1px solid rgba(220,90,70,0.45); margin-top: 1rem; }
+    .msg h3 { font-size: 1.25rem; margin-bottom: 0.4rem; }
+    .msg p { color: #E2DBCF; }
+    .msg .follow { margin-top: 1.1rem; padding-top: 1.1rem; border-top: 1px solid rgba(200,150,62,0.3); }
+    .msg .follow p { font-size: 0.95rem; margin-bottom: 0.8rem; }
+    .btn-ghost { background: transparent; color: #E9C98F; border: 1.5px solid var(--gold-light); box-shadow: none; padding: 0.85rem 1.4rem; }
+    .btn-ghost:hover { background: rgba(200,150,62,0.15); box-shadow: none; }
+    .msg .hint { margin-top: 0.9rem; padding-top: 0.9rem; border-top: 1px solid rgba(200,150,62,0.3); font-size: 0.95rem; }
+    .msg .steps { margin: 0.8rem 0 0 1.3rem; padding: 0; } .msg .steps li { margin: 0.35rem 0; line-height: 1.45; }
+
+    /* ── Über mich ── */
+    .about { padding: 5.5rem 0; background: var(--cream); }
+    .about-wrap { display: grid; grid-template-columns: auto 1fr; gap: 2.5rem; align-items: center; max-width: 52rem; margin: 0 auto; }
+    .about img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; object-position: 50% 26%; border: 3px solid var(--gold); }
+    .about h2 { font-size: 1.6rem; font-weight: 800; letter-spacing: -0.01em; margin-bottom: 0.6rem; }
+    .about p { color: var(--gray); font-size: 1.05rem; }
+    .about .btn { margin-top: 1.4rem; }
+
+    /* ── Footer ── */
+    footer { padding: 2rem 0; font-size: 0.85rem; color: var(--gray-light); }
+    footer .container { display: flex; flex-wrap: wrap; gap: 0.6rem 1.4rem; justify-content: space-between; }
+    footer nav { display: flex; gap: 1.2rem; }
+    footer a { text-decoration: none; }
+    footer a:hover { color: var(--gold); }
+
+    /* ── Mobil (die meisten Besucher kommen über Instagram) ── */
+    @media (max-width: 860px) {
+      .container { padding: 0 1.25rem; }
+      header { padding: 1.1rem 0; }
+      .wordmark { font-size: 1.55rem; }
+      .hero { padding: 2rem 0 3.5rem; }
+      .hero-photo { justify-self: center; }
+      .hero-wrap, .signup-wrap { grid-template-columns: 1fr; gap: 2.5rem; }
+      .hero .sub { font-size: 1.08rem; }
+      .hero .btn { width: 100%; }
+      .hero .micro { text-align: center; }
+      .hero-photo { max-width: 420px; margin: 0 auto; }
+      .hero-photo img { aspect-ratio: 1 / 1; }
+      .proof { left: 1rem; bottom: 1rem; padding: 0.75rem 1rem; }
+      .proof b { font-size: 1.6rem; }
+      .inside, .signup, .about { padding: 3.75rem 0; }
+      .prompt-grid { grid-template-columns: 1fr; }
+      .cover { max-width: 220px; }
+      .about-wrap { grid-template-columns: 1fr; text-align: center; justify-items: center; gap: 1.5rem; }
+      .about .btn { width: 100%; }
+      footer .container { justify-content: center; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <a class="wordmark" href="/" aria-label="HWaiHub strona główna">HW<span>ai</span>Hub</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-wrap">
+      <div>
+        <span class="eyebrow">Darmowy przewodnik dla przedsiębiorców</span>
+        <h1>Oszczędzaj <span>5 godzin</span> tygodniowo dzięki AI</h1>
+        <p class="sub">Moje 10 promptów na zysk: skopiuj, wklej, uzupełnij pola, gotowe. Bez wiedzy technicznej.</p>
+        <ul class="checks">
+          <li><b>Większy zysk:</b> oferty, ceny i rozmowy sprzedażowe</li>
+          <li><b>Więcej czasu:</b> maile, social media i spotkania</li>
+          <li><b>Od razu do użycia</b> z ChatGPT, Copilot, Claude i Gemini</li>
+        </ul>
+        <a class="btn" href="#zapis">Odbierz za darmo ↓</a>
+        <p class="micro">Za darmo · Od razu na maila · Wypisanie w każdej chwili</p>
+      </div>
+      <div class="hero-photo">
+        <img src="hanna.jpg" alt="Hanna Winkelmann, coach AI dla przedsiębiorców" width="816" height="1118" />
+        <div class="proof"><b>15</b><span>lat doświadczenia<br>w korporacji</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Was drin ist -->
+  <section class="inside">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Co jest w środku</span>
+        <h2>10 promptów, których od jutra użyjesz codziennie</h2>
+        <p>Każdy prompt z instrukcją, polami do uzupełnienia i wskazówką z praktyki.</p>
+      </div>
+      <div class="prompt-grid">
+        <div class="prompt-item"><span class="n">01</span><span class="t"><b>Turbo-oferta</b><small>Oferta w 15 zamiast 120 minut</small></span><span class="tag g">Zysk</span></div>
+        <div class="prompt-item"><span class="n">02</span><span class="t"><b>Test cen</b><small>Sprawdź, czy nie jesteś za tania</small></span><span class="tag g">Zysk</span></div>
+        <div class="prompt-item"><span class="n">03</span><span class="t"><b>Pomocnik skrzynki</b><small>Odpowiedzi na maile w kilka sekund</small></span><span class="tag z">Czas</span></div>
+        <div class="prompt-item"><span class="n">04</span><span class="t"><b>Tydzień treści</b><small>5 postów w 20 minut</small></span><span class="tag z">Czas</span></div>
+        <div class="prompt-item"><span class="n">05</span><span class="t"><b>Pogromca obiekcji</b><small>Więcej zamkniętych sprzedaży</small></span><span class="tag g">Zysk</span></div>
+        <div class="prompt-item"><span class="n">06</span><span class="t"><b>Wyszukiwarka upsellu</b><small>Większy obrót z obecnymi klientami</small></span><span class="tag g">Zysk</span></div>
+        <div class="prompt-item"><span class="n">07</span><span class="t"><b>Po spotkaniu</b><small>Notatka i follow-up automatycznie</small></span><span class="tag z">Czas</span></div>
+        <div class="prompt-item"><span class="n">08</span><span class="t"><b>Analiza pożeraczy czasu</b><small>Znajdź największe straty czasu</small></span><span class="tag z">Czas</span></div>
+        <div class="prompt-item"><span class="n">09</span><span class="t"><b>Powrót klientów</b><small>Odzyskaj dawnych klientów</small></span><span class="tag g">Zysk</span></div>
+        <div class="prompt-item"><span class="n">10</span><span class="t"><b>Wiedza w produkt</b><small>Stwórz produkt cyfrowy</small></span><span class="tag g">Zysk</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Anmeldung -->
+  <section class="signup" id="zapis">
+    <div class="container signup-wrap">
+      <div class="cover"><img src="guide-cover.jpg" alt="Okładka przewodnika 10 Promptów na Zysk" width="1020" height="1320" loading="lazy" /></div>
+      <div>
+        <span class="eyebrow" style="color:var(--gold-light)">Darmowy przewodnik PDF</span>
+        <h2>Odbierz 10 Promptów na Zysk za darmo</h2>
+        <p class="lead">Zapisz się, a przewodnik od razu trafi na Twojego maila, razem z moimi najlepszymi wskazówkami AI dla przedsiębiorców.</p>
+
+        <form class="form" id="ml-form" novalidate>
+          <div class="field">
+            <label for="f-name">Imię</label>
+            <input id="f-name" name="fields[name]" type="text" autocomplete="given-name" placeholder="Twoje imię" required />
+          </div>
+          <div class="field">
+            <label for="f-email">Adres e-mail</label>
+            <input id="f-email" name="fields[email]" type="email" autocomplete="email" placeholder="twoj@email.pl" required />
+          </div>
+          <div class="hp" aria-hidden="true"><label for="f-hpx">Zostaw puste</label><input id="f-hpx" type="text" name="hpx_9f3k" tabindex="-1" autocomplete="new-password" /></div>
+          <button class="btn" type="submit">Tak, wyślij mi prompty!</button>
+          <p class="consent">Zapisując się, otrzymasz 10 Promptów na Zysk i mój newsletter ze wskazówkami AI dla przedsiębiorców. Wysyłka odbywa się przez MailerLite. Możesz wypisać się jednym kliknięciem w każdej chwili. Więcej w <a href="/datenschutz.html" target="_blank" rel="noopener">polityce prywatności</a>.</p>
+          <div class="msg err" id="ml-err" role="alert"><p>Niestety coś poszło nie tak. Sprawdź adres e-mail i spróbuj jeszcze raz albo napisz do mnie na <a href="mailto:info@hwaihub.com">info@hwaihub.com</a>.</p></div>
+        </form>
+
+        <div class="msg ok" id="ml-ok" role="status">
+          <h3>Prawie gotowe! Jeszcze 1 kliknięcie 📬</h3>
+          <p>Właśnie wysłałam Ci maila. <b>Bez Twojego kliknięcia nie mogę wysłać Ci promptów</b> (ochrona danych).</p>
+          <ol class="steps">
+            <li>Otwórz maila od <b>HWaiHub</b> z tematem <b>„Confirmation email”</b>. Jest po angielsku.</li>
+            <li>Kliknij przycisk <b>„Confirm your email”</b>.</li>
+            <li>Zaraz potem dostaniesz <b>10 Promptów na Zysk</b> mailem.</li>
+          </ol>
+          <p class="hint"><b>Nie ma maila?</b> Sprawdź też folder <b>spam</b> i, jeśli używasz Gmaila, zakładkę „Oferty”. Mail przychodzi z <b>info@hwaihub.com</b>. Przenieś go do skrzynki odbiorczej, żeby kolejne maile też dotarły.</p>
+          <div class="follow">
+            <p>W międzyczasie: na Instagramie co tydzień dzielę się nowymi wskazówkami AI dla przedsiębiorców.</p>
+            <a class="btn btn-ghost" href="https://www.instagram.com/hanna.aiwpraktyce/" target="_blank" rel="noopener">📸 Obserwuj mnie na Instagramie</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Über mich -->
+  <section class="about">
+    <div class="container about-wrap">
+      <img src="hanna.jpg" alt="Hanna Winkelmann" width="150" height="150" loading="lazy" />
+      <div>
+        <h2>Cześć, jestem Hanna 👋</h2>
+        <p>Po 15 latach w korporacji pokazuję dziś przedsiębiorcom, jak używać narzędzi AI, żeby zarabiać więcej i pracować mniej. Bez technicznego stresu, z efektami od pierwszego dnia.</p>
+        <a class="btn" href="#zapis">Odbierz prompty za darmo</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <span>© 2026 HWaiHub · Hanna Winkelmann</span>
+      <nav>
+        <a href="/impressum.html">Nota prawna</a>
+        <a href="/datenschutz.html">Prywatność</a>
+        <a href="https://instagram.com/hanna.aiwpraktyce" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // MailerLite-Formular "Website Freebie Profit-Prompts" (Gruppe "Freebie Profit-Prompts", Double-Opt-In)
+    const ML_ACCOUNT = '2679544';
+    const ML_FORM = ''; // TODO: ID des Formulars "Website Freebie PL" aus MailerLite eintragen
+    const PDF_URL = '10-Promptow-na-Zysk_HWaiHub_PL.pdf';
+    const ML_URL = `https://assets.mailerlite.com/jsonp/${ML_ACCOUNT}/forms/${ML_FORM}/subscribe`;
+
+    const form = document.getElementById('ml-form');
+    const ok = document.getElementById('ml-ok');
+    const err = document.getElementById('ml-err');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      err.style.display = 'none';
+      if (form.hpx_9f3k.value) return; // Spam-Schutz (Feldname bewusst nicht autofill-tauglich)
+      if (!form.reportValidity()) return;
+      if (!ML_FORM) { window.location.href = PDF_URL; return; } // Fallback, solange kein Formular verbunden ist
+
+      const btn = form.querySelector('button');
+      btn.disabled = true;
+      btn.textContent = 'Wysyłanie …';
+
+      const data = new FormData();
+      data.append('fields[name]', form['fields[name]'].value.trim());
+      data.append('fields[email]', form['fields[email]'].value.trim());
+      data.append('ml-submit', '1');
+      data.append('anticsrf', 'true');
+
+      try {
+        const res = await fetch(ML_URL, { method: 'POST', body: data });
+        const json = await res.json().catch(() => ({}));
+        if (!res.ok || json.success === false) throw new Error('subscribe failed');
+        form.style.display = 'none';
+        ok.style.display = 'block';
+      } catch (_) {
+        err.style.display = 'block';
+        btn.disabled = false;
+        btn.textContent = 'Tak, wyślij mi prompty!';
+      }
+    });
+  </script>
+</body>
+</html>
