@@ -1,872 +1,582 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="color-scheme" content="light" />
-  <title>Hanna Winkelmann | AI & Digital Transformation Consultant – HWaiHub</title>
-  <meta name="description" content="Strategic AI consulting for companies of all sizes. From AI roadmap to team integration — measurable results, no hype. Book your free consultation now." />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.hwaihub.com/" />
-
-  <!-- GEO -->
-  <meta name="geo.region" content="PT-11" />
-  <meta name="geo.placename" content="Cascais, Portugal" />
-  <meta name="geo.position" content="38.6979;-9.4215" />
-  <meta name="ICBM" content="38.6979, -9.4215" />
-
-  <!-- Open Graph -->
+  <title>KI-Transformation &amp; Business Automation für den Mittelstand | HWaiHub</title>
+<meta name="description" content="HWaiHub bringt KI, Microsoft Copilot und Automatisierung dorthin, wo in Ihrem Unternehmen Zeit, Wissen und Kapazität verloren gehen – vom ersten Anwendungsfall bis zur sicheren Nutzung im Team." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://hwaihub.com/" />
+  <link rel="alternate" hreflang="de" href="https://hwaihub.com/" />
+  <link rel="alternate" hreflang="en" href="https://hwaihub.com/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://hwaihub.com/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="HWaiHub" />
-  <meta property="og:title" content="Hanna Winkelmann | AI & Digital Transformation Consultant – HWaiHub" />
-  <meta property="og:description" content="Strategic AI consulting for companies of all sizes. From AI roadmap to team integration — measurable results, no hype. Book your free consultation now." />
-  <meta property="og:url" content="https://www.hwaihub.com/" />
-  <meta property="og:image" content="https://www.hwaihub.com/og-image.jpg" />
-
-  <!-- Twitter Card -->
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:locale:alternate" content="en_GB" />
+  <meta property="og:title" content="KI-Transformation &amp; Business Automation für den Mittelstand | HWaiHub" />
+  <meta property="og:description" content="HWaiHub bringt KI, Microsoft Copilot und Automatisierung dorthin, wo in Ihrem Unternehmen Zeit, Wissen und Kapazität verloren gehen – vom ersten Anwendungsfall bis zur sicheren Nutzung im Team." />
+  <meta property="og:url" content="https://hwaihub.com/" />
+  <meta property="og:image" content="https://hwaihub.com/assets/og/og-home.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="KI-Transformation &amp; Business Automation für den Mittelstand | HWaiHub" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Hanna Winkelmann | AI & Digital Transformation Consultant – HWaiHub" />
-  <meta name="twitter:description" content="Strategic AI consulting for companies of all sizes. From AI roadmap to team integration — measurable results, no hype. Book your free consultation now." />
 
-  <!-- hreflang -->
-  <link rel="alternate" hreflang="en" href="https://www.hwaihub.com/" />
-  <link rel="alternate" hreflang="de" href="https://www.hwaihub.com/" />
-  <link rel="alternate" hreflang="pl" href="https://www.hwaihub.com/" />
-  <link rel="alternate" hreflang="pt" href="https://www.hwaihub.com/" />
-  <link rel="alternate" hreflang="x-default" href="https://www.hwaihub.com/" />
+  <meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39;; script-src &#39;self&#39; &#39;unsafe-inline&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; connect-src &#39;self&#39; https://hook.eu1.make.com; form-action &#39;self&#39; mailto:; base-uri &#39;self&#39;; object-src &#39;none&#39;" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="hw-form-endpoint" content="https://hook.eu1.make.com/mtmn2bhcxbo6h8ivvcdp9sj6o1lcer86" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/assets/icons/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="preload" href="/assets/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/CormorantGaramond-Regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/CormorantGaramond-Italic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/css/fonts.css?v=ffd4ba134e" />
+  <link rel="stylesheet" href="/css/tokens.css?v=ffd4ba134e" />
+  <link rel="stylesheet" href="/css/site.css?v=ffd4ba134e" />
+  <link rel="stylesheet" href="/css/components.css?v=ffd4ba134e" />
+  <link rel="stylesheet" href="/css/premium.css?v=ffd4ba134e" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ProfessionalService","@id":"https://hwaihub.com/#org","name":"HWaiHub","url":"https://hwaihub.com/","slogan":"Business first. Technology second.","description":"HWaiHub ist eine Beratung für KI-Transformation und Business Automation im deutschsprachigen Mittelstand, gegründet von Hanna Winkelmann. Business first. Technology second.","email":"info@hwaihub.com","address":{"@type":"PostalAddress","addressLocality":"Cascais","addressCountry":"PT"},"areaServed":[{"@type":"Country","name":"DE"},{"@type":"Country","name":"AT"},{"@type":"Country","name":"CH"}],"founder":{"@id":"https://hwaihub.com/#hanna"},"knowsAbout":["KI-Transformation","Business Automation","Microsoft 365 Copilot","Copilot Studio","Power Automate","KI-Agenten","KI-Kompetenz nach EU AI Act","KI-Governance","Prozessoptimierung","Change Management"],"logo":"https://hwaihub.com/assets/images/hwaihub-wordmark.png"},{"@type":"Person","@id":"https://hwaihub.com/#hanna","name":"Hanna Winkelmann","jobTitle":"Gründerin von HWaiHub","worksFor":{"@id":"https://hwaihub.com/#org"},"image":"https://hwaihub.com/assets/images/hanna_portrait.jpg","description":"Hanna Winkelmann ist Gründerin von HWaiHub. Sie verbindet Business, IT, Prozesse, Risikomanagement, Change und KI – mit 15 Jahren Konzernerfahrung in Banken, Versicherungen, Automotive und Energie.","sameAs":["https://www.linkedin.com/in/hanna-winkelmann"]},{"@type":"WebSite","@id":"https://hwaihub.com/#site","url":"https://hwaihub.com/","name":"HWaiHub","inLanguage":"de","publisher":{"@id":"https://hwaihub.com/#org"}},{"@type":"FAQPage","inLanguage":"de","mainEntity":[{"@type":"Question","name":"Wir haben schon Copilot oder ChatGPT. Wozu braucht es HWaiHub?","acceptedAnswer":{"@type":"Answer","text":"Werkzeuge allein ändern keinen Ablauf. Wir verbinden sie mit Ihren Prozessen, klären Regeln und Verantwortung und sorgen dafür, dass Ihr Team sie sicher nutzt."}},{"@type":"Question","name":"Arbeiten Sie nur mit Microsoft?","acceptedAnswer":{"@type":"Answer","text":"Nein. Wir sind technologieoffen und wählen nach Prozess: Microsoft Copilot, Power Automate, KI-Agenten, andere KI-Lösungen wie ChatGPT, Claude oder Gemini – oder einfach einen besseren Ablauf ohne neues Werkzeug."}},{"@type":"Question","name":"Brauchen wir ein eigenes Projektteam?","acceptedAnswer":{"@type":"Answer","text":"Nein. Wir arbeiten mit wenigen Schlüsselanwendern und halten Ihren Aufwand bewusst klein."}},{"@type":"Question","name":"Was passiert, wenn KI falsche Ergebnisse liefert?","acceptedAnswer":{"@type":"Answer","text":"Wo es darauf ankommt, prüft und entscheidet ein Mensch. Quellen bleiben sichtbar, Ausnahmen werden festgelegt, bevor etwas automatisiert wird."}},{"@type":"Question","name":"Funktioniert das mit unserem ERP und unseren Systemen?","acceptedAnswer":{"@type":"Answer","text":"Wir beginnen mit dem, was vorhanden ist, und prüfen Schnittstellen früh. Bei tiefer Integration arbeiten wir mit Ihrem IT-Dienstleister zusammen."}},{"@type":"Question","name":"Was verlangt der EU AI Act von uns?","acceptedAnswer":{"@type":"Answer","text":"Artikel 4 des EU AI Act verpflichtet Unternehmen, die KI-Systeme einsetzen, seit dem 2. Februar 2025 zu Maßnahmen für die KI-Kompetenz ihrer Beschäftigten. Seit dem 27. Juli 2026 gilt eine geänderte Fassung: Die Maßnahmen sollen den Aufbau von KI-Kompetenz unterstützen; ein bestimmtes Niveau einzelner Personen muss nicht garantiert werden. Mehr dazu in unserem Ratgeber zur KI-Kompetenz. Keine Rechtsberatung."}},{"@type":"Question","name":"Gibt es Förderung für KI- und Digitalisierungsprojekte?","acceptedAnswer":{"@type":"Answer","text":"Je nach Bundesland, Unternehmensgröße und Vorhaben können Förderwege in Frage kommen. Der Fördercheck gibt eine erste Orientierung – ohne Förderzusage."}}]}]}</script>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Hanna Winkelmann",
-    "jobTitle": "AI & Digital Transformation Consultant",
-    "url": "https://www.hwaihub.com/",
-    "email": "info@hwaihub.com",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Rua do Alcaide 59",
-      "postalCode": "2750-097",
-      "addressLocality": "Cascais",
-      "addressCountry": "PT"
-    },
-    "sameAs": ["https://www.linkedin.com/in/hanna-winkelmann"],
-    "knowsAbout": ["Artificial Intelligence", "Digital Transformation", "Process Automation", "Change Management"],
-    "areaServed": [
-      { "@type": "City", "name": "Cascais" },
-      { "@type": "Country", "name": "Portugal" },
-      { "@type": "AdministrativeArea", "name": "Europe" }
-    ],
-    "serviceArea": {
-      "@type": "GeoCircle",
-      "geoMidpoint": {
-        "@type": "GeoCoordinates",
-        "latitude": 38.6979,
-        "longitude": -9.4215
-      },
-      "geoRadius": "50000"
-    },
-    "worksFor": {
-      "@type": "Organization",
-      "name": "HWaiHub",
-      "url": "https://www.hwaihub.com",
-      "areaServed": "Worldwide"
-    }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "HWaiHub",
-    "url": "https://www.hwaihub.com",
-    "description": "AI & Digital Transformation Consulting by Hanna Winkelmann",
-    "inLanguage": ["en", "de", "pl", "pt"]
-  }
-  </script>
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body>
-<div id="nav-root"></div>
-<!-- ════════════ HERO ════════════ -->
-<section class="hero" id="hero">
+<body data-locale="de" data-page-key="home">
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+<header class="site-header" id="siteHeader">
+  <div class="sh-inner">
+    <a href="/" class="hw-logo hw-logo--md" aria-label="HWaiHub Startseite">
+<span class="hw-logo-mark" aria-hidden="true"><span>H</span></span><span class="hw-logo-text"><span class="hw-logo-word">HWaiHub</span><span class="hw-logo-claim">Business first. Technology second.</span></span></a>
+
+    <nav class="sh-nav" aria-label="Hauptnavigation">
+      <ul class="sh-menu">
+        <li class="sh-item">
+          <a href="/anwendungsfaelle/" class="sh-link" data-route="anwendungsfaelle">Ihre Situation</a>
+        </li>
+        <li class="sh-item">
+          <details class="sh-dd" data-dd>
+            <summary class="sh-link">Leistungen<span class="sh-caret" aria-hidden="true"></span></summary>
+            <div class="sh-panel sh-panel--cols">
+              <div class="sh-group">
+                <p class="sh-group-label">Drei Säulen</p>
+                <ul>
+                  <li><a href="/ki-business-automation/" class="" data-route="business-automation">KI &amp; Business Automation</a></li>
+                  <li><a href="/microsoft-copilot/" class="" data-route="copilot">Microsoft Copilot – Überblick</a></li>
+                  <li><a href="/ki-enablement-governance/" class="" data-route="enablement">KI-Befähigung &amp; Regeln</a></li>
+                </ul>
+              </div>
+              <div class="sh-group">
+                <p class="sh-group-label">Ihr Weg</p>
+                <ul>
+                  <li><a href="/ki-transformationsanalyse/" class="" data-route="analyse">KI-Transformationsanalyse</a></li>
+                  <li><a href="/ki-automation-pilot/" class="" data-route="pilot">KI &amp; Automation Pilot</a></li>
+                  <li><a href="/loesungen/#umsetzung" class="" data-route="umsetzung">Umsetzung &amp; Skalierung</a></li>
+                  <li><a href="/ki-begleitung/" class="" data-route="begleitung">KI-Begleitung</a></li>
+                </ul>
+              </div>
+              <div class="sh-group">
+                <p class="sh-group-label">Einstieg &amp; Academy</p>
+                <ul>
+                  <li><a href="/ki-potenzialcheck/" class="" data-route="potenzialcheck">KI-Potenzialcheck</a></li>
+                  <li><a href="/academy/unternehmen/" class="" data-route="academy-unternehmen">Für Unternehmen</a></li>
+                  <li><a href="/academy/einzelpersonen/" class="" data-route="academy-einzelpersonen">Für Einzelpersonen</a></li>
+                  <li><a href="/foerdercheck/" class="" data-route="foerdercheck">Fördercheck</a></li>
+                </ul>
+              </div>
+              <div class="sh-panel-foot">
+                <a href="/loesungen/" data-route="loesungen">Alle Leistungen →</a>
+                <a href="/wirkung/" data-route="wirkung">Wirkung &amp; Kennzahlen →</a>
+              </div>
+            </div>
+          </details>
+        </li>
+        <li class="sh-item">
+          <details class="sh-dd" data-dd>
+            <summary class="sh-link">Microsoft Copilot<span class="sh-caret" aria-hidden="true"></span></summary>
+            <div class="sh-panel">
+              <div class="sh-group">
+                <p class="sh-group-label">Microsoft Copilot &amp; digitaler Arbeitsplatz</p>
+                <ul>
+                  <li><a href="/microsoft-copilot/" class="" data-route="copilot">Microsoft Copilot – Überblick</a></li>
+                  <li><a href="/copilot-einfuehrung/" class="" data-route="copilot-einfuehrung">Copilot-Einführung</a></li>
+                  <li><a href="/copilot-schulung/" class="" data-route="copilot-schulung">Copilot-Schulung</a></li>
+                </ul>
+              </div>
+            </div>
+          </details>
+        </li>
+        <li class="sh-item">
+          <a href="/vorgehen/" class="sh-link" data-route="vorgehen">So arbeiten wir</a>
+        </li>
+        <li class="sh-item">
+          <a href="/ueber-hwaihub/" class="sh-link" data-route="ueber">Über HWaiHub</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="sh-actions">
+      <a href="https://bookings.cloud.microsoft/book/HWaiHub1@hwaihub.com/" class="btn btn-booking btn-booking--dark sh-book" data-route="booking" title="Erstgespräch buchen"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/></svg><span class="sh-book-t">Erstgespräch buchen</span></a>
+      <details class="ls-dd" data-dd>
+  <summary class="ls-pill" aria-label="Sprache wählen: Deutsch"><svg class="ls-globe" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.6 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.6-3.9-9S9.4 5.6 12 3z"/></svg><span class="ls-code">DE</span><span class="sh-caret" aria-hidden="true"></span></summary>
+  <div class="ls-panel">
+    <p class="ls-k">Sprache wählen</p>
+    <ul>
+      <li><span class="ls-opt is-current" aria-current="true"><span class="ls-mono">DE</span><span class="ls-txt"><b>Deutsch</b><small>Aktuelle Sprache</small></span><span class="ls-check" aria-hidden="true"></span></span></li>
+      <li><a class="ls-opt" href="/en/" hreflang="en" lang="en"><span class="ls-mono">EN</span><span class="ls-txt"><b>English</b><small>View this page in English</small></span><span class="ls-arrow" aria-hidden="true">→</span></a></li>
+    </ul>
+  </div>
+</details>
+      <a href="/ki-potenzialcheck/" class="btn btn-primary sh-cta" data-route="potenzialcheck">KI-Potenzial prüfen</a>
+    </div>
+
+    <details class="sh-mobile" data-mobile-menu>
+      <summary class="sh-burger" aria-label="Menü"><span></span><span></span><span></span></summary>
+      <div class="sh-overlay">
+        <nav aria-label="Mobile Navigation">
+          <ul class="sh-mlist">
+            <li>
+              <a href="/anwendungsfaelle/" class="" data-route="anwendungsfaelle">Ihre Situation</a>
+            </li>
+            <li>
+              <details>
+                <summary>Leistungen</summary>
+                <p class="sh-group-label">Drei Säulen</p>
+                <ul>
+                  <li><a href="/ki-business-automation/" class="" data-route="business-automation">KI &amp; Business Automation</a></li>
+                  <li><a href="/microsoft-copilot/" class="" data-route="copilot">Microsoft Copilot – Überblick</a></li>
+                  <li><a href="/ki-enablement-governance/" class="" data-route="enablement">KI-Befähigung &amp; Regeln</a></li>
+                </ul>
+                <p class="sh-group-label">Ihr Weg</p>
+                <ul>
+                  <li><a href="/ki-transformationsanalyse/" class="" data-route="analyse">KI-Transformationsanalyse</a></li>
+                  <li><a href="/ki-automation-pilot/" class="" data-route="pilot">KI &amp; Automation Pilot</a></li>
+                  <li><a href="/loesungen/#umsetzung" class="" data-route="umsetzung">Umsetzung &amp; Skalierung</a></li>
+                  <li><a href="/ki-begleitung/" class="" data-route="begleitung">KI-Begleitung</a></li>
+                </ul>
+                <p class="sh-group-label">Einstieg &amp; Academy</p>
+                <ul>
+                  <li><a href="/ki-potenzialcheck/" class="" data-route="potenzialcheck">KI-Potenzialcheck</a></li>
+                  <li><a href="/academy/unternehmen/" class="" data-route="academy-unternehmen">Für Unternehmen</a></li>
+                  <li><a href="/academy/einzelpersonen/" class="" data-route="academy-einzelpersonen">Für Einzelpersonen</a></li>
+                  <li><a href="/foerdercheck/" class="" data-route="foerdercheck">Fördercheck</a></li>
+                </ul>
+                <ul class="sh-mfootlinks">
+                  <li><a href="/loesungen/" class="" data-route="loesungen">Alle Leistungen</a></li>
+                  <li><a href="/wirkung/" class="" data-route="wirkung">Wirkung &amp; Kennzahlen</a></li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>Microsoft Copilot</summary>
+                <p class="sh-group-label">Microsoft Copilot &amp; digitaler Arbeitsplatz</p>
+                <ul>
+                  <li><a href="/microsoft-copilot/" class="" data-route="copilot">Microsoft Copilot – Überblick</a></li>
+                  <li><a href="/copilot-einfuehrung/" class="" data-route="copilot-einfuehrung">Copilot-Einführung</a></li>
+                  <li><a href="/copilot-schulung/" class="" data-route="copilot-schulung">Copilot-Schulung</a></li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <a href="/vorgehen/" class="" data-route="vorgehen">So arbeiten wir</a>
+            </li>
+            <li>
+              <a href="/ueber-hwaihub/" class="" data-route="ueber">Über HWaiHub</a>
+            </li>
+            <li><a href="https://bookings.cloud.microsoft/book/HWaiHub1@hwaihub.com/" class="" data-route="booking">Erstgespräch buchen</a></li>
+            <li><a href="/kontakt/" class="" data-route="kontakt">Kontakt</a></li>
+          </ul>
+        </nav>
+        <div class="sh-mfoot">
+          <a href="/ki-potenzialcheck/" class="btn btn-primary" data-route="potenzialcheck">KI-Potenzial prüfen</a>
+          <a href="mailto:info@hwaihub.com">info@hwaihub.com</a>
+          <a href="https://www.linkedin.com/in/hanna-winkelmann" rel="noopener" target="_blank">LinkedIn</a>
+          <nav class="ls-seg ls-seg--dark ls-seg--mobile" aria-label="Sprache wählen"><svg class="ls-globe" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.6 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.6-3.9-9S9.4 5.6 12 3z"/></svg><span class="ls-seg-opt is-current" aria-current="true">Deutsch</span><a class="ls-seg-opt" href="/en/" hreflang="en" lang="en">English</a>
+</nav>
+        </div>
+      </div>
+    </details>
+    <a href="/ki-potenzialcheck/" class="sh-mcta" data-route="potenzialcheck">Potenzial prüfen</a>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+<section class="hero home-hero nx-hero" id="hero" data-section="hero">
   <div class="container">
     <div class="hero-grid">
-
-      <!-- Left: Text -->
       <div class="hero-content">
-        <div class="hero-badge-row">
-          <a href="Artikels/hwaihub_artikel_fallstudie.html" class="badge" style="text-decoration:none;">
-            <span class="dot"></span>
-            <span data-i18n="hero_badge">Neue Fallstudie verfügbar — KI-Transformation im Mittelstand →</span>
-          </a>
+        <div class="hero-badge-row"><span class="hw-kicker">KI für den Mittelstand · verständlich und Schritt für Schritt</span></div>
+        <div class="nx-hero-text">
+          <h1 class="hero-headline">Wo verliert Ihr Unternehmen<br /><em>jeden Tag Zeit</em>?</h1>
+          <p class="hero-sub">Wir schauen uns Ihre Abläufe gemeinsam mit Ihrem Team an, zeigen, was sich mit KI vereinfachen lässt, und setzen es mit Ihnen um.</p>
         </div>
-
-        <h1 class="hero-headline">
-          <span data-i18n="hero_h1_line1">KI-Transformation.</span><br/>
-          <em><span data-i18n-html="hero_h1_em">Klar. Messbar.<br/>Menschlich.</span></em>
-        </h1>
-
-        <p class="hero-sub">
-          <span data-i18n="hero_sub">Ich helfe Unternehmen dabei, künstliche Intelligenz strategisch einzusetzen — von der ersten Idee bis zur reibungslosen Integration im Team. Kein Hype, sondern echte Ergebnisse.</span>
-        </p>
-
-        <div class="hero-btns">
-          <a href="#contact" class="btn btn-primary" data-i18n="nav_cta">Erstgespräch buchen →</a>
-          <a href="references.html" class="btn btn-ghost" data-i18n="hero_btn2">Referenzen ansehen</a>
+        <div class="btn-row">
+          <a href="/ki-potenzialcheck/" class="btn btn-primary nx-btn-pill" data-route="potenzialcheck"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg><span>KI-Potenzial prüfen<small>ca. 7 Min. · kostenlos · Sofortergebnis</small></span></a>
+          <a href="https://bookings.cloud.microsoft/book/HWaiHub1@hwaihub.com/" class="btn btn-booking" data-route="booking"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/></svg><span>Erstgespräch buchen<small>30 Min. · kostenlos</small></span></a>
         </div>
+        <ul class="nx-trust">
+          <li class="nx-trust-link"><a href="/ueber-hwaihub/" data-route="ueber"><b>15 Jahre</b> Konzernerfahrung</a></li>
+          <li class="nx-trust-link"><a href="/loesungen/#preise" data-route="loesungen"><b>Fester Umfang</b> Preis vorab</a></li>
+          <li class="nx-trust-link"><a href="/foerdercheck/" data-route="foerdercheck"><b>Fördercheck</b> kostenlos →</a></li>
+        </ul>
       </div>
 
-      <!-- Right: Brand Visual -->
       <div class="hero-visual">
-        <div class="hero-glow"></div>
-        <div class="hero-brand-card">
-          <div class="hbc-network">
-            <svg viewBox="0 0 420 500" xmlns="http://www.w3.org/2000/svg" class="hbc-svg">
-              <defs>
-                <radialGradient id="hbc-glow-c" cx="50%" cy="50%" r="50%">
-                  <stop offset="0%" stop-color="rgba(168,114,48,0.13)"/>
-                  <stop offset="100%" stop-color="rgba(0,0,0,0)"/>
-                </radialGradient>
-                <pattern id="hbc-dots" width="28" height="28" patternUnits="userSpaceOnUse">
-                  <circle cx="14" cy="14" r="0.8" fill="rgba(168,114,48,0.2)"/>
-                </pattern>
-              </defs>
-              <rect width="420" height="500" fill="url(#hbc-dots)"/>
-              <circle cx="210" cy="250" r="230" fill="url(#hbc-glow-c)"/>
-
-              <!-- Outer lines (dim) -->
-              <line x1="210" y1="250" x2="210" y2="42"  class="hbc-line hbc-line-dim"/>
-              <line x1="210" y1="250" x2="372" y2="152" class="hbc-line hbc-line-dim"/>
-              <line x1="210" y1="250" x2="368" y2="378" class="hbc-line hbc-line-dim"/>
-              <line x1="210" y1="250" x2="72"  y2="418" class="hbc-line hbc-line-dim"/>
-              <line x1="210" y1="250" x2="42"  y2="228" class="hbc-line hbc-line-dim"/>
-              <line x1="210" y1="145" x2="210" y2="42"  class="hbc-line hbc-line-dim"/>
-              <line x1="210" y1="145" x2="372" y2="152" class="hbc-line hbc-line-dim"/>
-              <line x1="301" y1="197" x2="372" y2="152" class="hbc-line hbc-line-dim"/>
-              <line x1="301" y1="303" x2="368" y2="378" class="hbc-line hbc-line-dim"/>
-              <line x1="210" y1="355" x2="368" y2="378" class="hbc-line hbc-line-dim"/>
-              <line x1="210" y1="355" x2="72"  y2="418" class="hbc-line hbc-line-dim"/>
-              <line x1="119" y1="303" x2="72"  y2="418" class="hbc-line hbc-line-dim"/>
-              <line x1="119" y1="197" x2="42"  y2="228" class="hbc-line hbc-line-dim"/>
-
-              <!-- Inner lines (bright) -->
-              <line x1="210" y1="250" x2="210" y2="145" class="hbc-line"/>
-              <line x1="210" y1="250" x2="301" y2="197" class="hbc-line"/>
-              <line x1="210" y1="250" x2="301" y2="303" class="hbc-line"/>
-              <line x1="210" y1="250" x2="210" y2="355" class="hbc-line"/>
-              <line x1="210" y1="250" x2="119" y2="303" class="hbc-line"/>
-              <line x1="210" y1="250" x2="119" y2="197" class="hbc-line"/>
-              <line x1="210" y1="145" x2="301" y2="197" class="hbc-line"/>
-              <line x1="301" y1="197" x2="301" y2="303" class="hbc-line"/>
-              <line x1="301" y1="303" x2="210" y2="355" class="hbc-line"/>
-              <line x1="210" y1="355" x2="119" y2="303" class="hbc-line"/>
-              <line x1="119" y1="303" x2="119" y2="197" class="hbc-line"/>
-              <line x1="119" y1="197" x2="210" y2="145" class="hbc-line"/>
-
-              <!-- Particles: center ↔ inner -->
-              <circle r="3.5" fill="#C8963E" opacity="0.9">
-                <animateMotion dur="2.6s" repeatCount="indefinite" path="M 210 250 L 210 145 L 210 250"/>
-              </circle>
-              <circle r="3.5" fill="#C8963E" opacity="0.9">
-                <animateMotion dur="2.9s" repeatCount="indefinite" begin="0.5s" path="M 210 250 L 301 197 L 210 250"/>
-              </circle>
-              <circle r="3.5" fill="#C8963E" opacity="0.9">
-                <animateMotion dur="3.1s" repeatCount="indefinite" begin="1.0s" path="M 210 250 L 301 303 L 210 250"/>
-              </circle>
-              <circle r="3.5" fill="#C8963E" opacity="0.9">
-                <animateMotion dur="2.7s" repeatCount="indefinite" begin="1.5s" path="M 210 250 L 210 355 L 210 250"/>
-              </circle>
-              <circle r="3.5" fill="#C8963E" opacity="0.9">
-                <animateMotion dur="3.0s" repeatCount="indefinite" begin="2.0s" path="M 210 250 L 119 303 L 210 250"/>
-              </circle>
-              <circle r="3.5" fill="#C8963E" opacity="0.9">
-                <animateMotion dur="2.8s" repeatCount="indefinite" begin="0.8s" path="M 210 250 L 119 197 L 210 250"/>
-              </circle>
-              <!-- Clockwise ring circulation -->
-              <circle r="2.5" fill="#E2B96A" opacity="0.75">
-                <animateMotion dur="6s" repeatCount="indefinite" path="M 210 145 L 301 197 L 301 303 L 210 355 L 119 303 L 119 197 L 210 145"/>
-              </circle>
-              <circle r="2.5" fill="#E2B96A" opacity="0.75">
-                <animateMotion dur="6s" repeatCount="indefinite" begin="3s" path="M 210 145 L 301 197 L 301 303 L 210 355 L 119 303 L 119 197 L 210 145"/>
-              </circle>
-              <!-- Particles center ↔ outer -->
-              <circle r="2.5" fill="rgba(200,150,62,0.6)">
-                <animateMotion dur="4.0s" repeatCount="indefinite" begin="0.2s" path="M 210 250 L 210 42 L 210 250"/>
-              </circle>
-              <circle r="2.5" fill="rgba(200,150,62,0.6)">
-                <animateMotion dur="4.5s" repeatCount="indefinite" begin="1.2s" path="M 210 250 L 372 152 L 210 250"/>
-              </circle>
-              <circle r="2.5" fill="rgba(200,150,62,0.6)">
-                <animateMotion dur="3.8s" repeatCount="indefinite" begin="2.3s" path="M 210 250 L 368 378 L 210 250"/>
-              </circle>
-              <circle r="2.5" fill="rgba(200,150,62,0.6)">
-                <animateMotion dur="4.2s" repeatCount="indefinite" begin="0.7s" path="M 210 250 L 72 418 L 210 250"/>
-              </circle>
-              <circle r="2.5" fill="rgba(200,150,62,0.6)">
-                <animateMotion dur="3.9s" repeatCount="indefinite" begin="1.8s" path="M 210 250 L 42 228 L 210 250"/>
-              </circle>
-
-              <!-- Outer nodes -->
-              <circle cx="210" cy="42"  r="11" fill="rgba(168,114,48,0.15)" stroke="#A87230" stroke-width="1" class="hbc-node-pulse"/>
-              <circle cx="210" cy="42"  r="6"  fill="#8B5E28"/>
-              <circle cx="210" cy="42"  r="3"  fill="#C8963E"/>
-              <text x="210" y="27" text-anchor="middle" font-family="Inter,sans-serif" font-size="9.5" fill="rgba(168,114,48,0.7)" data-i18n="anim_cloud">Cloud</text>
-
-              <circle cx="372" cy="152" r="11" fill="rgba(168,114,48,0.15)" stroke="#A87230" stroke-width="1" class="hbc-node-pulse-d1"/>
-              <circle cx="372" cy="152" r="6"  fill="#8B5E28"/>
-              <circle cx="372" cy="152" r="3"  fill="#C8963E"/>
-              <text x="372" y="137" text-anchor="middle" font-family="Inter,sans-serif" font-size="9.5" fill="rgba(168,114,48,0.7)" data-i18n="anim_data">Data</text>
-
-              <circle cx="368" cy="378" r="11" fill="rgba(168,114,48,0.15)" stroke="#A87230" stroke-width="1" class="hbc-node-pulse-d2"/>
-              <circle cx="368" cy="378" r="6"  fill="#8B5E28"/>
-              <circle cx="368" cy="378" r="3"  fill="#C8963E"/>
-              <text x="368" y="397" text-anchor="middle" font-family="Inter,sans-serif" font-size="9.5" fill="rgba(168,114,48,0.7)" data-i18n="anim_integr">Integr.</text>
-
-              <circle cx="72"  cy="418" r="11" fill="rgba(168,114,48,0.15)" stroke="#A87230" stroke-width="1" class="hbc-node-pulse-d3"/>
-              <circle cx="72"  cy="418" r="6"  fill="#8B5E28"/>
-              <circle cx="72"  cy="418" r="3"  fill="#C8963E"/>
-              <text x="72" y="437" text-anchor="middle" font-family="Inter,sans-serif" font-size="9.5" fill="rgba(168,114,48,0.7)" data-i18n="anim_change">Change</text>
-
-              <circle cx="42"  cy="228" r="11" fill="rgba(168,114,48,0.15)" stroke="#A87230" stroke-width="1" class="hbc-node-pulse-d4"/>
-              <circle cx="42"  cy="228" r="6"  fill="#8B5E28"/>
-              <circle cx="42"  cy="228" r="3"  fill="#C8963E"/>
-              <text x="42" y="213" text-anchor="middle" font-family="Inter,sans-serif" font-size="9.5" fill="rgba(168,114,48,0.7)" data-i18n="anim_train">Train.</text>
-
-              <!-- Inner hex nodes -->
-              <circle cx="210" cy="145" r="17" fill="rgba(168,114,48,0.2)" stroke="#C8963E" stroke-width="1.5" class="hbc-node-pulse"/>
-              <circle cx="210" cy="145" r="9"  fill="#A87230"/>
-              <text x="210" y="124" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="rgba(226,185,106,0.95)" data-i18n="anim_vision">Vision</text>
-
-              <circle cx="301" cy="197" r="17" fill="rgba(168,114,48,0.2)" stroke="#C8963E" stroke-width="1.5" class="hbc-node-pulse-d1"/>
-              <circle cx="301" cy="197" r="9"  fill="#A87230"/>
-              <text x="322" y="200" text-anchor="start" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="rgba(226,185,106,0.95)" data-i18n="anim_strategie">Strategie</text>
-
-              <circle cx="301" cy="303" r="17" fill="rgba(168,114,48,0.2)" stroke="#C8963E" stroke-width="1.5" class="hbc-node-pulse-d2"/>
-              <circle cx="301" cy="303" r="9"  fill="#A87230"/>
-              <text x="322" y="306" text-anchor="start" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="rgba(226,185,106,0.95)" data-i18n="anim_analyse">Analyse</text>
-
-              <circle cx="210" cy="355" r="17" fill="rgba(168,114,48,0.2)" stroke="#C8963E" stroke-width="1.5" class="hbc-node-pulse-d3"/>
-              <circle cx="210" cy="355" r="9"  fill="#A87230"/>
-              <text x="210" y="378" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="rgba(226,185,106,0.95)" data-i18n="anim_ergebnis">Ergebnis</text>
-
-              <circle cx="119" cy="303" r="17" fill="rgba(168,114,48,0.2)" stroke="#C8963E" stroke-width="1.5" class="hbc-node-pulse-d4"/>
-              <circle cx="119" cy="303" r="9"  fill="#A87230"/>
-              <text x="98" y="306" text-anchor="end" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="rgba(226,185,106,0.95)" data-i18n="anim_team">Team</text>
-
-              <circle cx="119" cy="197" r="17" fill="rgba(168,114,48,0.2)" stroke="#C8963E" stroke-width="1.5" class="hbc-node-pulse"/>
-              <circle cx="119" cy="197" r="9"  fill="#A87230"/>
-              <text x="98" y="200" text-anchor="end" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="rgba(226,185,106,0.95)" data-i18n="anim_automation">Automation</text>
-
-              <!-- Center node (triple ring) -->
-              <circle cx="210" cy="250" r="44" fill="rgba(168,114,48,0.07)" stroke="rgba(168,114,48,0.25)" stroke-width="1" class="hbc-node-ring"/>
-              <circle cx="210" cy="250" r="30" fill="rgba(168,114,48,0.16)" stroke="#A87230" stroke-width="1.5"/>
-              <circle cx="210" cy="250" r="19" fill="rgba(168,114,48,0.38)" stroke="#C8963E" stroke-width="2"/>
-              <circle cx="210" cy="250" r="11" fill="#A87230"/>
-              <text x="210" y="247" text-anchor="middle" font-family="Space Grotesk,sans-serif" font-weight="800" font-size="9" fill="white" letter-spacing="0.5">HWai</text>
-              <text x="210" y="258" text-anchor="middle" font-family="Space Grotesk,sans-serif" font-weight="800" font-size="9" fill="white" letter-spacing="0.5">Hub</text>
-            </svg>
+        <div class="hw-hero-card" id="hqCard" data-base="/anwendungsfaelle/">
+          <div class="hq-top">
+            <span class="mono">HWaiHub · KI-Potenzialcheck</span>
+            <span class="hq-live"><i></i>Beispiel</span>
           </div>
-        </div>
-
-      </div>
-
-      <!-- Row 2: All tiles full-width -->
-      <div class="hero-stats">
-        <div class="hero-stat-card">
-          <div class="stat-icon">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="22" height="22"><path d="M9 11l3 3L22 4" stroke="#A87230" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" stroke="#A87230" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div class="hq-ask">
+            <span id="hqAsk">So sieht ein Ergebnis aus – wählen Sie einen Bereich, dann ein Thema:</span>
+            <div class="hq-chips" role="group" aria-labelledby="hqAsk">
+              <button type="button" class="active" aria-pressed="true" data-k="vertrieb">Vertrieb</button>
+              <button type="button" aria-pressed="false" data-k="verwaltung">Verwaltung</button>
+              <button type="button" aria-pressed="false" data-k="kundenservice">Kundenservice</button>
+              <button type="button" aria-pressed="false" data-k="wissen">Wissen</button>
+              <button type="button" aria-pressed="false" data-k="steuerung">Steuerung</button>
+              <button type="button" aria-pressed="false" data-k="mitarbeiter">Mitarbeiter</button>
+            </div>
           </div>
-          <div class="stat-num">50<span>+</span></div>
-          <div class="stat-label" data-i18n="stat1">Projekte abgeschlossen</div>
-        </div>
-        <div class="hero-stat-card hero-stat-mobile-hide">
-          <div class="stat-icon">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="22" height="22"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="#A87230" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="7" r="4" stroke="#A87230" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="#A87230" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="stat-num">30<span>+</span></div>
-          <div class="stat-label" data-i18n="stat2">Unternehmen begleitet</div>
-        </div>
-        <div class="hero-stat-card hero-stat-mobile-hide">
-          <div class="stat-icon">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="22" height="22"><circle cx="12" cy="12" r="10" stroke="#A87230" stroke-width="2"/><polyline points="12 6 12 12 16 14" stroke="#A87230" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="stat-num">18<span>+</span></div>
-          <div class="stat-label" data-i18n="stat3">Jahre Erfahrung</div>
-        </div>
-        <div class="hero-stat-card">
-          <div class="stat-icon">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="22" height="22"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18" stroke="#A87230" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="17 6 23 6 23 12" stroke="#A87230" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="stat-num">+48<span>%</span></div>
-          <div class="stat-label" style="font-size:0.65rem;line-height:1.4;word-break:break-word;">Ø Effizienz&shy;steigerung nach Projekt&shy;einsatz</div>
-        </div>
-        <div class="hero-stat-card hero-stat-mobile-hide">
-          <div class="stat-icon">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="22" height="22"><circle cx="12" cy="12" r="10" stroke="#A87230" stroke-width="2"/><line x1="2" y1="12" x2="22" y2="12" stroke="#A87230" stroke-width="2"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" stroke="#A87230" stroke-width="2"/></svg>
-          </div>
-          <div class="stat-num">5</div>
-          <div class="stat-label"><span data-i18n="stat_sprachen">Sprachen</span><br/><span style="color:rgba(168,114,48,0.8);font-size:0.6rem;white-space:nowrap;">DE · EN · PL · PT · ES</span></div>
-        </div>
-        <div class="hero-stat-card hero-stat-mobile-hide">
-          <div class="stat-icon">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="22" height="22"><rect x="2" y="7" width="20" height="14" rx="2" stroke="#A87230" stroke-width="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" stroke="#A87230" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <div class="stat-num">B2B</div>
-          <div class="stat-label" style="font-size:0.6rem;line-height:1.5;word-break:break-word;" data-i18n-html="stat_b2b_label">KMU · Kliniken · Coaching,<br/>Handwerk · Gastro · Immo · E-Com</div>
-        </div>
-        <div class="hero-stat-card">
-          <div class="stat-icon">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="22" height="22"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" stroke="#A87230" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="stat-num">&lt;24h</div>
-          <div class="stat-label" data-i18n="stat_24h_label">Reaktionszeit</div>
-        </div>
-        <div class="hero-stat-card">
-          <div class="stat-icon">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="22" height="22"><rect x="2" y="3" width="20" height="14" rx="2" stroke="#A87230" stroke-width="2"/><line x1="8" y1="21" x2="16" y2="21" stroke="#A87230" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="17" x2="12" y2="21" stroke="#A87230" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <div class="stat-num" style="font-size:1.4rem;" data-i18n="stat_remote_num">Remote</div>
-          <div class="stat-label" data-i18n="stat_remote_label">&amp; Vor-Ort</div>
+          <a class="hq-score hq-score--link" id="hqScoreLink" href="/anwendungsfaelle/#bereich-vertrieb" title="Alle Probleme in diesem Bereich ansehen">
+            <div class="hw-ring" id="hqRing"><div><strong id="hqNum">78</strong><span>% HEBEL</span></div></div>
+            <div>
+              <div class="hq-title">Hebel im Bereich</div>
+              <div class="hq-sub" id="hqSub">Vertrieb &amp; Angebotsprozess – hoher Hebel</div>
+            </div>
+          </a>
+          <div class="hq-rows" id="hqRows" aria-live="polite"></div>
+          <a href="/anwendungsfaelle/#bereich-vertrieb" class="hq-more" id="hqMore">Mehr zu diesem Bereich →</a>
+          <a href="/ki-potenzialcheck/" class="hq-cta" data-route="potenzialcheck">KI-Potenzial prüfen – 16 Fragen →</a>
         </div>
       </div>
-
     </div>
   </div>
+</section><section class="nx-sec nx-sec--sand" id="kmu" data-section="six-areas">
+  <div class="container">
+    <div class="nx-head">
+      <p class="section-label">Ihre Situation</p>
+      <h2 class="sec-title">Erkennen Sie sich <em>wieder</em>?</h2>
+      <p class="sec-sub">Sie müssen nicht wissen, was KI kann. Sie wissen, wo es hakt.</p>
+    </div>
+    <ul class="nx-areas">
+      <li><a href="/anwendungsfaelle/#bereich-vertrieb" data-route="anwendungsfaelle">
+        <span class="nx-ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 5h18l-7 8v6l-4-2v-4z"/>
+</svg></span>
+        <span class="nx-area-t"><b>Vertrieb</b><span>„Angebote dauern zu lange.“</span></span>
+        <span class="nx-go" aria-hidden="true">→</span>
+      </a></li>
+      <li><a href="/anwendungsfaelle/#bereich-verwaltung" data-route="anwendungsfaelle">
+        <span class="nx-ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5"/><path d="M9 13h7M9 17h7"/>
+</svg></span>
+        <span class="nx-area-t"><b>Verwaltung</b><span>„Wir kopieren Daten zwischen fünf Systemen.“</span></span>
+        <span class="nx-go" aria-hidden="true">→</span>
+      </a></li>
+      <li><a href="/anwendungsfaelle/#bereich-kundenservice" data-route="anwendungsfaelle">
+        <span class="nx-ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5h16v11H10l-5 4v-4H4z"/><path d="M8 9h8M8 12h5"/>
+</svg></span>
+        <span class="nx-area-t"><b>Kundenservice</b><span>„Jeden Morgen zwei Stunden Anfragen sortieren.“</span></span>
+        <span class="nx-go" aria-hidden="true">→</span>
+      </a></li>
+      <li><a href="/anwendungsfaelle/#bereich-wissen" data-route="anwendungsfaelle">
+        <span class="nx-ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5c3-1 6-1 8 1 2-2 5-2 8-1v13c-3-1-6-1-8 1-2-2-5-2-8-1z"/><path d="M12 6v13"/>
+</svg></span>
+        <span class="nx-area-t"><b>Wissen</b><span>„Wir suchen ständig Informationen aus PDFs und E-Mails.“</span></span>
+        <span class="nx-go" aria-hidden="true">→</span>
+      </a></li>
+      <li><a href="/anwendungsfaelle/#bereich-steuerung" data-route="anwendungsfaelle">
+        <span class="nx-ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 20v-7M11 20V5M17 20v-11M3 20h18"/>
+</svg></span>
+        <span class="nx-area-t"><b>Steuerung</b><span>„Die Zahlen sind da – nur nicht aufbereitet.“</span></span>
+        <span class="nx-go" aria-hidden="true">→</span>
+      </a></li>
+      <li><a href="/anwendungsfaelle/#bereich-mitarbeiter" data-route="anwendungsfaelle">
+        <span class="nx-ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14c3 0 5 2 5 5"/>
+</svg></span>
+        <span class="nx-area-t"><b>Mitarbeiter</b><span>„Wir haben Copilot – aber niemand nutzt ihn richtig.“</span></span>
+        <span class="nx-go" aria-hidden="true">→</span>
+      </a></li>
+    </ul>
+  </div>
+</section><section class="nx-sec nx-sec--paper" id="einstieg" data-section="entry">
+  <div class="container">
+    <div class="nx-head">
+      <p class="section-label">So fangen Sie an</p>
+      <h2 class="sec-title">Drei Wege, <em>klein</em> zu starten.</h2>
+      <p class="sec-sub">Sie müssen sich nicht für ein großes Projekt entscheiden. Wählen Sie den Einstieg, der zu Ihnen passt.</p>
+    </div>
+    <ol class="nx-ways">
+      <li class="nx-way nx-way--main">
+        <span class="nx-way-n">01</span>
+        <h3>Einen Ablauf untersuchen lassen</h3>
+        <p>Wir nehmen einen echten Ablauf mit Ihren Mitarbeitenden auf, zum Beispiel von der Anfrage bis zum Angebot, und zeigen, wie er einfacher wird.</p>
+        <p class="nx-way-k">Sie erhalten</p>
+        <ul>
+          <li>Verbesserungsvorschläge, mit und ohne KI</li>
+          <li>Wirtschaftlichkeitsrechnung</li>
+          <li>Umsetzungsplan</li>
+        </ul>
+        <a href="/ki-transformationsanalyse/" class="link-arrow" data-route="analyse">KI-Transformationsanalyse →</a>
+      </li>
+      <li class="nx-way">
+        <span class="nx-way-n">02</span>
+        <h3>Ihr Team in KI schulen</h3>
+        <p>Schulung an Ihren eigenen Aufgaben statt an Folien. Ihr Team gewinnt Sicherheit im Umgang mit KI und Microsoft Copilot.</p>
+        <p class="nx-way-k">Sie erhalten</p>
+        <ul>
+          <li>Schulung nach Rollen</li>
+          <li>Klare Regeln für die Nutzung</li>
+          <li>Dokumentation der Schulung</li>
+        </ul>
+        <a href="/academy/unternehmen/" class="link-arrow" data-route="academy-unternehmen">Schulungen für Unternehmen →</a>
+      </li>
+      <li class="nx-way">
+        <span class="nx-way-n">03</span>
+        <h3>Förderung prüfen</h3>
+        <p>Für Beratung und Qualifizierung könnte ein Förderprogramm in Frage kommen. Der Fördercheck gibt Ihnen eine erste Orientierung.</p>
+        <p class="nx-way-k">Sie erhalten</p>
+        <ul>
+          <li>Mögliche Programme für Ihr Vorhaben</li>
+          <li>Hinweise zu den Voraussetzungen</li>
+          <li>Ergebnis als PDF</li>
+        </ul>
+        <a href="/foerdercheck/" class="link-arrow" data-route="foerdercheck">Fördercheck starten →</a>
+        <small class="nx-way-note">Erste Orientierung, keine Förderzusage.</small>
+      </li>
+    </ol>
 
-  <!-- Scroll invitation -->
-  <div class="hero-scroll-hint" aria-hidden="true">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
+    <div class="nx-combo">
+      <div>
+        <p class="nx-combo-k">Unser Tipp für den Einstieg</p>
+        <h3>Schulung und Untersuchung <em>zusammen</em>.</h3>
+        <p>Während Ihr Team den Umgang mit KI lernt, nehmen wir gemeinsam mit den Mitarbeitenden einen Ablauf auf. Am Ende stehen ein geschultes Team und ein konkreter Plan, was sich verbessern lässt.</p>
+      </div>
+      <a href="https://bookings.cloud.microsoft/book/HWaiHub1@hwaihub.com/" class="btn nx-btn-dark" data-route="booking">Im Erstgespräch besprechen</a>
+    </div>
+  </div>
+</section><section class="nx-sec nx-sec--dark" id="weg" data-section="journey">
+  <div class="container">
+    <div class="nx-head">
+      <p class="section-label">So läuft es ab</p>
+      <h2 class="sec-title">Drei Phasen. Nach jeder entscheiden <em>Sie</em>, ob es weitergeht.</h2>
+    </div>
+    <ol class="nx-steps">
+      <li>
+        <span class="nx-step-n">01</span>
+        <span class="nx-step-b">Kostenlos</span>
+        <h3>Orientieren</h3>
+        <p>Potenzialcheck und Erstgespräch. Sie schildern Ihren Fall, wir nennen den passenden nächsten Schritt mit Preis.</p>
+      </li>
+      <li>
+        <span class="nx-step-n">02</span>
+        <span class="nx-step-b">Fester Umfang</span>
+        <h3>Entscheiden &amp; umsetzen</h3>
+        <p>Wir untersuchen einen Ablauf und setzen einen Anwendungsfall begrenzt um. Gemessen wird vorher und nachher.</p>
+      </li>
+      <li>
+        <span class="nx-step-n">03</span>
+        <span class="nx-step-b">Laufend</span>
+        <h3>Ausweiten &amp; begleiten</h3>
+        <p>Was nachweislich wirkt, wird ausgeweitet. Ihr Team wird geschult, Regeln und Kosten bleiben im Blick.</p>
+      </li>
+    </ol>
+    <p class="nx-center"><a href="/vorgehen/" class="link-arrow link-arrow--light" data-route="vorgehen">So arbeiten wir im Detail →</a></p>
+  </div>
+</section>
+<section class="nx-sec nx-sec--paper nx-proof" id="praxis" data-section="proof">
+  <div class="container">
+    
+<a class="ref ref--card" href="/anwendungsfaelle/#bereich-wissen" data-route="anwendungsfaelle">
+  <span class="ref-k">Aus der Praxis</span>
+  <strong class="ref-card-t">Eine Prompt-Datenbank entlang des Eventprojekts</strong>
+  <span class="ref-client">KP the Agency · Eventagentur</span>
+  <span class="ref-card-p">Wissen entlang des Prozesses, für das ganze Team nutzbar: 92 Prompts in 7 Phasen für ein Eventteam.</span>
+  <ol class="ref-ph ref-ph--mini" aria-hidden="true"><li><i style="--h: 13"></i></li><li><i style="--h: 13"></i></li><li><i style="--h: 12"></i></li><li><i style="--h: 16"></i></li><li><i style="--h: 14"></i></li><li><i style="--h: 12"></i></li><li><i style="--h: 12"></i></li></ol>
+  <span class="ref-card-go">Zur Praxis-Referenz →</span>
+</a>
+  </div>
+</section><section class="nx-sec nx-sec--sand" id="hanna" data-section="founder">
+  <div class="container">
+    <div class="person">
+      <div class="person-photo">
+        <picture><source type="image/avif" srcset="/img/iQVIlSDiTB-480.avif 480w, /img/iQVIlSDiTB-800.avif 800w, /img/iQVIlSDiTB-1087.avif 1087w" sizes="(max-width: 900px) 90vw, 440px"><source type="image/webp" srcset="/img/iQVIlSDiTB-480.webp 480w, /img/iQVIlSDiTB-800.webp 800w, /img/iQVIlSDiTB-1087.webp 1087w" sizes="(max-width: 900px) 90vw, 440px"><img src="/img/iQVIlSDiTB-480.jpeg" alt="Hanna Winkelmann, Gründerin von HWaiHub, im weißen Anzug mit Laptop" loading="lazy" decoding="async" width="1087" height="1447" srcset="/img/iQVIlSDiTB-480.jpeg 480w, /img/iQVIlSDiTB-800.jpeg 800w, /img/iQVIlSDiTB-1087.jpeg 1087w" sizes="(max-width: 900px) 90vw, 440px"></picture>
+        <div class="person-badge"><small>Gründerin von HWaiHub</small><strong>Hanna Winkelmann</strong></div>
+      </div>
+      <div>
+        <p class="section-label">Wer dahintersteht</p>
+        <h2 class="sec-title">Konzernerfahrung, <em>für den Mittelstand</em> übersetzt.</h2>
+        <p class="sec-sub">Ich habe 15 Jahre in großen Unternehmen gearbeitet, in Business, IT, Risiko und Veränderung. Heute bringe ich diese Erfahrung in den Mittelstand: KI dort, wo sie sich rechnet, und so eingeführt, dass Menschen sie gern nutzen.</p>
+        <ul class="nx-promises">
+          <li><b>Erst verstehen, dann empfehlen.</b> Manchmal ist die beste Lösung ein besserer Ablauf ohne KI.</li>
+          <li><b>Fester Umfang, Preis vorab.</b> Sie wissen, worauf Sie sich einlassen.</li>
+          <li><b>Der Mensch entscheidet.</b> KI schlägt vor, Ihr Team gibt frei.</li>
+        </ul>
+        <a href="/ueber-hwaihub/" class="link-arrow" data-route="ueber">Mehr über HWaiHub →</a>
+      </div>
+    </div>
+  </div>
+</section><section class="nx-private" data-section="private">
+  <div class="container">
+    <div class="nx-private-in">
+      <p><b>Sie möchten KI für sich selbst lernen?</b> Die Academy für Einzelpersonen richtet sich an Selbstständige und Privatpersonen.</p>
+      <a href="/academy/einzelpersonen/" class="link-arrow" data-route="academy-einzelpersonen">Zur Academy für Einzelpersonen →</a>
+    </div>
+  </div>
+</section><section class="faq-sec" id="faq" data-section="faq" aria-labelledby="faq-home">
+  <div class="container container--narrow">
+    <div class="sec-head">
+      <p class="section-label">Häufige Fragen</p>
+      <h2 class="sec-title" id="faq-home">Kurz beantwortet</h2>
+    </div>
+    <div class="faq">
+      <details class="faq-q">
+        <summary>Wir haben schon Copilot oder ChatGPT. Wozu braucht es HWaiHub?</summary>
+        <div class="faq-a"><p>Werkzeuge allein ändern keinen Ablauf. Wir verbinden sie mit Ihren Prozessen, klären Regeln und Verantwortung und sorgen dafür, dass Ihr Team sie sicher nutzt.</p></div>
+      </details>
+      <details class="faq-q">
+        <summary>Arbeiten Sie nur mit Microsoft?</summary>
+        <div class="faq-a"><p>Nein. Wir sind technologieoffen und wählen nach Prozess: Microsoft Copilot, Power Automate, KI-Agenten, andere KI-Lösungen wie ChatGPT, Claude oder Gemini – oder einfach einen besseren Ablauf ohne neues Werkzeug.</p></div>
+      </details>
+      <details class="faq-q">
+        <summary>Brauchen wir ein eigenes Projektteam?</summary>
+        <div class="faq-a"><p>Nein. Wir arbeiten mit wenigen Schlüsselanwendern und halten Ihren Aufwand bewusst klein.</p></div>
+      </details>
+      <details class="faq-q">
+        <summary>Was passiert, wenn KI falsche Ergebnisse liefert?</summary>
+        <div class="faq-a"><p>Wo es darauf ankommt, prüft und entscheidet ein Mensch. Quellen bleiben sichtbar, Ausnahmen werden festgelegt, bevor etwas automatisiert wird.</p></div>
+      </details>
+      <details class="faq-q">
+        <summary>Funktioniert das mit unserem ERP und unseren Systemen?</summary>
+        <div class="faq-a"><p>Wir beginnen mit dem, was vorhanden ist, und prüfen Schnittstellen früh. Bei tiefer Integration arbeiten wir mit Ihrem IT-Dienstleister zusammen.</p></div>
+      </details>
+      <details class="faq-q">
+        <summary>Was verlangt der EU AI Act von uns?</summary>
+        <div class="faq-a"><p>Artikel 4 des EU AI Act verpflichtet Unternehmen, die KI-Systeme einsetzen, seit dem 2. Februar 2025 zu Maßnahmen für die KI-Kompetenz ihrer Beschäftigten. Seit dem 27. Juli 2026 gilt eine geänderte Fassung: Die Maßnahmen sollen den Aufbau von KI-Kompetenz unterstützen; ein bestimmtes Niveau einzelner Personen muss nicht garantiert werden. Mehr dazu in unserem <a href="/ki-kompetenz-ai-act/">Ratgeber zur KI-Kompetenz</a>. Keine Rechtsberatung.</p></div>
+      </details>
+      <details class="faq-q">
+        <summary>Gibt es Förderung für KI- und Digitalisierungsprojekte?</summary>
+        <div class="faq-a"><p>Je nach Bundesland, Unternehmensgröße und Vorhaben können Förderwege in Frage kommen. Der <a href="/foerdercheck/">Fördercheck</a> gibt eine erste Orientierung – ohne Förderzusage.</p></div>
+      </details>
+    </div>
+  </div>
+</section><section class="cta-band nx-cta" id="naechster-schritt" data-section="cta">
+  <div class="container">
+    <h2 class="cta-title">Sprechen wir über <em>Ihren</em> Ablauf.</h2>
+    <p class="cta-sub">30 Minuten, kostenlos. Wir sprechen über Ihren Fall, nicht über ein Produkt. Den Preis für jeden weiteren Schritt nennen wir vorab.</p>
+    <div class="btn-row btn-row--center">
+      <a href="https://bookings.cloud.microsoft/book/HWaiHub1@hwaihub.com/" class="btn btn-primary nx-btn-lg" data-route="booking">Erstgespräch buchen</a>
+    </div>
+    <p class="cta-small"><a href="/ki-potenzialcheck/" data-route="potenzialcheck">Lieber erst selbst prüfen: KI-Potenzial prüfen →</a></p>
   </div>
 </section>
 
-<!-- ════════════ TRUST BAR ════════════ -->
-<div class="trust-bar">
+
+</main>
+<footer class="site-footer">
   <div class="container">
-    <p class="trust-label" style="text-align:center;margin-bottom:2rem;" data-i18n="trust_label">Zusammenarbeit mit führenden Unternehmen</p>
-    <div class="logos-track-wrap">
-      <div class="logos-track">
-
-        <!-- Nexora Group — fiktiv -->
-        <div class="logo-item">
-          <svg viewBox="0 0 155 52" xmlns="http://www.w3.org/2000/svg" height="40">
-            <!-- N-Hexagon Icon -->
-            <polygon points="10,14 22,7 34,14 34,28 22,35 10,28" fill="none" stroke="currentColor" stroke-width="2.2"/>
-            <text x="22" y="25" font-family="'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="800" fill="currentColor" text-anchor="middle">N</text>
-            <text x="44" y="25" font-family="'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="700" fill="currentColor" letter-spacing="0.3">NEXORA</text>
-            <text x="44" y="36" font-family="'Helvetica Neue',Arial,sans-serif" font-size="8" font-weight="300" fill="currentColor" letter-spacing="2.5">GROUP</text>
-          </svg>
-        </div>
-
-        <!-- Veltro AG — fiktiv -->
-        <div class="logo-item">
-          <svg viewBox="0 0 130 52" xmlns="http://www.w3.org/2000/svg" height="40">
-            <!-- V-Shape -->
-            <polyline points="6,10 18,36 30,10" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-            <line x1="18" y1="36" x2="30" y2="36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <text x="40" y="29" font-family="'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="800" fill="currentColor" letter-spacing="0.5">VELTRO</text>
-            <text x="40" y="40" font-family="'Helvetica Neue',Arial,sans-serif" font-size="8.5" font-weight="300" fill="currentColor" letter-spacing="2">AG</text>
-          </svg>
-        </div>
-
-        <!-- Primova — fiktiv -->
-        <div class="logo-item">
-          <svg viewBox="0 0 140 52" xmlns="http://www.w3.org/2000/svg" height="40">
-            <!-- Circle + dot accent -->
-            <circle cx="20" cy="26" r="14" fill="none" stroke="currentColor" stroke-width="2.5"/>
-            <circle cx="20" cy="26" r="5" fill="currentColor"/>
-            <circle cx="20" cy="14" r="2.5" fill="currentColor"/>
-            <text x="42" y="31" font-family="'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="600" fill="currentColor" letter-spacing="0.2">primova</text>
-          </svg>
-        </div>
-
-        <!-- Coratis — fiktiv -->
-        <div class="logo-item">
-          <svg viewBox="0 0 135 52" xmlns="http://www.w3.org/2000/svg" height="40">
-            <!-- C bracket + bar -->
-            <path d="M28 12 C16 12 8 18 8 26 C8 34 16 40 28 40" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
-            <line x1="16" y1="26" x2="28" y2="26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <text x="38" y="32" font-family="'Helvetica Neue',Arial,sans-serif" font-size="19" font-weight="700" fill="currentColor" letter-spacing="0.5">CORATIS</text>
-          </svg>
-        </div>
-
-        <!-- Elevanta — fiktiv -->
-        <div class="logo-item">
-          <svg viewBox="0 0 145 52" xmlns="http://www.w3.org/2000/svg" height="40">
-            <!-- Rising arrow bars -->
-            <rect x="6"  y="30" width="7" height="12" rx="2" fill="currentColor"/>
-            <rect x="16" y="22" width="7" height="20" rx="2" fill="currentColor"/>
-            <rect x="26" y="13" width="7" height="29" rx="2" fill="currentColor"/>
-            <path d="M30 10 L38 10 L38 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <text x="46" y="31" font-family="'Helvetica Neue',Arial,sans-serif" font-size="19" font-weight="600" fill="currentColor" letter-spacing="0.2">elevanta</text>
-          </svg>
-        </div>
-
-        <!-- Duplicate set for seamless loop -->
-        <!-- Nexora -->
-        <div class="logo-item" aria-hidden="true">
-          <svg viewBox="0 0 155 52" xmlns="http://www.w3.org/2000/svg" height="40">
-            <polygon points="10,14 22,7 34,14 34,28 22,35 10,28" fill="none" stroke="currentColor" stroke-width="2.2"/>
-            <text x="22" y="25" font-family="'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="800" fill="currentColor" text-anchor="middle">N</text>
-            <text x="44" y="25" font-family="'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="700" fill="currentColor" letter-spacing="0.3">NEXORA</text>
-            <text x="44" y="36" font-family="'Helvetica Neue',Arial,sans-serif" font-size="8" font-weight="300" fill="currentColor" letter-spacing="2.5">GROUP</text>
-          </svg>
-        </div>
-        <!-- Veltro -->
-        <div class="logo-item" aria-hidden="true">
-          <svg viewBox="0 0 130 52" xmlns="http://www.w3.org/2000/svg" height="40">
-            <polyline points="6,10 18,36 30,10" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-            <line x1="18" y1="36" x2="30" y2="36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <text x="40" y="29" font-family="'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="800" fill="currentColor" letter-spacing="0.5">VELTRO</text>
-            <text x="40" y="40" font-family="'Helvetica Neue',Arial,sans-serif" font-size="8.5" font-weight="300" fill="currentColor" letter-spacing="2">AG</text>
-          </svg>
-        </div>
-        <!-- Primova -->
-        <div class="logo-item" aria-hidden="true">
-          <svg viewBox="0 0 140 52" xmlns="http://www.w3.org/2000/svg" height="40">
-            <circle cx="20" cy="26" r="14" fill="none" stroke="currentColor" stroke-width="2.5"/>
-            <circle cx="20" cy="26" r="5" fill="currentColor"/>
-            <circle cx="20" cy="14" r="2.5" fill="currentColor"/>
-            <text x="42" y="31" font-family="'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="600" fill="currentColor" letter-spacing="0.2">primova</text>
-          </svg>
-        </div>
-        <!-- Coratis -->
-        <div class="logo-item" aria-hidden="true">
-          <svg viewBox="0 0 135 52" xmlns="http://www.w3.org/2000/svg" height="40">
-            <path d="M28 12 C16 12 8 18 8 26 C8 34 16 40 28 40" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
-            <line x1="16" y1="26" x2="28" y2="26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <text x="38" y="32" font-family="'Helvetica Neue',Arial,sans-serif" font-size="19" font-weight="700" fill="currentColor" letter-spacing="0.5">CORATIS</text>
-          </svg>
-        </div>
-        <!-- Elevanta -->
-        <div class="logo-item" aria-hidden="true">
-          <svg viewBox="0 0 145 52" xmlns="http://www.w3.org/2000/svg" height="40">
-            <rect x="6"  y="30" width="7" height="12" rx="2" fill="currentColor"/>
-            <rect x="16" y="22" width="7" height="20" rx="2" fill="currentColor"/>
-            <rect x="26" y="13" width="7" height="29" rx="2" fill="currentColor"/>
-            <path d="M30 10 L38 10 L38 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <text x="46" y="31" font-family="'Helvetica Neue',Arial,sans-serif" font-size="19" font-weight="600" fill="currentColor" letter-spacing="0.2">elevanta</text>
-          </svg>
-        </div>
-
+    <div class="sf-band">
+      <div class="sf-brand-id">
+        <a href="/" class="hw-logo hw-logo--lg" aria-label="HWaiHub Startseite">
+<span class="hw-logo-mark" aria-hidden="true"><span>H</span></span><span class="hw-logo-text"><span class="hw-logo-word">HWaiHub</span><span class="hw-logo-claim">Business first. Technology second.</span></span></a>
       </div>
+      <p class="sf-entity">HWaiHub ist eine Beratung für KI-Transformation und Business Automation im deutschsprachigen Mittelstand, gegründet von Hanna Winkelmann.</p>
+      <div class="sf-brand-contact">
+        <p class="sf-meta">Sitz: Cascais, Portugal · Beratung remote und vor Ort im deutschsprachigen Raum</p>
+        <p class="sf-meta sf-mail"><a href="mailto:info@hwaihub.com">info@hwaihub.com</a></p>
+        <ul class="sf-social">
+          <li><a href="https://www.linkedin.com/in/hanna-winkelmann" target="_blank" rel="noopener" aria-label="Hanna Winkelmann auf LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0h.01z"/></svg><span>Hanna Winkelmann auf LinkedIn</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sf-top">
+      <div class="sf-col">
+        <h2 class="sf-h">Orientieren</h2>
+        <ul>
+          <li><a href="/anwendungsfaelle/" data-route="anwendungsfaelle">Ihre Situation</a></li>
+          <li><a href="/ki-potenzialcheck/" data-route="potenzialcheck">KI-Potenzialcheck</a></li>
+          <li><a href="/foerdercheck/" data-route="foerdercheck">Fördercheck</a></li>
+          <li><a href="/wirkung/" data-route="wirkung">Wirkung &amp; Kennzahlen</a></li>
+        </ul>
+      </div>
+      <div class="sf-col">
+        <h2 class="sf-h">Leistungen</h2>
+        <ul>
+          <li><a href="/loesungen/" data-route="loesungen">Alle Leistungen</a></li>
+          <li><a href="/ki-transformationsanalyse/" data-route="analyse">KI-Transformationsanalyse</a></li>
+          <li><a href="/ki-automation-pilot/" data-route="pilot">KI &amp; Automation Pilot</a></li>
+          <li><a href="/loesungen/#umsetzung" data-route="umsetzung">Umsetzung &amp; Skalierung</a></li>
+          <li><a href="/ki-begleitung/" data-route="begleitung">KI-Begleitung</a></li>
+        </ul>
+      </div>
+      <div class="sf-col">
+        <h2 class="sf-h">Kompetenzfelder</h2>
+        <ul>
+          <li><a href="/ki-business-automation/" data-route="business-automation">KI &amp; Business Automation</a></li>
+          <li><a href="/microsoft-copilot/" data-route="copilot">Microsoft Copilot – Überblick</a></li>
+          <li><a href="/copilot-einfuehrung/" data-route="copilot-einfuehrung">Copilot-Einführung</a></li>
+          <li><a href="/copilot-schulung/" data-route="copilot-schulung">Copilot-Schulung</a></li>
+          <li><a href="/ki-enablement-governance/" data-route="enablement">KI-Befähigung &amp; Regeln</a></li>
+          <li><a href="/ki-kompetenz-ai-act/" data-route="ai-act">KI-Kompetenz (AI Act)</a></li>
+        </ul>
+      </div>
+      <div class="sf-col">
+        <h2 class="sf-h">Academy</h2>
+        <ul>
+          <li><a href="/academy/" data-route="academy">HWaiHub Academy</a></li>
+          <li><a href="/academy/unternehmen/" data-route="academy-unternehmen">Für Unternehmen</a></li>
+          <li><a href="/academy/einzelpersonen/" data-route="academy-einzelpersonen">Für Einzelpersonen</a></li>
+          <li><a href="/empfehlen/" data-route="empfehlen">Für mein Team / Unternehmen anfragen</a></li>
+        </ul>
+      </div>
+      <div class="sf-col">
+        <h2 class="sf-h">HWaiHub</h2>
+        <ul>
+          <li><a href="/vorgehen/" data-route="vorgehen">So arbeiten wir</a></li>
+          <li><a href="/ueber-hwaihub/" data-route="ueber">Über HWaiHub</a></li>
+          <li><a href="/kontakt/" data-route="kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sf-bottom">
+      <span>© 2026 Hanna Winkelmann · HWaiHub</span>
+      <nav class="sf-legal" aria-label="Rechtliches">
+        <a href="/impressum/">Impressum</a>
+        <a href="/datenschutz/">Datenschutz</a>
+        <button type="button" class="sf-linkbtn" data-open-modal="modalCookies">Cookie-Einstellungen</button>
+      </nav>
+      <nav class="ls-seg ls-seg--dark" aria-label="Sprache wählen"><svg class="ls-globe" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.6 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.6-3.9-9S9.4 5.6 12 3z"/></svg><span class="ls-seg-opt is-current" aria-current="true">Deutsch</span><a class="ls-seg-opt" href="/en/" hreflang="en" lang="en">English</a>
+</nav>
+    </div>
+  </div>
+</footer>
+
+<div id="cookieBanner" hidden role="region" aria-label="Cookie-Einstellungen">
+  <p><span>Wir verwenden ausschließlich technisch notwendige Speicherfunktionen. Es werden keine Tracking- oder Marketing-Cookies gesetzt. Mehr in unserer</span> <a href="/datenschutz/">Datenschutzerklärung</a>.</p>
+  <div class="cookie-btns">
+    <button type="button" class="cookie-btn-accept" data-cookie-ok>Verstanden</button>
+  </div>
+</div>
+
+<div id="modalCookies" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalCookiesTitle">
+  <div class="modal-box">
+    <button type="button" class="modal-close" data-close-modal="modalCookies" aria-label="Schließen">✕</button>
+    <h2 id="modalCookiesTitle">Cookie-Einstellungen</h2>
+    <div class="modal-divider"></div>
+    <p>Diese Website verwendet ausschließlich technisch notwendige Speicherfunktionen. Analyse- oder Marketing-Cookies werden nicht eingesetzt.</p>
+    <div class="modal-actions">
+      <button type="button" class="cookie-btn-accept" data-cookie-ok data-close-modal="modalCookies">Verstanden</button>
     </div>
   </div>
 </div>
 
-<!-- ════════════ SERVICES ════════════ -->
-<section class="services" id="services">
-  <div class="container">
-    <div class="services-header">
-      <div class="section-label" data-i18n="services_label">Leistungen</div>
-      <h2 class="section-title" data-i18n="services_title">Was ich für dein Unternehmen tue.</h2>
-      <p class="section-sub" style="margin:0 auto;" data-i18n="services_sub">Maßgeschneiderte Beratung — von der KI-Strategie bis zur Umsetzung im Team. Praxisnah, verständlich, wirksam.</p>
-    </div>
+<template id="hwLogoTpl"><span class="hw-logo hw-logo--print" role="img" aria-label="HWaiHub">
+<span class="hw-logo-mark" aria-hidden="true"><span>H</span></span><span class="hw-logo-text"><span class="hw-logo-word">HWaiHub</span></span></span></template>
+<script type="application/json" id="hw-routes">{"home":"/","potenzialcheck":"/ki-potenzialcheck/","foerdercheck":"/foerdercheck/","loesungen":"/loesungen/","analyse":"/ki-transformationsanalyse/","pilot":"/ki-automation-pilot/","umsetzung":"/loesungen/#umsetzung","begleitung":"/ki-begleitung/","business-automation":"/ki-business-automation/","enablement":"/ki-enablement-governance/","ai-act":"/ki-kompetenz-ai-act/","copilot":"/microsoft-copilot/","copilot-einfuehrung":"/copilot-einfuehrung/","copilot-schulung":"/copilot-schulung/","anwendungsfaelle":"/anwendungsfaelle/","wirkung":"/wirkung/","academy":"/academy/","academy-unternehmen":"/academy/unternehmen/","academy-einzelpersonen":"/academy/einzelpersonen/","empfehlen":"/empfehlen/","vorgehen":"/vorgehen/","ueber":"/ueber-hwaihub/","kontakt":"/kontakt/","booking":"https://bookings.cloud.microsoft/book/HWaiHub1@hwaihub.com/","impressum":"/impressum/","datenschutz":"/datenschutz/"}</script>
+<script src="/js/main.js?v=ffd4ba134e" defer></script>
+<script src="/js/site-context.js?v=ffd4ba134e" defer></script>
 
-    <div class="services-grid">
+<script src="/js/hero-card.js?v=ffd4ba134e" defer></script>
 
-      <div class="service-card">
-        <div class="service-icon">🎯</div>
-        <h3 class="service-title" data-i18n="s1_title">KI-Strategie & Roadmap</h3>
-        <p class="service-desc" data-i18n="s1_desc">Ich entwickle mit dir eine klare KI-Strategie, die zu deinem Unternehmen passt — kein Technologie-Overkill, sondern gezielte Schritte mit echtem Business-Impact.</p>
-        <a href="services.html" class="service-link" data-i18n="service_more">Mehr erfahren →</a>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon">⚙️</div>
-        <h3 class="service-title" data-i18n="s2_title">Prozessautomatisierung</h3>
-        <p class="service-desc" data-i18n="s2_desc">Zeitfresser eliminieren, Fehlerquoten senken, Teams entlasten. Ich analysiere deine Abläufe und automatisiere dort, wo es den größten Hebel hat.</p>
-        <a href="services.html" class="service-link" data-i18n="service_more">Mehr erfahren →</a>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon">💬</div>
-        <h3 class="service-title" data-i18n="s3_title">Change Management</h3>
-        <p class="service-desc" data-i18n="s3_desc">KI scheitert nicht an der Technologie — sie scheitert an fehlender Akzeptanz. Ich begleite Führungskräfte und Teams durch den Wandel, nachhaltig und menschlich.</p>
-        <a href="services.html" class="service-link" data-i18n="service_more">Mehr erfahren →</a>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon">📈</div>
-        <h3 class="service-title" data-i18n="s4_title">Workshops & Training</h3>
-        <p class="service-desc" data-i18n="s4_desc">Praxisnahe Workshops zu KI-Tools, Prompt Engineering und digitalem Mindset — für Führungsteams, Fachbereiche oder das gesamte Unternehmen.</p>
-        <a href="services.html" class="service-link" data-i18n="service_more">Mehr erfahren →</a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ════════════ ERGEBNISSE / REFERENZEN ════════════ -->
-<section class="results" id="results">
-  <div class="container">
-    <div class="results-header">
-      <div class="section-label" data-i18n="results_label">Referenzen</div>
-      <h2 class="section-title" data-i18n="results_title">Ergebnisse, die zählen.</h2>
-      <p class="section-sub" data-i18n="results_sub">
-        Messbare Wirkung, keine leeren Versprechen.
-        Das sagen Zahlen und Menschen, mit denen ich gearbeitet habe.
-      </p>
-    </div>
-
-    <div class="results-grid">
-      <div class="result-card">
-        <div class="result-number">48%</div>
-        <div class="result-desc" data-i18n="r1_desc">Ø Effizienzsteigerung nach KI-Einführung</div>
-      </div>
-      <div class="result-card">
-        <div class="result-number">2,5 Wo.</div>
-        <div class="result-desc" data-i18n="r2_desc">Ø Zeit von Kick-off bis erstem Live-Prozess</div>
-      </div>
-      <div class="result-card">
-        <div class="result-number">30+</div>
-        <div class="result-desc" data-i18n="r3_desc">Unternehmen erfolgreich durch den Wandel begleitet</div>
-      </div>
-    </div>
-
-    <div class="testimonials-track-wrap">
-      <div class="testimonials-track">
-
-        <div class="testimonial">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text" data-i18n="t1_text">„Hanna hat unsere gesamte Perspektive auf KI verändert — nicht mit Buzzwords, sondern mit einer Roadmap, die wir wirklich umsetzen konnten. Das Ergebnis: 35 % weniger manuelle Arbeit in der Auftragsverarbeitung.“</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">MK</div>
-            <div><div class="testimonial-name" data-i18n="t1_name">M. Kaufmann</div><div class="testimonial-role" data-i18n="t1_role">COO, Mittelständisches Industrieunternehmen</div></div>
-          </div>
-        </div>
-
-        <div class="testimonial">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text" data-i18n="t2_text">„Was mich überzeugt hat: Hanna spricht sowohl mit dem IT-Team als auch mit dem Vorstand auf Augenhöhe. Sie übersetzt — und das macht den Unterschied bei jedem Transformationsprojekt.“</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">SL</div>
-            <div><div class="testimonial-name" data-i18n="t2_name">S. Lauer</div><div class="testimonial-role" data-i18n="t2_role">Geschäftsführerin, Beratungsunternehmen</div></div>
-          </div>
-        </div>
-
-        <div class="testimonial">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text" data-i18n="t3_text">„Innerhalb von drei Wochen hatten wir unseren ersten automatisierten Prozess live. Hanna erklärt KI so, dass das gesamte Team mitzieht — nicht nur die IT-Abteilung.“</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">TW</div>
-            <div><div class="testimonial-name" data-i18n="t3_name">T. Weber</div><div class="testimonial-role" data-i18n="t3_role">Head of Operations, Logistikunternehmen</div></div>
-          </div>
-        </div>
-
-        <div class="testimonial">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text" data-i18n="t4_text">„Wir haben mit Hanna unsere gesamte Kundenkommunikation digitalisiert. Die Kombination aus strategischem Denken und handfester Umsetzung ist selten — und genau das brauchten wir.“</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">AR</div>
-            <div><div class="testimonial-name" data-i18n="t4_name">A. Richter</div><div class="testimonial-role" data-i18n="t4_role">Managing Director, Financial Services</div></div>
-          </div>
-        </div>
-
-        <div class="testimonial">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text" data-i18n="t5_text">„Das Onboarding neuer Mitarbeitender dauerte früher zwei Wochen — heute zwei Tage. HWaiHub hat uns gezeigt, wie man KI wirklich in den Alltag integriert, ohne den Faktor Mensch zu verlieren.“</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">JN</div>
-            <div><div class="testimonial-name" data-i18n="t5_name">J. Neumann</div><div class="testimonial-role" data-i18n="t5_role">HR Director, internationales Industrieunternehmen</div></div>
-          </div>
-        </div>
-
-        <!-- duplicate for seamless loop -->
-        <div class="testimonial" aria-hidden="true">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text" data-i18n="t1_text">„Hanna hat unsere gesamte Perspektive auf KI verändert — nicht mit Buzzwords, sondern mit einer Roadmap, die wir wirklich umsetzen konnten. Das Ergebnis: 35 % weniger manuelle Arbeit in der Auftragsverarbeitung.“</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">MK</div>
-            <div><div class="testimonial-name" data-i18n="t1_name">M. Kaufmann</div><div class="testimonial-role" data-i18n="t1_role">COO, Mittelständisches Industrieunternehmen</div></div>
-          </div>
-        </div>
-
-        <div class="testimonial" aria-hidden="true">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text" data-i18n="t2_text">„Was mich überzeugt hat: Hanna spricht sowohl mit dem IT-Team als auch mit dem Vorstand auf Augenhöhe. Sie übersetzt — und das macht den Unterschied bei jedem Transformationsprojekt.“</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">SL</div>
-            <div><div class="testimonial-name" data-i18n="t2_name">S. Lauer</div><div class="testimonial-role" data-i18n="t2_role">Geschäftsführerin, Beratungsunternehmen</div></div>
-          </div>
-        </div>
-
-        <div class="testimonial" aria-hidden="true">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text" data-i18n="t3_text">„Innerhalb von drei Wochen hatten wir unseren ersten automatisierten Prozess live. Hanna erklärt KI so, dass das gesamte Team mitzieht — nicht nur die IT-Abteilung.“</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">TW</div>
-            <div><div class="testimonial-name" data-i18n="t3_name">T. Weber</div><div class="testimonial-role" data-i18n="t3_role">Head of Operations, Logistikunternehmen</div></div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ════════════ ÜBER MICH ════════════ -->
-<section class="about" id="about">
-  <div class="container">
-    <div class="about-grid">
-
-      <!-- Foto -->
-      <div class="about-photo">
-        <img
-          src="assets/images/hanna_laptop.jpg"
-          alt="Hanna Winkelmann"
-          onerror="this.closest('.about-photo').innerHTML='<div class=\'photo-placeholder\' style=\'height:580px;border-radius:24px;\'><div class=\'ph-icon\'>📷</div><span>hanna_laptop.jpg<br/>hier ablegen</span></div>'"
-        />
-        <div class="about-photo-badge">
-          <p>AI & Digital Transformation</p>
-          <strong>Hanna Winkelmann</strong>
-        </div>
-      </div>
-
-      <!-- Text -->
-      <div class="about-text">
-        <div class="section-label" data-i18n="about_label">Über mich</div>
-        <h2 class="section-title about-name-title">
-          <span data-i18n="about_title">Hanna Winkelmann</span>
-        </h2>
-        <p class="about-role-line">
-          <span style="background:linear-gradient(135deg,var(--gold),#E2B96A);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;" data-i18n="about_subtitle">AI &amp; Digital Transformation Consultant · Gründerin, HWaiHub</span>
-        </p>
-
-        <p class="about-body" data-i18n-html="about_body1">
-          Ich habe HWaiHub gegründet, weil ich überzeugt bin: Künstliche Intelligenz verändert die Art, wie wir arbeiten — und Unternehmen, die diesen Wandel aktiv gestalten, werden die Gewinner von morgen sein. Als <strong>AI &amp; Digital Transformation Consultant</strong> begleite ich Führungsteams dabei, genau das zu tun: nicht reagieren, sondern gestalten.
-        </p>
-        <p class="about-body" data-i18n-html="about_body2">
-          Mit über einem Jahrzehnt Erfahrung in der digitalen Transformation kenne ich beide Seiten: die strategische Vogelperspektive und die Realität im Tagesgeschäft. Meine Kunden schätzen, dass ich Technologie verständlich mache — und dass messbare Ergebnisse für mich kein Versprechen, sondern ein Anspruch sind.
-        </p>
-
-        <blockquote class="about-quote" data-i18n="about_quote">
-          „Effizienz neu definieren bedeutet nicht, Menschen durch Maschinen zu ersetzen — sondern Menschen durch Technologie zu befreien."
-        </blockquote>
-
-      </div><!-- /about-text -->
-
-    </div><!-- /about-grid -->
-  </div>
-</section>
-
-<!-- ════════════ PAKETE & PREISE ════════════ -->
-<section class="pricing" id="pricing">
-  <div class="container">
-    <div class="pricing-header">
-      <div class="section-label" data-i18n="idx_pricing_label">Pakete &amp; Preise</div>
-      <h2 class="section-title" data-i18n="idx_pricing_title">Ein System. Vier Phasen.</h2>
-    </div>
-    <p class="pricing-subtitle" data-i18n="idx_pricing_subtitle">Jede Phase baut auf der vorherigen auf — einzeln buchbar oder als komplettes System.</p>
-
-    <div class="pricing-phases-grid">
-
-      <!-- PHASE 01 -->
-      <div class="price-card phase-card">
-        <div class="phase-number">01</div>
-        <div class="phase-icon">🎯</div>
-        <div class="price-tier" data-i18n="sv_p1_num">Phase 01</div>
-        <div class="price-name" data-i18n="sv_p1_title">Neue Kunden gewinnen</div>
-        <p class="phase-desc" data-i18n-html="sv_p1_desc">Wir entwickeln moderne, gezielte Websites mit den neuesten Techniken — damit Sie online gefunden werden und Interessenten zu Kunden werden. Individuell. Schnell. Wirkungsvoll.</p>
-        <p class="phase-ref" data-i18n-html="sv_p1_ref" style="font-size:0.82rem;color:var(--gray);line-height:1.5;margin:0.5rem 0 0.8rem;"></p>
-        <ul class="price-features" data-i18n-html="sv_p1_items_idx">
-          <li>Maßgeschneiderte Website &amp; Landingpages</li>
-          <li>SEO-Optimierung &amp; Google-Sichtbarkeit</li>
-          <li>Google Business Profil-Optimierung</li>
-          <li>Mobil-optimiertes &amp; schnelles Design</li>
-        </ul>
-        <a href="services.html#phase01" class="service-link" style="margin-bottom:0.6rem;display:inline-block;" data-i18n="service_more">Mehr erfahren →</a>
-        <a href="#contact" class="btn btn-ghost" style="width:100%;justify-content:center;margin-top:auto;" data-i18n="sv_cta_btn">Jetzt Erstgespräch buchen →</a>
-      </div>
-
-      <!-- PHASE 02 -->
-      <div class="price-card phase-card">
-        <div class="phase-number">02</div>
-        <div class="phase-icon">💬</div>
-        <div class="price-tier" data-i18n="sv_p2_num">Phase 02</div>
-        <div class="price-name" data-i18n="sv_p2_title">Anfragen &amp; Termine automatisieren</div>
-        <p class="phase-desc" data-i18n="sv_p2_desc">Kein Lead geht verloren. Automatisierte Kommunikation sorgt dafür, dass jede Anfrage zur richtigen Zeit die richtige Antwort bekommt.</p>
-        <ul class="price-features" data-i18n-html="sv_p2_items">
-          <li>Automatische Terminbestätigungen &amp; Erinnerungen</li>
-          <li>WhatsApp Business Automation</li>
-          <li>E-Mail-Funnels &amp; Nachfasssequenzen</li>
-          <li>KI-gestützter Telefon-Assistent</li>
-          <li>Angebotserstellung &amp; Follow-up</li>
-        </ul>
-        <a href="#contact" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;" data-i18n="sv_cta_btn">Jetzt Erstgespräch buchen →</a>
-      </div>
-
-      <!-- PHASE 03 -->
-      <div class="price-card phase-card">
-        <div class="phase-number">03</div>
-        <div class="phase-icon">⚙️</div>
-        <div class="price-tier" data-i18n="sv_p3_num">Phase 03</div>
-        <div class="price-name" data-i18n="sv_p3_title">Betrieb &amp; Verwaltung digitalisieren</div>
-        <p class="phase-desc" data-i18n="sv_p3_desc">Dein Betrieb läuft — auch wenn du schläfst. Wir automatisieren operative Routinen und schaffen Klarheit durch strukturierte Systeme.</p>
-        <ul class="price-features" data-i18n-html="sv_p3_items">
-          <li>CRM-Einführung &amp; automatische Pflege</li>
-          <li>Workflow-Automationen (Zapier, Make &amp; Co.)</li>
-          <li>Dokumentenmanagement &amp; Vorlagen</li>
-          <li>Rechnungs- &amp; Buchhaltungsautomation</li>
-          <li>Operations-Dashboard &amp; KPI-Tracking</li>
-        </ul>
-        <a href="#contact" class="btn btn-ghost" style="width:100%;justify-content:center;margin-top:auto;" data-i18n="sv_cta_btn">Jetzt Erstgespräch buchen →</a>
-      </div>
-
-      <!-- PHASE 04 -->
-      <div class="price-card phase-card">
-        <div class="phase-number">04</div>
-        <div class="phase-icon">📈</div>
-        <div class="price-tier" data-i18n="sv_p4_num">Phase 04</div>
-        <div class="price-name" data-i18n="sv_p4_title">Kunden binden &amp; Umsatz steigern</div>
-        <p class="phase-desc" data-i18n="sv_p4_desc">Einmal gewonnene Kunden bleiben — und bringen neue. Smarte Systeme lassen dein Business wachsen, ohne mehr manuelle Arbeit.</p>
-        <ul class="price-features" data-i18n-html="sv_p4_items">
-          <li>Recall- &amp; Wiederkehrkampagnen</li>
-          <li>Newsletter- &amp; Content-Automation</li>
-          <li>Bewertungsmanagement (Google, Trustpilot)</li>
-          <li>Loyalty-Programme &amp; Upsell-Sequenzen</li>
-          <li>Skalierbare KPI-Dashboards &amp; Reportings</li>
-        </ul>
-        <a href="#contact" class="btn btn-ghost" style="width:100%;justify-content:center;margin-top:auto;" data-i18n="sv_cta_btn">Jetzt Erstgespräch buchen →</a>
-      </div>
-
-    </div>
-
-    <p class="price-note" data-i18n="ph_note">Erstgespräch (30 Min.) kostenlos &amp; unverbindlich &nbsp;·&nbsp; Phasen einzeln oder als komplettes System buchbar &nbsp;·&nbsp; Individuelle Preise auf Anfrage</p>
-  </div>
-</section>
-
-<!-- ════════════ KONTAKT ════════════ -->
-<section class="contact" id="contact">
-  <div class="container">
-    <div class="contact-grid">
-
-      <div class="contact-left">
-        <div class="section-label" data-i18n="contact_label">Kontakt</div>
-        <h2 class="section-title" data-i18n="contact_title">Lass uns sprechen.</h2>
-        <p class="section-sub" data-i18n="contact_sub">Du planst ein KI- oder Digitalisierungsprojekt und weißt noch nicht genau wo anfangen? Schreib mir — je konkreter, desto besser.</p>
-
-        <div class="contact-info">
-          <div class="contact-row">
-            <div class="contact-icon" style="background:#A87230;">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width:18px;height:18px;fill:#fff;flex-shrink:0;"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
-            </div>
-            <div class="contact-detail">
-              <strong>E-Mail</strong>
-              <a href="mailto:info@hwaihub.com"
-                 style="color:var(--gray);text-decoration:none;font-size:0.83rem;transition:color 0.2s;"
-                 onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--gray)'"
-                 data-i18n="contact_email_label">E-Mail schreiben →</a>
-            </div>
-          </div>
-          <div class="contact-row">
-            <div class="contact-icon" style="background:#0A66C2;">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width:20px;height:20px;fill:#fff;">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-              </svg>
-            </div>
-            <div class="contact-detail">
-              <strong>LinkedIn</strong>
-              <a href="https://www.linkedin.com/in/hanna-winkelmann" target="_blank" rel="noopener"
-                 style="color:var(--gray);text-decoration:none;font-size:0.83rem;transition:color 0.2s;"
-                 onmouseover="this.style.color='#0A66C2'" onmouseout="this.style.color='var(--gray)'"
-                 data-i18n="contact_linkedin_label">Profil ansehen →</a>
-            </div>
-          </div>
-          <div class="contact-row">
-            <div class="contact-icon" style="background:#A87230;">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width:18px;height:18px;fill:#fff;flex-shrink:0;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-            </div>
-            <div class="contact-detail">
-              <strong data-i18n="contact_location_label">Standort</strong>
-              <a href="https://www.google.com/maps/place/Cascais,+Portugal" target="_blank" rel="noopener"
-                 style="color:var(--gray);text-decoration:none;font-size:0.83rem;transition:color 0.2s;"
-                 onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--gray)'"
-                 data-i18n="contact_location">Cascais, Portugal — Remote &amp; vor Ort</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="contact-form">
-        <form id="contactForm" novalidate>
-          <!-- Honeypot: von echten Nutzern unsichtbar, Bots füllen es aus -->
-          <div style="position:absolute;left:-9999px;top:-9999px;height:0;overflow:hidden;" aria-hidden="true">
-            <label for="cf-honeypot">Bitte leer lassen</label>
-            <input id="cf-honeypot" type="text" name="website" tabindex="-1" autocomplete="off" />
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label data-i18n="form_name_label">Dein Name *</label>
-              <input id="cf-name" type="text" placeholder="Max Mustermann" required />
-            </div>
-            <div class="form-group">
-              <label data-i18n="form_email_label">E-Mail *</label>
-              <input id="cf-email" type="email" placeholder="max@firma.de" required />
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label data-i18n="form_company_label">Unternehmen</label>
-              <input id="cf-company" type="text" placeholder="Musterfirma GmbH" />
-            </div>
-            <div class="form-group">
-              <label data-i18n="form_size_label">Unternehmensgröße</label>
-              <select id="cf-size">
-                <option value="" data-i18n="form_size_opt0">Bitte wählen…</option>
-                <option data-i18n="form_size_opt1">1–10 Mitarbeiter</option>
-                <option data-i18n="form_size_opt2">11–50 Mitarbeiter</option>
-                <option data-i18n="form_size_opt3">51–250 Mitarbeiter</option>
-                <option data-i18n="form_size_opt4">250+ Mitarbeiter</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-group">
-            <label data-i18n="form_topic_label">Worum geht es?</label>
-            <select id="cf-topic">
-              <option value="" data-i18n="form_topic_opt0">Bitte auswählen…</option>
-              <option data-i18n="form_topic_opt1">KI-Strategie &amp; Roadmap</option>
-              <option data-i18n="form_topic_opt2">Prozessautomatisierung</option>
-              <option data-i18n="form_topic_opt3">Change Management</option>
-              <option data-i18n="form_topic_opt4">Workshop / Training</option>
-              <option data-i18n="form_topic_opt5">Sonstiges</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label data-i18n="form_msg_label">Deine Nachricht *</label>
-            <textarea id="cf-message" placeholder="Beschreib kurz dein Projekt oder deine Frage…" required></textarea>
-          </div>
-          <p class="form-gdpr">
-            <label>
-              <input id="cf-gdpr" type="checkbox" required />
-              <span data-i18n-html="form_gdpr">Ich habe die <a href="#">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu.</span>
-            </label>
-          </p>
-          <div id="cf-feedback" style="display:none;padding:0.8rem 1rem;border-radius:8px;margin-bottom:0.8rem;font-size:0.9rem;"></div>
-          <button id="cf-submit" type="submit" class="btn btn-primary" style="width:100%;justify-content:center;" data-i18n="contact_btn">Nachricht senden →</button>
-        </form>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- ════════════ FOOTER ════════════ -->
-<div id="footer-root"></div>
-
-
-
-<script src="js/translations.js"></script>
-<script src="js/components.js"></script>
-<script src="js/main.js"></script>
-<script src="js/contact.js"></script>
-<script src="js/chatbot.js"></script>
 </body>
 </html>

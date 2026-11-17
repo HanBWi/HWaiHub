@@ -1,0 +1,39 @@
+# HWaiHub
+
+> HWaiHub ist eine Beratung für KI-Transformation und Business Automation im deutschsprachigen Mittelstand, gegründet von Hanna Winkelmann. Business first. Technology second.
+
+HWaiHub bringt Geschäftsprozess und Technologie zusammen: herausfinden, wo Zeit, Wissen und Kapazität verloren gehen, die passende Lösung wählen – oft in der vorhandenen Microsoft-Umgebung, immer technologieoffen –, begrenzt und messbar umsetzen und das Team befähigen, sie sicher zu nutzen. Gründerin: Hanna Winkelmann. Sitz: Cascais, Portugal; Beratung im deutschsprachigen Raum. Kontakt: info@hwaihub.com. Preise (netto, Ab-Preise): Potenzialcheck und Erstgespräch kostenlos, KI-Transformationsanalyse ab 1.900 €, KI & Automation Pilot ab 4.900 €, KI-Begleitung ab 690 € pro Monat; Übersicht: https://hwaihub.com/loesungen/#preise. Der verbindliche Preis wird vor Beginn schriftlich genannt.
+
+## Angebote
+- [KI-Potenzialcheck](https://hwaihub.com/ki-potenzialcheck/): Selbsteinschätzung mit 16 Fragen: Reifegrad, Potenzial je Bereich, drei Prioritäten. Nicht enthalten: Keine Prüfung Ihrer echten Prozesse.
+- [Erstgespräch](https://bookings.cloud.microsoft/book/HWaiHub1@hwaihub.com/): Ihre Situation, Ihre Ziele, eine ehrliche Einschätzung des nächsten Schritts. Nicht enthalten: Kein Lösungsdesign, kein Verkaufsgespräch.
+- [KI-Transformationsanalyse](https://hwaihub.com/ki-transformationsanalyse/): Analyse realer Prozesse mit Ihren Leuten, Priorisierung nach Nutzen und Aufwand, Wirtschaftlichkeitsrechnung, Umsetzungsplan, Blick auf Regeln und Verantwortung. Nicht enthalten: Keine Umsetzung enthalten.
+- [KI & Automation Pilot](https://hwaihub.com/ki-automation-pilot/): Ein ausgewählter Anwendungsfall, begrenzte Umsetzung mit Schlüsselanwendern, menschliche Aufsicht, gemessenes Ergebnis. Nicht enthalten: Keine Einführung im ganzen Unternehmen.
+- [Umsetzung & Skalierung](https://hwaihub.com/loesungen/#umsetzung): Ausrollen, Integration in bestehende Systeme, weitere Prozesse – gemeinsam mit Ihrem IT-Dienstleister. Nicht enthalten: Kein Start ohne nachgewiesenen Nutzen.
+- [KI-Begleitung](https://hwaihub.com/ki-begleitung/): Externe KI-Verantwortung: Umsetzungsplan pflegen, neue Anwendungsfälle, Verankerung im Alltag, Regeln aktuell halten. Nicht enthalten: Kein Ersatz für Ihre Entscheidungen.
+
+## Kompetenzfelder
+- [KI & Business Automation](https://hwaihub.com/ki-business-automation/): Abläufe automatisieren, Systeme verbinden, KI-Agenten dort, wo sie Nutzen stiften.
+- [Microsoft Copilot & digitaler Arbeitsplatz](https://hwaihub.com/microsoft-copilot/): Copilot, Teams, SharePoint und Outlook so einführen, dass Ihr Team sie wirklich nutzt.
+- [KI-Befähigung & Regeln](https://hwaihub.com/ki-enablement-governance/): KI-Kompetenz, klare Regeln und menschliche Aufsicht.
+- [Copilot-Einführung](https://hwaihub.com/copilot-einfuehrung/): Vorbereitung und Nutzung im Alltag für Microsoft 365 Copilot.
+- [Copilot-Schulung](https://hwaihub.com/copilot-schulung/): praxisnah, rollenbasiert, dokumentiert.
+
+## Werkzeuge
+- [KI-Potenzialcheck](https://hwaihub.com/ki-potenzialcheck/): kostenloser Selbsttest, 16 Fragen, Auswertung nur im Browser.
+- [Fördercheck](https://hwaihub.com/foerdercheck/): erste Orientierung zu Förderprogrammen von Bund und Ländern mit offizieller Quelle; keine Förderzusage, keine Förderberatung.
+
+## Wissen
+- [Anwendungsfälle](https://hwaihub.com/anwendungsfaelle/): typische Situationen im Mittelstand mit Ursache und Lösungsweg (anonymisiert, ohne Zahlen).
+- [KI-Kompetenz nach Art. 4 EU AI Act](https://hwaihub.com/ki-kompetenz-ai-act/): Ratgeber mit Quellen; keine Rechtsberatung.
+- [So arbeiten wir](https://hwaihub.com/vorgehen/): Methode in sieben Schritten und was gemessen wird.
+- [Wirkung & Kennzahlen](https://hwaihub.com/wirkung/): wie Wirkung gemessen wird – Cockpit und Detailauswertungen als Konzept-Visuals mit Beispielwerten, keine Kundendaten.
+
+## Academy
+- [HWaiHub Academy](https://hwaihub.com/academy/): Schulungen für Unternehmen; Programm für Einzelpersonen in Vorbereitung (Warteliste).
+
+## Über
+- [Über HWaiHub](https://hwaihub.com/ueber-hwaihub/) · [Kontakt](https://hwaihub.com/kontakt/) · [Impressum](https://hwaihub.com/impressum/) · [Datenschutz](https://hwaihub.com/datenschutz/)
+
+## Hinweise
+Keine Kundenlogos, Testimonials oder Wirkungszahlen – es werden nur belegte Aussagen veröffentlicht. Stand: 17.11.2026.

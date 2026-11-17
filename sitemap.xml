@@ -1,65 +1,340 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.hwaihub.com/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.hwaihub.com/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.hwaihub.com/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.hwaihub.com/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.hwaihub.com/"/>
+    <loc>https://hwaihub.com/anwendungsfaelle/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/anwendungsfaelle/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/your-situation/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/anwendungsfaelle/" />
   </url>
-
   <url>
-    <loc>https://www.hwaihub.com/services.html</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://hwaihub.com/copilot-einfuehrung/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/copilot-einfuehrung/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/copilot-rollout/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/copilot-einfuehrung/" />
   </url>
-
   <url>
-    <loc>https://www.hwaihub.com/packages.html</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://hwaihub.com/copilot-schulung/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/copilot-schulung/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/copilot-training/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/copilot-schulung/" />
   </url>
-
   <url>
-    <loc>https://www.hwaihub.com/references.html</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://hwaihub.com/datenschutz/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/datenschutz/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/privacy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/datenschutz/" />
   </url>
-
   <url>
-    <loc>https://www.hwaihub.com/about.html</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://hwaihub.com/empfehlen/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/empfehlen/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/recommend/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/empfehlen/" />
   </url>
-
   <url>
-    <loc>https://www.hwaihub.com/prompts/</loc>
+    <loc>https://hwaihub.com/foerdercheck/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/foerdercheck/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/funding-check/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/foerdercheck/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/impressum/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/impressum/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/legal-notice/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/impressum/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/ki-automation-pilot/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/ki-automation-pilot/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/ai-automation-pilot/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/ki-automation-pilot/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/ki-begleitung/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/ki-begleitung/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/ai-partnership/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/ki-begleitung/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/ki-business-automation/</loc>
     <lastmod>2026-10-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/ki-business-automation/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/ai-business-automation/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/ki-business-automation/" />
   </url>
-
   <url>
-    <loc>https://www.hwaihub.com/impressum.html</loc>
-    <lastmod>2026-10-02</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://hwaihub.com/ki-enablement-governance/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/ki-enablement-governance/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/ai-enablement-governance/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/ki-enablement-governance/" />
   </url>
-
   <url>
-    <loc>https://www.hwaihub.com/datenschutz.html</loc>
-    <lastmod>2026-10-02</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://hwaihub.com/ki-kompetenz-ai-act/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/ki-kompetenz-ai-act/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/ai-literacy-eu-ai-act/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/ki-kompetenz-ai-act/" />
   </url>
-
+  <url>
+    <loc>https://hwaihub.com/ki-potenzialcheck/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/ki-potenzialcheck/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/ai-potential-check/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/ki-potenzialcheck/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/ki-transformationsanalyse/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/ki-transformationsanalyse/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/ai-transformation-analysis/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/ki-transformationsanalyse/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/kontakt/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/kontakt/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/kontakt/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/loesungen/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/loesungen/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/services/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/loesungen/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/microsoft-copilot/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/microsoft-copilot/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/microsoft-copilot/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/microsoft-copilot/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/ueber-hwaihub/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/ueber-hwaihub/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/ueber-hwaihub/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/vorgehen/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/vorgehen/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/how-we-work/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/vorgehen/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/wirkung/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/wirkung/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/impact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/wirkung/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/academy/einzelpersonen/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/academy/einzelpersonen/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/academy/individuals/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/academy/einzelpersonen/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/academy/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/academy/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/academy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/academy/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/academy/unternehmen/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/academy/unternehmen/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/academy/companies/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/academy/unternehmen/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/en/about/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/ueber-hwaihub/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/ueber-hwaihub/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/en/ai-automation-pilot/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/ki-automation-pilot/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/ai-automation-pilot/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/ki-automation-pilot/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/en/ai-business-automation/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/ki-business-automation/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/ai-business-automation/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/ki-business-automation/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/en/ai-enablement-governance/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/ki-enablement-governance/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/ai-enablement-governance/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/ki-enablement-governance/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/en/ai-literacy-eu-ai-act/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/ki-kompetenz-ai-act/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/ai-literacy-eu-ai-act/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/ki-kompetenz-ai-act/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/en/ai-partnership/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/ki-begleitung/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/ai-partnership/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/ki-begleitung/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/en/ai-potential-check/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/ki-potenzialcheck/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/ai-potential-check/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/ki-potenzialcheck/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/en/ai-transformation-analysis/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/ki-transformationsanalyse/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/ai-transformation-analysis/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/ki-transformationsanalyse/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/en/contact/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/kontakt/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/kontakt/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/en/copilot-rollout/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/copilot-einfuehrung/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/copilot-rollout/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/copilot-einfuehrung/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/en/copilot-training/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/copilot-schulung/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/copilot-training/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/copilot-schulung/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/en/funding-check/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/foerdercheck/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/funding-check/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/foerdercheck/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/en/how-we-work/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/vorgehen/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/how-we-work/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/vorgehen/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/en/impact/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/wirkung/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/impact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/wirkung/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/en/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/en/legal-notice/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/impressum/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/legal-notice/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/impressum/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/en/microsoft-copilot/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/microsoft-copilot/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/microsoft-copilot/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/microsoft-copilot/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/en/privacy/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/datenschutz/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/privacy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/datenschutz/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/en/recommend/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/empfehlen/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/recommend/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/empfehlen/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/en/services/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/loesungen/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/services/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/loesungen/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/en/your-situation/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/anwendungsfaelle/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/your-situation/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/anwendungsfaelle/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/en/academy/companies/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/academy/unternehmen/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/academy/companies/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/academy/unternehmen/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/en/academy/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/academy/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/academy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/academy/" />
+  </url>
+  <url>
+    <loc>https://hwaihub.com/en/academy/individuals/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hwaihub.com/academy/einzelpersonen/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hwaihub.com/en/academy/individuals/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hwaihub.com/academy/einzelpersonen/" />
+  </url>
+  <url><loc>https://hwaihub.com/prompts/</loc></url>
 </urlset>

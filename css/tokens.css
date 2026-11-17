@@ -1,0 +1,29 @@
+/* HWaiHub Design-Tokens (Blueprint V3, Kap. 21 · Schritt 2)
+   Warme Premium-Palette – Evolution, keine neue Designsprache. */
+:root {
+  /* Flächen */
+  --color-paper: #F8F4EC;        /* Karten, helle Flächen */
+  --color-sand: #ECE6DA;         /* Seitengrund */
+  --color-sand-2: #E1D9C8;       /* alternierende Sections */
+  --color-sand-mid: #E3DCCD;
+  --color-card: #F7F3EB;
+  --color-cream: #F5F0E8;        /* CI-Cream */
+  /* Text */
+  --color-ink: #1C1914;          /* Near-Black, dunkle Sections */
+  --color-ink-deep: #15120D;     /* Footer */
+  --color-text-muted: #5F5950;
+  --color-text-subtle: #9A948C;
+  /* Gold – sparsam einsetzen */
+  --color-gold: #A87230;         /* CI-Hauptakzent */
+  --color-gold-deep: #9A7630;
+  --color-gold-light: #C8963E;
+  --color-gold-bright: #E2B85A;  /* Akzent auf dunklem Grund */
+  --color-gold-highlight: #FBE8A6;
+  --color-gold-faint: #EDE4D3;
+  --gradient-gold-metal: linear-gradient(105deg, #7A4E14 0%, #B8842E 22%, #E8C266 45%, #FBE8A6 52%, #E2B85A 60%, #A9772A 82%, #7A4E14 100%);
+  /* Linien */
+  --color-border: rgba(60,40,10,0.12);
+  /* Typografie */
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}

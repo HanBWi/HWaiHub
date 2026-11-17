@@ -1,0 +1,10 @@
+/* Selbst gehostete Schriften (SIL Open Font License, siehe assets/fonts/OFL-*.txt).
+   Kein Abruf von Google-Servern. Nur benötigte Zeichen enthalten. */
+@font-face{font-family:'Inter';font-weight:300 400;font-style:normal;font-display:swap;src:url('/assets/fonts/Inter-Regular.woff2') format('woff2');}
+@font-face{font-family:'Inter';font-weight:500;font-style:normal;font-display:swap;src:url('/assets/fonts/InterMedium-Regular.woff2') format('woff2');}
+@font-face{font-family:'Inter';font-weight:600;font-style:normal;font-display:swap;src:url('/assets/fonts/InterSemiBold-Regular.woff2') format('woff2');}
+@font-face{font-family:'Inter';font-weight:700 800;font-style:normal;font-display:swap;src:url('/assets/fonts/Inter-Bold.woff2') format('woff2');}
+@font-face{font-family:'Cormorant Garamond';font-weight:300;font-style:normal;font-display:swap;src:url('/assets/fonts/CormorantGaramondLight-Regular.woff2') format('woff2');}
+@font-face{font-family:'Cormorant Garamond';font-weight:400;font-style:normal;font-display:swap;src:url('/assets/fonts/CormorantGaramond-Regular.woff2') format('woff2');}
+@font-face{font-family:'Cormorant Garamond';font-weight:500 600;font-style:normal;font-display:swap;src:url('/assets/fonts/CormorantGaramondMedium-Regular.woff2') format('woff2');}
+@font-face{font-family:'Cormorant Garamond';font-weight:300 600;font-style:italic;font-display:swap;src:url('/assets/fonts/CormorantGaramond-Italic.woff2') format('woff2');}

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.hwaihub.com/sitemap.xml
+Sitemap: https://hwaihub.com/sitemap.xml

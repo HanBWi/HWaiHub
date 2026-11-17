@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light" />
+  <title>Impact &amp; metrics: how we measure AI projects | HWaiHub</title>
+<meta name="description" content="Time, cost, lead time, error rate: how HWaiHub makes the impact of AI and automation measurable – with a cockpit, detailed reports and baselines before the start." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://hwaihub.com/en/impact/" />
+  <link rel="alternate" hreflang="de" href="https://hwaihub.com/wirkung/" />
+  <link rel="alternate" hreflang="en" href="https://hwaihub.com/en/impact/" />
+  <link rel="alternate" hreflang="x-default" href="https://hwaihub.com/wirkung/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="HWaiHub" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:title" content="Impact &amp; metrics: how we measure AI projects | HWaiHub" />
+  <meta property="og:description" content="Time, cost, lead time, error rate: how HWaiHub makes the impact of AI and automation measurable – with a cockpit, detailed reports and baselines before the start." />
+  <meta property="og:url" content="https://hwaihub.com/en/impact/" />
+  <meta property="og:image" content="https://hwaihub.com/assets/og/og-wirkung-en.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Impact &amp; metrics: how we measure AI projects | HWaiHub" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39;; script-src &#39;self&#39; &#39;unsafe-inline&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; connect-src &#39;self&#39; https://hook.eu1.make.com; form-action &#39;self&#39; mailto:; base-uri &#39;self&#39;; object-src &#39;none&#39;" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="hw-form-endpoint" content="https://hook.eu1.make.com/mtmn2bhcxbo6h8ivvcdp9sj6o1lcer86" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/assets/icons/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="preload" href="/assets/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/CormorantGaramondMedium-Regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/CormorantGaramond-Italic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/css/fonts.css?v=ffd4ba134e" />
+  <link rel="stylesheet" href="/css/tokens.css?v=ffd4ba134e" />
+  <link rel="stylesheet" href="/css/site.css?v=ffd4ba134e" />
+  <link rel="stylesheet" href="/css/components.css?v=ffd4ba134e" />
+  <link rel="stylesheet" href="/css/premium.css?v=ffd4ba134e" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ProfessionalService","@id":"https://hwaihub.com/#org","name":"HWaiHub","url":"https://hwaihub.com/","slogan":"Business first. Technology second.","description":"HWaiHub is a consultancy for AI transformation and business automation for small and mid-sized companies in the German-speaking region, founded by Hanna Winkelmann. Business first. Technology second.","email":"info@hwaihub.com","address":{"@type":"PostalAddress","addressLocality":"Cascais","addressCountry":"PT"},"areaServed":[{"@type":"Country","name":"DE"},{"@type":"Country","name":"AT"},{"@type":"Country","name":"CH"}],"founder":{"@id":"https://hwaihub.com/#hanna"},"knowsAbout":["AI transformation","Business automation","Microsoft 365 Copilot","Copilot Studio","Power Automate","AI agents","AI literacy under the EU AI Act","AI governance","Process optimisation","Change management"],"logo":"https://hwaihub.com/assets/images/hwaihub-wordmark.png"},{"@type":"Person","@id":"https://hwaihub.com/#hanna","name":"Hanna Winkelmann","jobTitle":"Founder of HWaiHub","worksFor":{"@id":"https://hwaihub.com/#org"},"image":"https://hwaihub.com/assets/images/hanna_portrait.jpg","description":"Hanna Winkelmann is the founder of HWaiHub. She combines business, IT, processes, risk management, change and AI – with 15 years of corporate experience in banking, insurance, automotive and energy.","sameAs":["https://www.linkedin.com/in/hanna-winkelmann"]},{"@type":"FAQPage","inLanguage":"en","mainEntity":[{"@type":"Question","name":"Are the figures in the cockpit and the detailed reports real customer data?","acceptedAnswer":{"@type":"Answer","text":"No. They are concept visuals with example values from typical workflows in mid-sized companies. They show how we present impact – not which result you can expect."}},{"@type":"Question","name":"Which metrics do you measure?","acceptedAnswer":{"@type":"Answer","text":"A few meaningful ones per workflow: for example time per case, lead time, error and rework rate, degree of automation per sub-step and the impact in euros – calculated conservatively. We agree on which ones fit together before the start."}},{"@type":"Question","name":"When can you see whether something has improved?","acceptedAnswer":{"@type":"Answer","text":"We measure the baseline before the start and again after the pilot. We define the period upfront; in the examples it is 90 days after the start."}},{"@type":"Question","name":"What happens if a pilot does not show the hoped-for impact?","acceptedAnswer":{"@type":"Answer","text":"Then you decide based on the measurement: adjust or deliberately stop. That is exactly why we start small – before larger sums are invested."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://hwaihub.com/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://hwaihub.com/en/services/"},{"@type":"ListItem","position":3,"name":"Impact & metrics","item":"https://hwaihub.com/en/impact/"}]}]}</script>
+
+</head>
+<body data-locale="en" data-page-key="wirkung">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="siteHeader">
+  <div class="sh-inner">
+    <a href="/en/" class="hw-logo hw-logo--md" aria-label="HWaiHub home">
+<span class="hw-logo-mark" aria-hidden="true"><span>H</span></span><span class="hw-logo-text"><span class="hw-logo-word">HWaiHub</span><span class="hw-logo-claim">Business first. Technology second.</span></span></a>
+
+    <nav class="sh-nav" aria-label="Main navigation">
+      <ul class="sh-menu">
+        <li class="sh-item">
+          <a href="/en/your-situation/" class="sh-link" data-route="anwendungsfaelle">Your situation</a>
+        </li>
+        <li class="sh-item is-active">
+          <details class="sh-dd" data-dd>
+            <summary class="sh-link">Services<span class="sh-caret" aria-hidden="true"></span></summary>
+            <div class="sh-panel sh-panel--cols">
+              <div class="sh-group">
+                <p class="sh-group-label">Three pillars</p>
+                <ul>
+                  <li><a href="/en/ai-business-automation/" class="" data-route="business-automation">AI &amp; Business Automation</a></li>
+                  <li><a href="/en/microsoft-copilot/" class="" data-route="copilot">Microsoft Copilot – overview</a></li>
+                  <li><a href="/en/ai-enablement-governance/" class="" data-route="enablement">AI Enablement &amp; Rules</a></li>
+                </ul>
+              </div>
+              <div class="sh-group">
+                <p class="sh-group-label">Your path</p>
+                <ul>
+                  <li><a href="/en/ai-transformation-analysis/" class="" data-route="analyse">AI Transformation Analysis</a></li>
+                  <li><a href="/en/ai-automation-pilot/" class="" data-route="pilot">AI &amp; Automation Pilot</a></li>
+                  <li><a href="/en/services/#umsetzung" class="" data-route="umsetzung">Implementation &amp; scaling</a></li>
+                  <li><a href="/en/ai-partnership/" class="" data-route="begleitung">AI Partnership</a></li>
+                </ul>
+              </div>
+              <div class="sh-group">
+                <p class="sh-group-label">Getting started &amp; Academy</p>
+                <ul>
+                  <li><a href="/en/ai-potential-check/" class="" data-route="potenzialcheck">AI Potential Check</a></li>
+                  <li><a href="/en/academy/companies/" class="" data-route="academy-unternehmen">For companies</a></li>
+                  <li><a href="/en/academy/individuals/" class="" data-route="academy-einzelpersonen">For individuals</a></li>
+                  <li><a href="/en/funding-check/" class="" data-route="foerdercheck">Funding check</a></li>
+                </ul>
+              </div>
+              <div class="sh-panel-foot">
+                <a href="/en/services/" data-route="loesungen">All services →</a>
+                <a href="/en/impact/" aria-current="page" data-route="wirkung">Impact &amp; metrics →</a>
+              </div>
+            </div>
+          </details>
+        </li>
+        <li class="sh-item">
+          <details class="sh-dd" data-dd>
+            <summary class="sh-link">Microsoft Copilot<span class="sh-caret" aria-hidden="true"></span></summary>
+            <div class="sh-panel">
+              <div class="sh-group">
+                <p class="sh-group-label">Microsoft Copilot &amp; digital workplace</p>
+                <ul>
+                  <li><a href="/en/microsoft-copilot/" class="" data-route="copilot">Microsoft Copilot – overview</a></li>
+                  <li><a href="/en/copilot-rollout/" class="" data-route="copilot-einfuehrung">Copilot rollout</a></li>
+                  <li><a href="/en/copilot-training/" class="" data-route="copilot-schulung">Copilot training</a></li>
+                </ul>
+              </div>
+            </div>
+          </details>
+        </li>
+        <li class="sh-item">
+          <a href="/en/how-we-work/" class="sh-link" data-route="vorgehen">How we work</a>
+        </li>
+        <li class="sh-item">
+          <a href="/en/about/" class="sh-link" data-route="ueber">About HWaiHub</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="sh-actions">
+      <a href="https://bookings.cloud.microsoft/book/HWaiHub1@hwaihub.com/" class="btn btn-booking btn-booking--dark sh-book" data-route="booking" title="Book an intro call"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/></svg><span class="sh-book-t">Book an intro call</span></a>
+      <details class="ls-dd" data-dd>
+  <summary class="ls-pill" aria-label="Choose language: English"><svg class="ls-globe" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.6 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.6-3.9-9S9.4 5.6 12 3z"/></svg><span class="ls-code">EN</span><span class="sh-caret" aria-hidden="true"></span></summary>
+  <div class="ls-panel">
+    <p class="ls-k">Choose language</p>
+    <ul>
+      <li><a class="ls-opt" href="/wirkung/" hreflang="de" lang="de"><span class="ls-mono">DE</span><span class="ls-txt"><b>Deutsch</b><small>Diese Seite auf Deutsch</small></span><span class="ls-arrow" aria-hidden="true">→</span></a></li>
+      <li><span class="ls-opt is-current" aria-current="true"><span class="ls-mono">EN</span><span class="ls-txt"><b>English</b><small>Current language</small></span><span class="ls-check" aria-hidden="true"></span></span></li>
+    </ul>
+  </div>
+</details>
+      <a href="/en/ai-potential-check/" class="btn btn-primary sh-cta" data-route="potenzialcheck">Check your AI potential</a>
+    </div>
+
+    <details class="sh-mobile" data-mobile-menu>
+      <summary class="sh-burger" aria-label="Menu"><span></span><span></span><span></span></summary>
+      <div class="sh-overlay">
+        <nav aria-label="Mobile navigation">
+          <ul class="sh-mlist">
+            <li>
+              <a href="/en/your-situation/" class="" data-route="anwendungsfaelle">Your situation</a>
+            </li>
+            <li>
+              <details>
+                <summary>Services</summary>
+                <p class="sh-group-label">Three pillars</p>
+                <ul>
+                  <li><a href="/en/ai-business-automation/" class="" data-route="business-automation">AI &amp; Business Automation</a></li>
+                  <li><a href="/en/microsoft-copilot/" class="" data-route="copilot">Microsoft Copilot – overview</a></li>
+                  <li><a href="/en/ai-enablement-governance/" class="" data-route="enablement">AI Enablement &amp; Rules</a></li>
+                </ul>
+                <p class="sh-group-label">Your path</p>
+                <ul>
+                  <li><a href="/en/ai-transformation-analysis/" class="" data-route="analyse">AI Transformation Analysis</a></li>
+                  <li><a href="/en/ai-automation-pilot/" class="" data-route="pilot">AI &amp; Automation Pilot</a></li>
+                  <li><a href="/en/services/#umsetzung" class="" data-route="umsetzung">Implementation &amp; scaling</a></li>
+                  <li><a href="/en/ai-partnership/" class="" data-route="begleitung">AI Partnership</a></li>
+                </ul>
+                <p class="sh-group-label">Getting started &amp; Academy</p>
+                <ul>
+                  <li><a href="/en/ai-potential-check/" class="" data-route="potenzialcheck">AI Potential Check</a></li>
+                  <li><a href="/en/academy/companies/" class="" data-route="academy-unternehmen">For companies</a></li>
+                  <li><a href="/en/academy/individuals/" class="" data-route="academy-einzelpersonen">For individuals</a></li>
+                  <li><a href="/en/funding-check/" class="" data-route="foerdercheck">Funding check</a></li>
+                </ul>
+                <ul class="sh-mfootlinks">
+                  <li><a href="/en/services/" class="" data-route="loesungen">All services</a></li>
+                  <li><a href="/en/impact/" class="" aria-current="page" data-route="wirkung">Impact &amp; metrics</a></li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>Microsoft Copilot</summary>
+                <p class="sh-group-label">Microsoft Copilot &amp; digital workplace</p>
+                <ul>
+                  <li><a href="/en/microsoft-copilot/" class="" data-route="copilot">Microsoft Copilot – overview</a></li>
+                  <li><a href="/en/copilot-rollout/" class="" data-route="copilot-einfuehrung">Copilot rollout</a></li>
+                  <li><a href="/en/copilot-training/" class="" data-route="copilot-schulung">Copilot training</a></li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <a href="/en/how-we-work/" class="" data-route="vorgehen">How we work</a>
+            </li>
+            <li>
+              <a href="/en/about/" class="" data-route="ueber">About HWaiHub</a>
+            </li>
+            <li><a href="https://bookings.cloud.microsoft/book/HWaiHub1@hwaihub.com/" class="" data-route="booking">Book an intro call</a></li>
+            <li><a href="/en/contact/" class="" data-route="kontakt">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="sh-mfoot">
+          <a href="/en/ai-potential-check/" class="btn btn-primary" data-route="potenzialcheck">Check your AI potential</a>
+          <a href="mailto:info@hwaihub.com">info@hwaihub.com</a>
+          <a href="https://www.linkedin.com/in/hanna-winkelmann" rel="noopener" target="_blank">LinkedIn</a>
+          <nav class="ls-seg ls-seg--dark ls-seg--mobile" aria-label="Choose language"><svg class="ls-globe" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.6 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.6-3.9-9S9.4 5.6 12 3z"/></svg><a class="ls-seg-opt" href="/wirkung/" hreflang="de" lang="de">Deutsch</a><span class="ls-seg-opt is-current" aria-current="true">English</span>
+</nav>
+        </div>
+      </div>
+    </details>
+    <a href="/en/ai-potential-check/" class="sh-mcta" data-route="potenzialcheck">Check potential</a>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+<nav class="breadcrumbs" aria-label="Breadcrumb navigation">
+  <div class="container">
+    <ol>
+      <li><a href="/en/">Home</a></li>
+      <li><a href="/en/services/">Services</a></li>
+      <li><span aria-current="page">Impact &amp; metrics</span></li>
+    </ol>
+  </div>
+</nav>
+
+<section class="svh wk-hero" data-section="hero">
+  <div class="container svh-grid">
+    <div class="svh-text">
+      <p class="kicker">Impact &amp; metrics</p>
+      <h1 class="pt-title">What counts in the end: <em>time, cost, lead time, error rate.</em></h1>
+      <p class="pt-sub">Every project starts with a baseline and ends with a measurement. We only roll out what demonstrably works – and you see it in numbers, not in slides.</p>
+      <div class="btn-row">
+        <a href="/en/ai-potential-check/" class="btn btn-primary" data-route="potenzialcheck">Check your AI potential</a>
+        <a href="https://bookings.cloud.microsoft/book/HWaiHub1@hwaihub.com/" class="link-arrow" data-route="booking">Book an intro call →</a>
+      </div>
+    </div>
+    <aside class="svh-card wk-cycle" aria-label="How a reliable result is created">
+      <p class="svh-card-k">Measurement cycle</p>
+      <p class="svh-card-name">How a reliable result is created</p>
+      <ol>
+        <li><b>Capture the baseline</b><span>How long, how often, what does a case cost today?</span></li>
+        <li><b>Set the goal</b><span>A few metrics, agreed before the start.</span></li>
+        <li><b>Implement in a limited scope</b><span>One workflow in the pilot, with human approval.</span></li>
+        <li><b>Measure afterwards &amp; decide</b><span>Roll out, adjust or deliberately stop.</span></li>
+      </ol>
+    </aside>
+  </div>
+</section>
+
+<section class="sec sec--paper" id="kennzahlen" data-section="metrics">
+  <div class="container">
+    
+<div class="sec-head sec-head--center">
+  <p class="section-label">What we measure</p>
+  <h2 class="sec-title">Six metrics – <em>few, but reliable.</em></h2>
+  <p class="sec-sub">We choose two to four of them per workflow. You can see which measures are typical in your area under your situation.</p>
+</div>
+
+    <ol class="wk-metrics">
+      <li><span class="wk-n">01</span><h3>Time per case</h3><p class="wk-q">How long does a quote, an invoice, an answer take?</p><p class="wk-how"><b>How it's measured</b>Sample before and after, with your key users.</p></li>
+      <li><span class="wk-n">02</span><h3>Lead time</h3><p class="wk-q">How long does a case take from receipt to result?</p><p class="wk-how"><b>How it's measured</b>From timestamps in email, ticket or system.</p></li>
+      <li><span class="wk-n">03</span><h3>Errors &amp; rework</h3><p class="wk-q">How often does something have to be corrected, queried or redone?</p><p class="wk-how"><b>How it's measured</b>Corrections and follow-up questions per case.</p></li>
+      <li><span class="wk-n">04</span><h3>Degree of automation</h3><p class="wk-q">Which sub-steps does AI prepare or complete?</p><p class="wk-how"><b>How it's measured</b>Per sub-step of the workflow – before and after.</p></li>
+      <li><span class="wk-n">05</span><h3>Usage &amp; acceptance</h3><p class="wk-q">Is the solution really used every day?</p><p class="wk-how"><b>How it's measured</b>Active usage and feedback from key users.</p></li>
+      <li><span class="wk-n">06</span><h3>Impact in euros</h3><p class="wk-q">What is the time gained worth?</p><p class="wk-how"><b>How it's measured</b>Time saved × internal hourly rate – calculated conservatively.</p></li>
+    </ol>
+    <div class="wk-areas"><p class="sva"><span>Metrics per area:</span> <a href="/en/your-situation/#bereich-vertrieb" data-route="anwendungsfaelle"><i><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 5h18l-7 8v6l-4-2v-4z"/>
+</svg></i>Sales</a> <a href="/en/your-situation/#bereich-verwaltung" data-route="anwendungsfaelle"><i><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5"/><path d="M9 13h7M9 17h7"/>
+</svg></i>Administration</a> <a href="/en/your-situation/#bereich-kundenservice" data-route="anwendungsfaelle"><i><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5h16v11H10l-5 4v-4H4z"/><path d="M8 9h8M8 12h5"/>
+</svg></i>Customer service</a> <a href="/en/your-situation/#bereich-wissen" data-route="anwendungsfaelle"><i><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5c3-1 6-1 8 1 2-2 5-2 8-1v13c-3-1-6-1-8 1-2-2-5-2-8-1z"/><path d="M12 6v13"/>
+</svg></i>Knowledge</a> <a href="/en/your-situation/#bereich-steuerung" data-route="anwendungsfaelle"><i><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 20v-7M11 20V5M17 20v-11M3 20h18"/>
+</svg></i>Management</a> <a href="/en/your-situation/#bereich-mitarbeiter" data-route="anwendungsfaelle"><i><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14c3 0 5 2 5 5"/>
+</svg></i>People</a></p>
+</div>
+  </div>
+</section>
+
+<section class="sec sec--paper" id="cockpit-sec" data-section="cockpit">
+  <div class="container">
+
+    <div class="grid-2 impact-head" id="cockpit">
+      <div>
+        <p class="section-label">The overview</p>
+        <h2 class="sec-title">SME Business Cockpit – <em>the overview for management.</em></h2>
+      </div>
+      <p class="sec-sub">One picture for management: how automated are the six core processes, where is time lost, what does it cost – and how are revenue, margin and liquidity developing.</p>
+    </div>
+    <figure class="hw-figure wide">
+      <picture><source type="image/avif" srcset="/img/1BgMza6KX7-800.avif 800w, /img/1BgMza6KX7-1280.avif 1280w, /img/1BgMza6KX7-1920.avif 1920w" sizes="(max-width: 1200px) 94vw, 1120px"><source type="image/webp" srcset="/img/1BgMza6KX7-800.webp 800w, /img/1BgMza6KX7-1280.webp 1280w, /img/1BgMza6KX7-1920.webp 1920w" sizes="(max-width: 1200px) 94vw, 1120px"><img src="/img/1BgMza6KX7-800.jpeg" alt="HWaiHub SME Business Cockpit – process radar, KPIs, time lost, receivables, sales funnel and revenue development (example values, labels in German)" loading="lazy" decoding="async" width="1920" height="1080" srcset="/img/1BgMza6KX7-800.jpeg 800w, /img/1BgMza6KX7-1280.jpeg 1280w, /img/1BgMza6KX7-1920.jpeg 1920w" sizes="(max-width: 1200px) 94vw, 1120px"></picture>
+      <figcaption>SME Business Cockpit · degree of automation per core process (in %), time lost per manual process, liquidity and sales funnel. Concept visual with example values; image labels in German.</figcaption>
+    </figure>
+    <div class="hw-figure-facts">
+      <div><small>Degree of automation</small><strong>58 %</strong><span>across six core processes · example</span></div>
+      <div><small>Time lost</small><strong>31 h / week</strong><span>in manual processes · example</span></div>
+      <div><small>Resulting cost</small><strong>≈ €5,600 / month</strong><span>at €42/h staff cost · example calculation</span></div>
+      <div><small>Biggest potential</small><strong>Accounting &amp; administration</strong><span>degree of automation 35 % and 30 %</span></div>
+    </div>
+    <p class="example-note">Example values for illustration – no customer data.</p>
+  </div>
+</section>
+
+<section class="sec sec--sand" id="deep-dives" data-section="deep-dives">
+  <div class="container">
+    
+<div class="sec-head sec-head--center">
+  <p class="section-label">Detailed reports</p>
+  <h2 class="sec-title">What a measurement looks like – <em>90 days after the start.</em></h2>
+  <p class="sec-sub">The same logic for every area: core metric before and after, trend around the start, degree of automation per sub-step – and the result in hours and euros.</p>
+</div>
+
+    <div class="wk-tabs" role="tablist" aria-label="Detailed reports">
+      <button type="button" role="tab" id="wkt-dd-vertrieb" aria-controls="dd-vertrieb" aria-selected="true">Sales &amp; quotes</button>
+      <button type="button" role="tab" id="wkt-dd-kundenservice" aria-controls="dd-kundenservice" aria-selected="false" tabindex="-1">Customer service</button>
+      <button type="button" role="tab" id="wkt-dd-buchhaltung" aria-controls="dd-buchhaltung" aria-selected="false" tabindex="-1">Accounting &amp; dunning</button>
+    </div>
+    <div class="hw-dive wk-dive" id="dd-vertrieb" role="tabpanel" aria-labelledby="wkt-dd-vertrieb">
+      <figure class="hw-figure">
+        <picture><source type="image/avif" srcset="/img/pZxN2fYSB9-800.avif 800w, /img/pZxN2fYSB9-1280.avif 1280w" sizes="(max-width: 900px) 94vw, 620px"><source type="image/webp" srcset="/img/pZxN2fYSB9-800.webp 800w, /img/pZxN2fYSB9-1280.webp 1280w" sizes="(max-width: 900px) 94vw, 620px"><img src="/img/pZxN2fYSB9-800.jpeg" alt="Detailed report sales &amp; quote process – time per quote, response time, conversion and degree of automation (example values, labels in German)" loading="lazy" decoding="async" width="1280" height="720" srcset="/img/pZxN2fYSB9-800.jpeg 800w, /img/pZxN2fYSB9-1280.jpeg 1280w" sizes="(max-width: 900px) 94vw, 620px"></picture>
+      </figure>
+      <div class="hw-dive-text">
+        <p class="section-label">Detailed report 01</p>
+        <h3>Sales &amp; quote process</h3>
+        <p>Enquiries arrive by email, data is gathered from several places, the quote is written by hand. After automation, enquiries are pre-qualified, calculated, the document is generated and the follow-up is triggered – the employee checks and approves.</p>
+        <p class="example-tag">Example values · no customer data</p>
+        <ul class="hw-kpis">
+          <li><b>25 min</b><span>per quote · before 3.5 h</span></li>
+          <li><b>3 h</b><span>response time · before 2.1 days</span></li>
+          <li><b>39 %</b><span>conversion quote → order</span></li>
+          <li><b>≈ +€21,600</b><span>order intake / month</span></li>
+        </ul>
+        <div class="hw-score">Degree of automation <b>55 % → 84 %</b></div>
+      </div>
+    </div>
+    <div class="hw-dive wk-dive" id="dd-kundenservice" role="tabpanel" aria-labelledby="wkt-dd-kundenservice">
+      <figure class="hw-figure">
+        <picture><source type="image/avif" srcset="/img/t_eBINYJZX-800.avif 800w, /img/t_eBINYJZX-1280.avif 1280w" sizes="(max-width: 900px) 94vw, 620px"><source type="image/webp" srcset="/img/t_eBINYJZX-800.webp 800w, /img/t_eBINYJZX-1280.webp 1280w" sizes="(max-width: 900px) 94vw, 620px"><img src="/img/t_eBINYJZX-800.jpeg" alt="Detailed report customer service – first response time, automatically resolved enquiries, satisfaction and degree of automation per enquiry type (example values, labels in German)" loading="lazy" decoding="async" width="1280" height="720" srcset="/img/t_eBINYJZX-800.jpeg 800w, /img/t_eBINYJZX-1280.jpeg 1280w" sizes="(max-width: 900px) 94vw, 620px"></picture>
+      </figure>
+      <div class="hw-dive-text">
+        <p class="section-label">Detailed report 02</p>
+        <h3>Customer service</h3>
+        <p>The enquiry volume stays the same – the manual effort drops. Standard cases such as opening hours, delivery status and appointment requests are answered automatically, complex cases reach the employee already prepared.</p>
+        <p class="example-tag">Example values · no customer data</p>
+        <ul class="hw-kpis">
+          <li><b>8 min</b><span>first response time · before 9.5 h</span></li>
+          <li><b>64 %</b><span>resolved automatically</span></li>
+          <li><b>4.6 / 5</b><span>satisfaction · before 3.8</span></li>
+          <li><b>58 h</b><span>regained / month</span></li>
+        </ul>
+        <div class="hw-score">Degree of automation <b>40 % → 82 %</b></div>
+      </div>
+    </div>
+    <div class="hw-dive wk-dive" id="dd-buchhaltung" role="tabpanel" aria-labelledby="wkt-dd-buchhaltung">
+      <figure class="hw-figure">
+        <picture><source type="image/avif" srcset="/img/Hx3GZPFi5G-800.avif 800w, /img/Hx3GZPFi5G-1280.avif 1280w" sizes="(max-width: 900px) 94vw, 620px"><source type="image/webp" srcset="/img/Hx3GZPFi5G-800.webp 800w, /img/Hx3GZPFi5G-1280.webp 1280w" sizes="(max-width: 900px) 94vw, 620px"><img src="/img/Hx3GZPFi5G-800.jpeg" alt="Detailed report accounting &amp; dunning – time per incoming invoice, payment period, overdue receivables and error rate (example values, labels in German)" loading="lazy" decoding="async" width="1280" height="720" srcset="/img/Hx3GZPFi5G-800.jpeg 800w, /img/Hx3GZPFi5G-1280.jpeg 1280w" sizes="(max-width: 900px) 94vw, 620px"></picture>
+      </figure>
+      <div class="hw-dive-text">
+        <p class="section-label">Detailed report 03</p>
+        <h3>Accounting &amp; dunning</h3>
+        <p>380 invoices a month, each captured and coded by hand. With document recognition and AI coding suggestions, accounting only checks – and the three-stage dunning process runs without anyone having to trigger it.</p>
+        <p class="example-tag">Example values · no customer data</p>
+        <ul class="hw-kpis">
+          <li><b>1.5 min</b><span>per incoming invoice · before 12 min</span></li>
+          <li><b>29 days</b><span>payment period · before 41 days</span></li>
+          <li><b>0.8 %</b><span>error rate · before 6.2 %</span></li>
+          <li><b>≈ €40,000</b><span>liquidity released</span></li>
+        </ul>
+        <div class="hw-score">Degree of automation <b>35 % → 79 %</b></div>
+      </div>
+    </div>
+    <p class="example-note center wk-ex">All illustrations are concept visuals with example values from typical projects in mid-sized companies – no customer data and no promise of impact. We determine your baselines in the <a href="/en/ai-transformation-analysis/">AI Transformation Analysis</a>.</p>
+  </div>
+</section>
+
+<section class="sec sec--paper" id="ausgangswert" data-section="baseline">
+  <div class="container">
+    
+<div class="sec-head sec-head--center">
+  <p class="section-label">Your baseline</p>
+  <h2 class="sec-title">No baseline, <em>no result.</em></h2>
+  <p class="sec-sub">Three ways to your first number – from a quick self-test to a reliable cost-benefit calculation.</p>
+</div>
+
+    <ol class="wk-base">
+      <li><a href="/en/your-situation/#rechner" data-route="anwendungsfaelle"><small>Instant · in your browser</small><b>Do the maths</b><span>What does a workflow cost today? With your own values.</span><i>To the calculator →</i></a></li>
+      <li><a href="/en/ai-potential-check/" data-route="potenzialcheck"><small>7 minutes · free</small><b>AI Potential Check</b><span>First assessment per area, with a PDF report.</span><i>Check potential →</i></a></li>
+      <li><a href="/en/ai-transformation-analysis/" data-route="analyse"><small>With your team</small><b>AI Transformation Analysis</b><span>Real baselines and a cost-benefit calculation.</span><i>View details →</i></a></li>
+    </ol>
+  </div>
+</section>
+
+
+<section class="faq-sec" id="faq" data-section="faq" aria-labelledby="faq-wirkung">
+  <div class="container container--narrow">
+    <div class="sec-head">
+      <p class="section-label">FAQ</p>
+      <h2 class="sec-title" id="faq-wirkung">Frequently asked questions</h2>
+    </div>
+    <div class="faq">
+      <details class="faq-q">
+        <summary>Are the figures in the cockpit and the detailed reports real customer data?</summary>
+        <div class="faq-a"><p>No. They are concept visuals with example values from typical workflows in mid-sized companies. They show how we present impact – not which result you can expect.</p></div>
+      </details>
+      <details class="faq-q">
+        <summary>Which metrics do you measure?</summary>
+        <div class="faq-a"><p>A few meaningful ones per workflow: for example time per case, lead time, error and rework rate, degree of automation per sub-step and the impact in euros – calculated conservatively. We agree on which ones fit together before the start.</p></div>
+      </details>
+      <details class="faq-q">
+        <summary>When can you see whether something has improved?</summary>
+        <div class="faq-a"><p>We measure the baseline before the start and again after the pilot. We define the period upfront; in the examples it is 90 days after the start.</p></div>
+      </details>
+      <details class="faq-q">
+        <summary>What happens if a pilot does not show the hoped-for impact?</summary>
+        <div class="faq-a"><p>Then you decide based on the measurement: adjust or deliberately stop. That is exactly why we start small – before larger sums are invested.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="cta-band" data-section="cta">
+  <div class="container">
+    <h2 class="cta-title">Which number would you like to see <em>change</em> in 90 days?</h2>
+    <p class="cta-sub">Tell us the process – we tell you what can realistically be measured.</p>
+    <div class="btn-row btn-row--center">
+      <a href="https://bookings.cloud.microsoft/book/HWaiHub1@hwaihub.com/" class="btn btn-primary" data-route="booking">Book an intro call</a>
+      <a href="/en/ai-potential-check/" class="link-arrow link-arrow--light" data-route="potenzialcheck">Check your AI potential →</a>
+    </div>
+    <p class="cta-small"><a href="/en/your-situation/" data-route="anwendungsfaelle">See your situation →</a> · <a href="/en/services/" data-route="loesungen">All services →</a></p>
+  </div>
+</section>
+
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="sf-band">
+      <div class="sf-brand-id">
+        <a href="/en/" class="hw-logo hw-logo--lg" aria-label="HWaiHub home">
+<span class="hw-logo-mark" aria-hidden="true"><span>H</span></span><span class="hw-logo-text"><span class="hw-logo-word">HWaiHub</span><span class="hw-logo-claim">Business first. Technology second.</span></span></a>
+      </div>
+      <p class="sf-entity">HWaiHub is a consultancy for AI transformation and business automation for small and mid-sized companies in the German-speaking region, founded by Hanna Winkelmann.</p>
+      <div class="sf-brand-contact">
+        <p class="sf-meta">Based in Cascais, Portugal · consulting remotely and on site in the German-speaking region</p>
+        <p class="sf-meta sf-mail"><a href="mailto:info@hwaihub.com">info@hwaihub.com</a></p>
+        <ul class="sf-social">
+          <li><a href="https://www.linkedin.com/in/hanna-winkelmann" target="_blank" rel="noopener" aria-label="Hanna Winkelmann on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0h.01z"/></svg><span>Hanna Winkelmann on LinkedIn</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sf-top">
+      <div class="sf-col">
+        <h2 class="sf-h">Get oriented</h2>
+        <ul>
+          <li><a href="/en/your-situation/" data-route="anwendungsfaelle">Your situation</a></li>
+          <li><a href="/en/ai-potential-check/" data-route="potenzialcheck">AI Potential Check</a></li>
+          <li><a href="/en/funding-check/" data-route="foerdercheck">Funding check</a></li>
+          <li><a href="/en/impact/" data-route="wirkung">Impact &amp; metrics</a></li>
+        </ul>
+      </div>
+      <div class="sf-col">
+        <h2 class="sf-h">Services</h2>
+        <ul>
+          <li><a href="/en/services/" data-route="loesungen">All services</a></li>
+          <li><a href="/en/ai-transformation-analysis/" data-route="analyse">AI Transformation Analysis</a></li>
+          <li><a href="/en/ai-automation-pilot/" data-route="pilot">AI &amp; Automation Pilot</a></li>
+          <li><a href="/en/services/#umsetzung" data-route="umsetzung">Implementation &amp; scaling</a></li>
+          <li><a href="/en/ai-partnership/" data-route="begleitung">AI Partnership</a></li>
+        </ul>
+      </div>
+      <div class="sf-col">
+        <h2 class="sf-h">Areas of expertise</h2>
+        <ul>
+          <li><a href="/en/ai-business-automation/" data-route="business-automation">AI &amp; Business Automation</a></li>
+          <li><a href="/en/microsoft-copilot/" data-route="copilot">Microsoft Copilot – overview</a></li>
+          <li><a href="/en/copilot-rollout/" data-route="copilot-einfuehrung">Copilot rollout</a></li>
+          <li><a href="/en/copilot-training/" data-route="copilot-schulung">Copilot training</a></li>
+          <li><a href="/en/ai-enablement-governance/" data-route="enablement">AI Enablement &amp; Rules</a></li>
+          <li><a href="/en/ai-literacy-eu-ai-act/" data-route="ai-act">AI literacy (AI Act)</a></li>
+        </ul>
+      </div>
+      <div class="sf-col">
+        <h2 class="sf-h">Academy</h2>
+        <ul>
+          <li><a href="/en/academy/" data-route="academy">HWaiHub Academy</a></li>
+          <li><a href="/en/academy/companies/" data-route="academy-unternehmen">For companies</a></li>
+          <li><a href="/en/academy/individuals/" data-route="academy-einzelpersonen">For individuals</a></li>
+          <li><a href="/en/recommend/" data-route="empfehlen">Request for my team / company</a></li>
+        </ul>
+      </div>
+      <div class="sf-col">
+        <h2 class="sf-h">HWaiHub</h2>
+        <ul>
+          <li><a href="/en/how-we-work/" data-route="vorgehen">How we work</a></li>
+          <li><a href="/en/about/" data-route="ueber">About HWaiHub</a></li>
+          <li><a href="/en/contact/" data-route="kontakt">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sf-bottom">
+      <span>© 2026 Hanna Winkelmann · HWaiHub</span>
+      <nav class="sf-legal" aria-label="Legal">
+        <a href="/en/legal-notice/">Legal notice</a>
+        <a href="/en/privacy/">Privacy</a>
+        <button type="button" class="sf-linkbtn" data-open-modal="modalCookies">Cookie settings</button>
+      </nav>
+      <nav class="ls-seg ls-seg--dark" aria-label="Choose language"><svg class="ls-globe" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.6 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.6-3.9-9S9.4 5.6 12 3z"/></svg><a class="ls-seg-opt" href="/wirkung/" hreflang="de" lang="de">Deutsch</a><span class="ls-seg-opt is-current" aria-current="true">English</span>
+</nav>
+    </div>
+  </div>
+</footer>
+
+<div id="cookieBanner" hidden role="region" aria-label="Cookie settings">
+  <p><span>We only use technically necessary storage. No tracking or marketing cookies are set. More in our</span> <a href="/en/privacy/">privacy policy</a>.</p>
+  <div class="cookie-btns">
+    <button type="button" class="cookie-btn-accept" data-cookie-ok>Got it</button>
+  </div>
+</div>
+
+<div id="modalCookies" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalCookiesTitle">
+  <div class="modal-box">
+    <button type="button" class="modal-close" data-close-modal="modalCookies" aria-label="Close">✕</button>
+    <h2 id="modalCookiesTitle">Cookie settings</h2>
+    <div class="modal-divider"></div>
+    <p>This website only uses technically necessary storage. No analytics or marketing cookies are used.</p>
+    <div class="modal-actions">
+      <button type="button" class="cookie-btn-accept" data-cookie-ok data-close-modal="modalCookies">Got it</button>
+    </div>
+  </div>
+</div>
+
+<template id="hwLogoTpl"><span class="hw-logo hw-logo--print" role="img" aria-label="HWaiHub">
+<span class="hw-logo-mark" aria-hidden="true"><span>H</span></span><span class="hw-logo-text"><span class="hw-logo-word">HWaiHub</span></span></span></template>
+<script type="application/json" id="hw-routes">{"home":"/en/","potenzialcheck":"/en/ai-potential-check/","foerdercheck":"/en/funding-check/","loesungen":"/en/services/","analyse":"/en/ai-transformation-analysis/","pilot":"/en/ai-automation-pilot/","umsetzung":"/en/services/#umsetzung","begleitung":"/en/ai-partnership/","business-automation":"/en/ai-business-automation/","enablement":"/en/ai-enablement-governance/","ai-act":"/en/ai-literacy-eu-ai-act/","copilot":"/en/microsoft-copilot/","copilot-einfuehrung":"/en/copilot-rollout/","copilot-schulung":"/en/copilot-training/","anwendungsfaelle":"/en/your-situation/","wirkung":"/en/impact/","academy":"/en/academy/","academy-unternehmen":"/en/academy/companies/","academy-einzelpersonen":"/en/academy/individuals/","empfehlen":"/en/recommend/","vorgehen":"/en/how-we-work/","ueber":"/en/about/","kontakt":"/en/contact/","booking":"https://bookings.cloud.microsoft/book/HWaiHub1@hwaihub.com/","impressum":"/en/legal-notice/","datenschutz":"/en/privacy/"}</script>
+<script src="/js/main.js?v=ffd4ba134e" defer></script>
+<script src="/js/site-context.js?v=ffd4ba134e" defer></script>
+
+<script src="/js/wirkung.js?v=ffd4ba134e" defer></script>
+
+</body>
+</html>

@@ -1,221 +1,196 @@
+/* HWaiHub – Kontaktformular
+ * Der Formular-Endpunkt kommt ausschließlich aus der zentralen Konfiguration
+ * (site.json → formEndpoint → <meta name="hw-form-endpoint">). Kein Token,
+ * keine Zugangsdaten im Code: Auf statischem Hosting ist jeder Endpunkt
+ * öffentlich; Prüfung, Filter und Rate-Limit erfolgen im Empfänger (Make).
+ * Ist kein Endpunkt gesetzt, wird nichts gesendet und auf E-Mail verwiesen.
+ */
 (function () {
-  // ─────────────────────────────────────────────────────────────────
-  // KONFIGURATION — Make.com Webhook → Notion
-  // Setup: https://make.com (kostenloser Account)
-  // 1. Neues Szenario: Webhooks → Notion (Create Database Item)
-  // 2. Webhook-URL von Make.com hier eintragen:
-  // ─────────────────────────────────────────────────────────────────
-  var WEBHOOK_URL = 'https://hook.eu1.make.com/mtmn2bhcxbo6h8ivvcdp9sj6o1lcer86';
+  'use strict';
 
-  // ─────────────────────────────────────────────────────────────────
-  // SICHERHEIT — Token-Schutz & Spam-Abwehr
-  //
-  // SCHRITT 1 – Make.com Filter einrichten (einmalig, in deinem Szenario):
-  //   Füge nach dem Webhook-Trigger einen Filter hinzu:
-  //   Bedingung: {{1._token}} = "hwai-contact-2026"
-  //   → Alle Anfragen ohne diesen Token werden von Make.com ignoriert.
-  //
-  // SCHRITT 2 – IP-Beschränkung (optional, in Make.com → Webhook → Settings):
-  //   Unter "Advanced Settings" kannst du IP-Adressen whitelisten.
-  //   Für eine öffentliche Kontaktseite reicht der Token-Filter aus.
-  //
-  // SCHRITT 3 – Honeypot (automatisch, kein Handlungsbedarf):
-  //   Das Formular enthält ein unsichtbares Feld (cf-honeypot).
-  //   Bots füllen es aus → Absendung wird clientseitig stillschweigend blockiert.
-  //
-  // SCHRITT 4 – Rate-Limiting (automatisch, kein Handlungsbedarf):
-  //   Max. 3 Absendungen pro 10 Minuten pro Browser-Session.
-  // ─────────────────────────────────────────────────────────────────
-  var CONTACT_TOKEN   = 'hwai-contact-2026';
-  var RATE_LIMIT_MAX  = 3;
-  var RATE_LIMIT_MS   = 10 * 60 * 1000; // 10 Minuten
+  var RATE_LIMIT_MAX = 3;
+  var RATE_LIMIT_MS = 10 * 60 * 1000;
+  var MIN_FILL_MS = 3000; // Zeitfalle gegen Bots
 
   var MSGS = {
     de: {
-      sending:  'Wird gesendet…',
-      success:  '✓ Nachricht erhalten. Wir melden uns innerhalb von 24 Stunden.',
-      error:    'Fehler beim Senden. Bitte kontaktiere mich direkt: info@hwaihub.com.',
-      required: 'Bitte fülle alle Pflichtfelder aus.',
-      gdpr:     'Bitte stimme der Datenschutzerklärung zu.',
-      notset:   'Formular noch nicht konfiguriert. Bitte schreib direkt an info@hwaihub.com.',
+      sending: 'Wird gesendet…',
+      success: '✓ Nachricht erhalten. Wir melden uns so schnell wie möglich.',
+      error: 'Fehler beim Senden. Bitte schreiben Sie direkt an info@hwaihub.com.',
+      required: 'Bitte füllen Sie alle Pflichtfelder aus.',
+      email: 'Bitte geben Sie eine gültige E-Mail-Adresse an.',
+      gdpr: 'Bitte stimmen Sie der Datenschutzerklärung zu.',
+      notset: 'Das Formular ist noch nicht freigeschaltet. Bitte schreiben Sie direkt an info@hwaihub.com.',
+      ratelimit: 'Zu viele Anfragen. Bitte warten Sie einige Minuten oder schreiben Sie direkt an info@hwaihub.com.'
     },
     en: {
-      sending:  'Sending…',
-      success:  '✓ Message received. We will be in touch within 24 hours.',
-      error:    'Submission failed. Please reach me directly at info@hwaihub.com.',
+      sending: 'Sending…',
+      success: '✓ Message received. We will get back to you as soon as possible.',
+      error: 'Error while sending. Please write directly to info@hwaihub.com.',
       required: 'Please fill in all required fields.',
-      gdpr:     'Please accept the privacy policy.',
-      notset:   'Form not configured yet. Please write directly to info@hwaihub.com.',
-    },
-    pl: {
-      sending:  'Wysyłanie…',
-      success:  '✓ Wiadomość odebrana. Skontaktujemy się w ciągu 24 godzin.',
-      error:    'Błąd wysyłania. Skontaktuj się bezpośrednio: info@hwaihub.com.',
-      required: 'Proszę wypełnić wszystkie wymagane pola.',
-      gdpr:     'Proszę zaakceptować politykę prywatności.',
-      notset:   'Formularz jeszcze nie skonfigurowany. Napisz na info@hwaihub.com.',
-    },
-    pt: {
-      sending:  'A enviar…',
-      success:  '✓ Mensagem recebida. Entraremos em contacto em 24 horas.',
-      error:    'Erro no envio. Contacte-me diretamente: info@hwaihub.com.',
-      required: 'Por favor preencha todos os campos obrigatórios.',
-      gdpr:     'Por favor aceite a política de privacidade.',
-      notset:   'Formulário ainda não configurado. Escreva para info@hwaihub.com.',
-    },
-    es: {
-      sending:  'Enviando…',
-      success:  '✓ Mensaje recibido. Nos pondremos en contacto en 24 horas.',
-      error:    'Error al enviar. Escríbeme directamente a info@hwaihub.com.',
-      required: 'Por favor rellena todos los campos obligatorios.',
-      gdpr:     'Por favor acepta la política de privacidad.',
-      notset:   'Formulario aún no configurado. Escribe a info@hwaihub.com.',
-    },
+      email: 'Please enter a valid email address.',
+      gdpr: 'Please agree to the privacy policy.',
+      notset: 'The form is not active yet. Please write directly to info@hwaihub.com.',
+      ratelimit: 'Too many requests. Please wait a few minutes or write directly to info@hwaihub.com.'
+    }
   };
 
-  function getLang() {
-    var l = localStorage.getItem('hw_lang') || 'en';
-    return MSGS[l] ? l : 'en';
+  function lang() {
+    var l = (document.documentElement.getAttribute('lang') || 'de').slice(0, 2);
+    return MSGS[l] ? l : 'de';
   }
+  function t(key) { return (MSGS[lang()] || MSGS.de)[key] || MSGS.de[key]; }
 
-  function t(key) {
-    var lang = getLang();
-    return (MSGS[lang] || MSGS['de'])[key] || MSGS['de'][key];
+  function endpoint() {
+    var m = document.querySelector('meta[name="hw-form-endpoint"]');
+    var v = m ? (m.getAttribute('content') || '').trim() : '';
+    return /^https:\/\//.test(v) ? v : '';
   }
 
   function showFeedback(ok, msg) {
     var el = document.getElementById('cf-feedback');
     if (!el) return;
     el.textContent = msg;
-    el.style.display = 'block';
-    el.style.background = ok ? 'rgba(74,222,128,0.12)' : 'rgba(239,68,68,0.12)';
-    el.style.color       = ok ? '#4ade80' : '#f87171';
-    el.style.border      = '1px solid ' + (ok ? 'rgba(74,222,128,0.3)' : 'rgba(239,68,68,0.3)');
+    el.setAttribute('role', ok ? 'status' : 'alert');
+    el.className = ok ? 'is-ok' : 'is-error';
     el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
-
   function hideFeedback() {
     var el = document.getElementById('cf-feedback');
-    if (el) el.style.display = 'none';
+    if (el) el.className = '';
   }
-
   function setSubmitState(loading) {
     var btn = document.getElementById('cf-submit');
     if (!btn) return;
     if (loading) {
       btn.setAttribute('data-original', btn.textContent);
-      btn.disabled    = true;
+      btn.disabled = true;
       btn.textContent = t('sending');
     } else {
-      btn.disabled    = false;
-      btn.textContent = btn.getAttribute('data-original') || 'Nachricht senden →';
+      btn.disabled = false;
+      btn.textContent = btn.getAttribute('data-original') || btn.textContent;
     }
   }
 
-  // ── Rate-Limit-Hilfsfunktionen ─────────────────────────────────────
-  function getRateLimitData() {
-    try {
-      return JSON.parse(localStorage.getItem('hw_contact_rl') || '{"count":0,"since":0}');
-    } catch (e) { return { count: 0, since: 0 }; }
-  }
-  function setRateLimitData(data) {
-    try { localStorage.setItem('hw_contact_rl', JSON.stringify(data)); } catch (e) {}
+  function rl() {
+    try { return JSON.parse(sessionStorage.getItem('hw_contact_rl') || '{"count":0,"since":0}'); }
+    catch (e) { return { count: 0, since: 0 }; }
   }
   function isRateLimited() {
-    var d = getRateLimitData();
-    var now = Date.now();
-    if (now - d.since > RATE_LIMIT_MS) { return false; }
+    var d = rl();
+    if (Date.now() - d.since > RATE_LIMIT_MS) return false;
     return d.count >= RATE_LIMIT_MAX;
   }
   function incrementRateLimit() {
-    var d = getRateLimitData();
-    var now = Date.now();
-    if (now - d.since > RATE_LIMIT_MS) { d = { count: 0, since: now }; }
+    var d = rl(), now = Date.now();
+    if (now - d.since > RATE_LIMIT_MS) d = { count: 0, since: now };
     d.count++;
-    setRateLimitData(d);
+    try { sessionStorage.setItem('hw_contact_rl', JSON.stringify(d)); } catch (e) {}
   }
+
+  function val(id) { var el = document.getElementById(id); return el ? (el.value || '') : ''; }
 
   function init() {
     var form = document.getElementById('contactForm');
     if (!form) return;
+    var startedAt = Date.now();
+
+    // Kurs-Knöpfe (Academy): Kurs in der Warteliste vorauswählen
+    document.querySelectorAll('[data-interest]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var sel = document.getElementById('cf-interest');
+        if (sel) sel.value = btn.getAttribute('data-interest');
+      });
+    });
 
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       hideFeedback();
 
-      // ── Honeypot-Prüfung (Bots füllen versteckte Felder aus) ──────
-      var honeypot = (document.getElementById('cf-honeypot') || {}).value || '';
-      if (honeypot) { return; } // Stilles Ignorieren — kein Feedback für Bots
+      if (val('cf-honeypot')) return;               // Honeypot
+      if (Date.now() - startedAt < MIN_FILL_MS) return; // Zeitfalle
+      if (isRateLimited()) { showFeedback(false, t('ratelimit')); return; }
 
-      // ── Rate-Limiting ─────────────────────────────────────────────
-      if (isRateLimited()) {
-        showFeedback(false, 'Zu viele Anfragen. Bitte warte einige Minuten oder schreib direkt an info@hwaihub.com.');
-        return;
+      var data = {
+        name: val('cf-name').trim(),
+        email: val('cf-email').trim(),
+        company: val('cf-company').trim(),
+        size: val('cf-size'),
+        topic: val('cf-topic') || form.getAttribute('data-segment') || '',
+        message: val('cf-message').trim(),
+        interest: val('cf-interest'),
+        source: val('cf-source'),
+        lang: lang()
+      };
+      var gdpr = (document.getElementById('cf-gdpr') || {}).checked || false;
+      // Make setzt Felder direkt in den JSON-Text für Notion ein: Name/Unternehmen ohne Sonderzeichen,
+      // Nachricht zusätzlich als escapter Text in „notes“ (message bleibt für die E-Mail lesbar)
+      data.name = data.name.replace(/["\\]/g, '').replace(/\s+/g, ' ');
+      data.company = data.company.replace(/["\\]/g, '').replace(/\s+/g, ' ');
+      data.notes = JSON.stringify(data.message.slice(0, 1750)).slice(1, -1);
+      // Herkunft eindeutig kennzeichnen: Academy-Warteliste vs. Kontaktformular
+      var isWaitlist = form.getAttribute('data-segment') === 'academy_waitlist';
+      // Notion-Auswahlwerte immer deutsch (data-de), auch auf den englischen Seiten
+      var deText = function (o) { return o.getAttribute('data-de') || o.text; };
+      data.tag = isWaitlist ? 'Academy Warteliste' : 'Warm Lead';
+      data.form = isWaitlist ? 'warteliste' : 'kontakt';
+      if (isWaitlist) {
+        // Kurswahl lesbar in Nachricht und Notizen, damit sie in Notion und in der E-Mail sichtbar ist
+        var sel = document.getElementById('cf-interest');
+        var label = sel && sel.selectedIndex > 0 ? deText(sel.options[sel.selectedIndex]) : 'kein Kurs ausgewählt';
+        data.message = 'Academy-Warteliste · Interesse: ' + label;
+        data.notes = JSON.stringify(data.message).slice(1, -1);
+        if (!data.name) data.name = data.email;
       }
+      // Für Notion fertig aufbereitete Felder (Make setzt sie unverändert in den Notion-Aufruf ein)
+      var cleanSel = function (t) { return String(t || '').replace(/["\\,]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 90); };
+      var topicSel = document.getElementById('cf-topic');
+      var interestText = isWaitlist
+        ? (data.interest ? cleanSel(deText(document.getElementById('cf-interest').options[document.getElementById('cf-interest').selectedIndex])) : 'Academy (noch offen)')
+        : (topicSel && topicSel.selectedIndex > 0 ? cleanSel(deText(topicSel.options[topicSel.selectedIndex])) : 'Allgemeine Anfrage');
+      data.quelle = isWaitlist ? 'Academy-Warteliste' : 'Website-Kontakt';
+      data.interestJson = JSON.stringify([{ name: interestText }]);
+      data.phoneJson = 'null';
+      data.positionJson = '[]';
+      data.page = location.pathname;
+      data.submittedAt = new Date().toISOString();
+      data.mailExtra = '';
+      data.callback = '';
 
-      var name    = (document.getElementById('cf-name')    || {}).value || '';
-      var email   = (document.getElementById('cf-email')   || {}).value || '';
-      var company = (document.getElementById('cf-company') || {}).value || '';
-      var size    = (document.getElementById('cf-size')    || {}).value || '';
-      var topic   = (document.getElementById('cf-topic')   || {}).value || '';
-      var message = (document.getElementById('cf-message') || {}).value || '';
-      var gdpr    = (document.getElementById('cf-gdpr')    || {}).checked || false;
+      // Pflichtfelder: alle Felder mit required-Attribut (Kontakt: Name, E-Mail, Nachricht; Warteliste: E-Mail)
+      var missing = Array.prototype.some.call(form.querySelectorAll('[required]'), function (f) {
+        return f.type === 'checkbox' ? false : !String(f.value || '').trim();
+      });
+      if (missing || !data.email) { showFeedback(false, t('required')); return; }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(data.email)) { showFeedback(false, t('email')); return; }
+      if (data.name.length > 120 || data.company.length > 160 || data.message.length > 4000) { showFeedback(false, t('required')); return; }
+      if (!gdpr) { showFeedback(false, t('gdpr')); return; }
+      // Nachweis der Einwilligung (Warteliste: Art. 6 Abs. 1 lit. a DSGVO) – Zeitpunkt steht in submittedAt
+      data.consent = true;
 
-      // Validierung
-      if (!name.trim() || !email.trim() || !message.trim()) {
-        showFeedback(false, t('required'));
-        return;
-      }
-      if (!gdpr) {
-        showFeedback(false, t('gdpr'));
-        return;
-      }
-
-      // Webhook noch nicht konfiguriert?
-      if (!WEBHOOK_URL || WEBHOOK_URL.indexOf('MAKE_') === 0) {
-        showFeedback(false, t('notset'));
-        return;
-      }
+      var url = endpoint();
+      if (!url) { showFeedback(false, t('notset')); return; }
 
       setSubmitState(true);
       incrementRateLimit();
-
-      fetch(WEBHOOK_URL, {
-        method:  'POST',
+      fetch(url, {
+        method: 'POST',
         headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name:     name.trim(),
-          email:    email.trim(),
-          company:  company.trim(),
-          size:     size,
-          topic:    topic,
-          message:  message.trim(),
-          lang:     getLang(),
-          _subject: 'Neue Anfrage von ' + name.trim() + ' – HWaiHub',
-          _token:   CONTACT_TOKEN, // Make.com-Filter prüft diesen Wert
-        }),
+        body: JSON.stringify(data)
       })
         .then(function (res) {
           setSubmitState(false);
-          // Jede 2xx Antwort von Make.com gilt als Erfolg
-          if (res.ok) {
-            showFeedback(true, t('success'));
-            form.reset();
-          } else {
-            throw new Error('HTTP ' + res.status);
-          }
+          if (!res.ok) throw new Error('HTTP ' + res.status);
+          showFeedback(true, t('success'));
+          form.reset();
         })
-        .catch(function (err) {
-          console.error('Contact form error:', err);
+        .catch(function () {
           setSubmitState(false);
           showFeedback(false, t('error'));
         });
     });
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
-  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
 })();
