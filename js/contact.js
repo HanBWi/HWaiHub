@@ -21,7 +21,8 @@
       email: 'Bitte geben Sie eine gültige E-Mail-Adresse an.',
       gdpr: 'Bitte stimmen Sie der Datenschutzerklärung zu.',
       notset: 'Das Formular ist noch nicht freigeschaltet. Bitte schreiben Sie direkt an info@hwaihub.com.',
-      ratelimit: 'Zu viele Anfragen. Bitte warten Sie einige Minuten oder schreiben Sie direkt an info@hwaihub.com.'
+      ratelimit: 'Zu viele Anfragen. Bitte warten Sie einige Minuten oder schreiben Sie direkt an info@hwaihub.com.',
+      spam: 'Ihre Nachricht wurde als automatisierte Werbung eingestuft und nicht gesendet. Falls das ein Irrtum ist, schreiben Sie bitte direkt an info@hwaihub.com.'
     },
     en: {
       sending: 'Sending…',
@@ -31,7 +32,8 @@
       email: 'Please enter a valid email address.',
       gdpr: 'Please agree to the privacy policy.',
       notset: 'The form is not active yet. Please write directly to info@hwaihub.com.',
-      ratelimit: 'Too many requests. Please wait a few minutes or write directly to info@hwaihub.com.'
+      ratelimit: 'Too many requests. Please wait a few minutes or write directly to info@hwaihub.com.',
+      spam: 'Your message was classified as automated advertising and was not sent. If this is a mistake, please write directly to info@hwaihub.com.'
     }
   };
 
@@ -86,6 +88,20 @@
     if (now - d.since > RATE_LIMIT_MS) d = { count: 0, since: now };
     d.count++;
     try { sessionStorage.setItem('hw_contact_rl', JSON.stringify(d)); } catch (e) {}
+  }
+
+  // Einfacher Inhaltsfilter gegen automatisierte Akquise-Nachrichten (Punkte; ab SPAM_LIMIT wird nicht gesendet).
+  // Bewusst konservativ: ein einzelnes schwaches Signal reicht nie.
+  var SPAM_LIMIT = 2;
+  var STRONG = /free (claude |ai |openai )?credits|no strings attached|just reply\s*["“'«]?\s*(yes|ja)\b|book(ing)? (more )?demos|high[- ]intent leads|backlinks?|guest post|seo (audit|services?)|lead[- ]generation (service|agency)|cold (e-?mail|outreach)|we (just )?launched (a|an|our)|startup program/i;
+  var WEAK = /\bour (ai )?(agent|platform|tool|program)\b|reserved for (you|your)|get your first (clients|customers)|google ranking|first page of google|crypto|casino|viagra|\bleads?\b.*\b(for you|for hwaihub)\b/i;
+  function spamScore(text, email) {
+    var score = 0;
+    if (STRONG.test(text)) score += 2;
+    if (WEAK.test(text)) score += 1;
+    if ((text.match(/https?:\/\/|www\./gi) || []).length >= 3) score += 1;
+    if (/\+[a-z0-9]{6,}@/i.test(email)) score += 1;
+    return score;
   }
 
   function val(id) { var el = document.getElementById(id); return el ? (el.value || '') : ''; }
@@ -167,6 +183,9 @@
       if (!gdpr) { showFeedback(false, t('gdpr')); return; }
       // Nachweis der Einwilligung (Warteliste: Art. 6 Abs. 1 lit. a DSGVO) – Zeitpunkt steht in submittedAt
       data.consent = true;
+
+      data.spamScore = spamScore([data.message, data.company, data.name].join(' '), data.email);
+      if (data.spamScore >= SPAM_LIMIT) { showFeedback(false, t('spam')); return; }
 
       var url = endpoint();
       if (!url) { showFeedback(false, t('notset')); return; }
